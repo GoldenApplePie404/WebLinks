@@ -1,0 +1,350 @@
+{
+  "class_name": "我的世界",
+  "websites": [
+    {
+      "name": "星断肃昭的模组开发",
+      "url": "https://xingduansuzhao.com/",
+      "description": "以教程的形式，利用AI进行模组开发"
+    },
+    {
+      "name": "Minecraft官网",
+      "url": "https://www.minecraft.net/zh-hans/",
+      "description": "Minecraft的官方网站"
+    },
+    {
+      "name": "MCNav",
+      "url": "https://www.mcnav.net/",
+      "description": "MC资源站导航"
+    },
+    {
+      "name": "HiMCBBS",
+      "url": "https://www.hibbs.top/",
+      "description": "一个Minecraft论坛"
+    },
+    {
+      "name": "Mined",
+      "url": "https://mined.to/",
+      "description": "一个论坛资源站"
+    },
+    {
+      "name": "Hypixel",
+      "url": "https://hypixel.net/",
+      "description": "Hypixel的官网"
+    },
+    {
+      "name": "我的世界声音大全",
+      "url": "http://o.xbottle.top/mcsounds/#",
+      "description": "Minecraft声音资源集合"
+    },
+    {
+      "name": "Minecraft Note Block Studio",
+      "url": "https://opennbs.org/",
+      "description": "一个MC音乐制作软件的下载网站"
+    },
+    {
+      "name": "MC头颅获取指令大全",
+      "url": "http://minecraft.yxzoo.com/touludaquan",
+      "description": "Minecraft头颅指令集合"
+    },
+    {
+      "name": "MrGarretto",
+      "url": "https://mrgarretto.com/",
+      "description": "一个命令方块，地图网站，有一些好玩的指令模组"
+    },
+    {
+      "name": "The Red Engineer",
+      "url": "http://www.theredengineer.com/",
+      "description": "内有许多有趣的指令模组，作者就是TheRedEngineer"
+    },
+    {
+      "name": "MC mod中文百科",
+      "url": "https://www.mcmod.cn/",
+      "description": "Minecraft模组中文百科"
+    },
+    {
+      "name": "Minecraft Skins",
+      "url": "https://www.minecraftskins.com/",
+      "description": "MC皮肤大全，免费下载"
+    },
+    {
+      "name": "命令方块指令生成器",
+      "url": "https://www.mcmod.cn/tools/cbcreator/",
+      "description": "Minecraft命令方块指令生成工具"
+    },
+    {
+      "name": "Minecraft Maps",
+      "url": "https://www.minecraftmaps.com/",
+      "description": "免费的 Minecraft 地图下载站，同时支持 Java 版与基岩版，按冒险、PVP、PvE、解密、跑酷、创造、生存等类型分类，提供海量玩家自制地图与攻略"
+    },
+    {
+      "name": "SkillAPI",
+      "url": "https://antarctics.github.io/SAED/",
+      "description": "知名粒子特效技能插件SkillAPI制作网站"
+    },
+    {
+      "name": "Snowstorm",
+      "url": "https://snowstorm.app/",
+      "description": "MC粒子效果设计"
+    },
+    {
+      "name": "MC Map Item Tool",
+      "url": "https://mc-map.djfun.de/",
+      "description": "将图片转为MC的地图画"
+    },
+    {
+      "name": "MC Admin",
+      "url": "https://www.mcadmin.cn/",
+      "description": "一个MC论坛，同时有地图，mod下载"
+    },
+    {
+      "name": "IEcraft",
+      "url": "https://www.iecraft.com/news/",
+      "description": "提供各种服务器教程、插件、MOD、软件资源，建站服务，服主必备"
+    },
+    {
+      "name": "Bukkit",
+      "url": "https://dev.bukkit.org/",
+      "description": "插件大全"
+    },
+    {
+      "name": "MC heads",
+      "url": "https://minecraft-heads.com/",
+      "description": "头颅指令查询"
+    },
+    {
+      "name": "FreshCoal Heads",
+      "url": "https://freshcoal.com/",
+      "description": "MC头颅指令查询"
+    },
+    {
+      "name": "MC 资源下载",
+      "url": "http://www.minecraftxz.com/",
+      "description": "地图，mod，材质包等，免费下载"
+    },
+    {
+      "name": "MC烟花代码生成器",
+      "url": "http://lib.orzfly.com/apps/minecraft-fireworks-generator/",
+      "description": "在线设计烟花"
+    },
+    {
+      "name": "MC 服务器列表",
+      "url": "https://www.mclists.cn/",
+      "description": "Minecraft服务器列表"
+    },
+    {
+      "name": "B站的MC wiki",
+      "url": "https://wiki.biligame.com/mc/Minecraft_Wiki",
+      "description": "Bilibili的Minecraft Wiki"
+    },
+    {
+      "name": "我的世界中文WIKI",
+      "url": "https://zh.minecraft.wiki/",
+      "description": "Minecraft的中文Wiki"
+    },
+    {
+      "name": "WorldGuard",
+      "url": "https://worldguard.enginehub.org/en/latest/",
+      "description": "MC服务器插件-WorldGuard的使用指南"
+    },
+    {
+      "name": "SpigotMC",
+      "url": "https://www.spigotmc.org/",
+      "description": "SpigotMC社区和资源"
+    },
+    {
+      "name": "ChunkBase",
+      "url": "https://www.chunkbase.com/",
+      "description": "一个方便的工具，用于查询Minecraft地图中的史莱姆区块、村庄等位置信息。"
+    },
+    {
+      "name": "MC Armorstand",
+      "url": "https://haselkern.com/Minecraft-ArmorStand/",
+      "description": "专门用于设计和展示Minecraft盔甲架动作的网站。"
+    },
+    {
+      "name": "MC Generators",
+      "url": "https://www.digminecraft.com/generators/",
+      "description": "提供多种Minecraft命令生成器，帮助玩家快速创建复杂的游戏元素。"
+    },
+    {
+      "name": "Command Creator",
+      "url": "https://www.commandcreator.com/",
+      "description": "即使没有任何编程基础，也能通过这个网站轻松创建Minecraft小游戏。"
+    },
+    {
+      "name": "MC 插件百科",
+      "url": "https://mineplugin.org/%E9%A6%96%E9%A1%B5",
+      "description": "提供Minecraft插件的详细介绍和使用教程。"
+    },
+    {
+      "name": "PlanetMC",
+      "url": "https://www.planetminecraft.com/",
+      "description": "一个综合性的Minecraft资源站，包含地图、mod、材质包等多种资源。"
+    },
+    {
+      "name": "9Minecraft",
+      "url": "https://www.9minecraft.net/",
+      "description": "另一个提供Minecraft各种资源的网站，包括mod、地图等。"
+    },
+    {
+      "name": "MCSManager",
+      "url": "https://mcsmanager.com/",
+      "description": "一个Minecraft服务器管理工具，帮助服主更好地管理服务器。"
+    },
+    {
+      "name": "Optifine",
+      "url": "https://www.optifine.net/home",
+      "description": "一个用于优化Minecraft性能的mod，提高游戏帧率和视觉效果。"
+    },
+    {
+      "name": "Spigot下载",
+      "url": "https://getbukkit.org/download/spigot",
+      "description": "提供Spigot服务器软件的下载链接，适用于需要高级插件支持的Minecraft服务器。"
+    },
+    {
+      "name": "HMCL",
+      "url": "https://hmcl.huangyuhui.net/",
+      "description": "一个易于使用的Minecraft启动器，支持多种版本和mod管理。"
+    },
+    {
+      "name": "光影",
+      "url": "https://shadersmods.com/category/shaderpacks/",
+      "description": "提供多种Minecraft光影mod，增强游戏视觉效果。"
+    },
+    {
+      "name": "资源包/材质包",
+      "url": "https://resourcepack.net/",
+      "description": "一个专门提供Minecraft资源包和材质包的网站。"
+    },
+    {
+      "name": "史莱姆区块查询",
+      "url": "https://mclt.cn/slimechunk",
+      "description": "除了查询史莱姆区块，还支持木牌商店生成和自定义物品功能。"
+    },
+    {
+      "name": "Realismmats",
+      "url": "https://realismmats.com/",
+      "description": "提供一款超级真实的Minecraft材质包，提升游戏沉浸感。"
+    },
+    {
+      "name": "材质包",
+      "url": "https://minecraft-textures.com/",
+      "description": "包含大量优质的Minecraft材质包，满足不同玩家的需求。"
+    },
+    {
+      "name": "SEUS",
+      "url": "https://www.sonicether.com/seus/",
+      "description": "一款高配置要求但效果极佳的Minecraft光影mod，提供逼真的光影效果。"
+    },
+    {
+      "name": "PixelCloud",
+      "url": "https://pixelcloud.cn/",
+      "description": "提供Minecraft服务器租用服务，对新手友好，易于上手。"
+    },
+    {
+      "name": "真实物理mod",
+      "url": "https://minecraftphysicsmod.com/",
+      "description": "为Minecraft添加更真实的物理效果，提升游戏体验。"
+    },
+    {
+      "name": "Overviewer",
+      "url": "https://overviewer.org/",
+      "description": "利用这个工具，你可以清晰地俯瞰Minecraft地图的全貌，方便规划和管理。"
+    },
+    {
+      "name": "Modrinth",
+      "url": "https://modrinth.com/",
+      "description": "一个资源丰富的Minecraft资源站，包含模组、插件、数据包、光影、资源包等多种内容。"
+    },
+    {
+      "name": "MinecraftTools",
+      "url": "https://minecraft.tools/en/",
+      "description": "功能全面的Minecraft工具网站，包括自定义合成表、自定义烟花火箭、超平坦世界生成器等多种实用功能。"
+    },
+    {
+      "name": "MSL",
+      "url": "https://www.mslmc.cn/",
+      "description": "一款专为Minecraft开服设计的工具，提供便捷的服务器管理功能。"
+    },
+    {
+      "name": "Pixel GPT",
+      "url": "https://deep-pixels.com/Home#",
+      "description": "利用AI技术生成Minecraft纹理材质，为玩家提供独特的视觉体验。"
+    },
+    {
+      "name": "SkinGenerator",
+      "url": "https://skingenerator.io/",
+      "description": "一个基于AI的玩家皮肤生成器，帮助玩家快速创建个性化的游戏角色皮肤。"
+    },
+    {
+      "name": "CrashMC",
+      "url": "https://crashmc.com/",
+      "description": "提供专业的服务端和客户端崩溃报告分析服务，帮助玩家和服主快速定位并解决问题。"
+    },
+    {
+      "name": "SkriptHUB",
+      "url": "https://skripthub.net/",
+      "description": "介绍Minecraft服务器插件Skript的详细信息和使用教程，帮助服主扩展服务器功能。"
+    },
+    {
+      "name": "香草图书馆",
+      "url": "https://vanillalibrary.mcfpp.top/datapack-index/",
+      "description": "一个专注于原版模组开发资源的索引站，为Minecraft模组开发者提供便利。"
+    },
+    {
+      "name": "我的世界中文论坛",
+      "url": "https://www.mcbbs.net/",
+      "description": "（已挂）"
+    },
+    {
+      "name": "Minecraft服务器查询列表",
+      "url": "https://findmcserver.com/",
+      "description": "Minecraft服务器查询和列表平台"
+    },
+    {
+      "name": "Create Mod 社区",
+      "url": "https://createmod.com/zh/",
+      "description": "《我的世界》机械动力（Create）模组相关站点，提供各类载具、建筑、农场等蓝图（schematics）的浏览与下载"
+    },
+    {
+      "name": "创意机械师蓝图站",
+      "url": "https://www.creativemechanicserver.com/",
+      "description": "专注于《我的世界》机械动力（Create）模组的蓝图分享社区，提供大量自动化机械、载具、飞行器蓝图的下载"
+    },
+    {
+      "name": "Prism Launcher",
+      "url": "https://prismlauncher.org/",
+      "description": "开源的 Minecraft 启动器，支持多实例、多账号与 Mod/整合包管理，直接对接 Modrinth 与 CurseForge"
+    },
+    {
+      "name": "Resourcery",
+      "url": "https://resourcery.skycrystal.fun/",
+      "description": "网页端像素材质绘制工具，提供调色板、画笔、橡皮、填充与撤销功能，可在浏览器里制作像素风格的材质/贴图"
+    },
+    {
+      "name": "Fabric",
+      "url": "https://fabricmc.net/",
+      "description": "轻量、模块化的 Minecraft 模组加载器与开发工具链，包含 Fabric API、Yarn 映射、Loom Gradle 插件、模板生成器及开发文档"
+    },
+    {
+      "name": "NeoForge",
+      "url": "https://neoforged.net/",
+      "description": "Minecraft Java 版模组开发与加载平台，提供 NeoForge 安装器、在线模组项目生成器、MDK 示例和完整开发文档"
+    },
+    {
+      "name": "PaperMC",
+      "url": "https://papermc.io/",
+      "description": "高性能 Minecraft Java 服务器软件生态，提供 Paper 服务端、Velocity 代理、Folia 区域多线程服务端及 Hangar 插件仓库"
+    },
+    {
+      "name": "GeyserMC",
+      "url": "https://geysermc.org/",
+      "description": "在基岩版客户端与 Java 版服务器之间转换协议的跨版本联机项目，可作为插件或独立代理运行，并可配合 Floodgate 登录"
+    },
+    {
+      "name": "MCBlock 方块工坊",
+      "url": "https://mcblock.top/",
+      "description": "Minecraft 建筑内容与创作工具平台，提供 500+ 座建筑的 3D 逐层教学、浏览器端投影编辑器（换材质/看投影/导出 .litematic .schem）、高清壁纸站与 Mine2Blend（把投影一键导入 Blender 渲染），全流程免费"
+    }
+  ]
+}

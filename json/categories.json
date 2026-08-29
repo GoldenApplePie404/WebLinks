@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "page": "ai.html",
+      "category": "人工智能",
+      "description": "AI相关工具和资源"
+    },
+    {
+      "page": "mc.html",
+      "category": "Minecraft",
+      "description": "Minecraft相关资源和工具"
+    },
+    {
+      "page": "music.html",
+      "category": "音乐",
+      "description": "音乐相关工具和资源"
+    },
+    {
+      "page": "other.html",
+      "category": "其他",
+      "description": "未分类的工具和资源"
+    },
+    {
+      "page": "science.html",
+      "category": "科学",
+      "description": "科学相关工具和资源"
+    }
+  ]
+}

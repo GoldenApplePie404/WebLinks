@@ -1,0 +1,367 @@
+{
+  "class_name": "科学技术",
+  "categories": {
+    "comprehensive": [
+      {
+        "name": "博科园",
+        "url": "https://www.bokeyuan.net/",
+        "description": "一个综合性的科学论坛，应有尽有"
+      },
+      {
+        "name": "Omni Calculator",
+        "url": "https://www.omnicalculator.com/",
+        "description": "万能计算器，涵盖各种学科，各种物理量的计算"
+      },
+      {
+        "name": "科创",
+        "url": "https://www.kechuang.org/",
+        "description": "科创网，各类科学爱好者的聚集地。手搓核聚变、火箭发动机都不在话下"
+      },
+      {
+        "name": "Fusor",
+        "url": "https://fusor.net/",
+        "description": "静电可控核聚变装置爱好者的论坛"
+      },
+      {
+        "name": "科普中国",
+        "url": "https://www.kepuchina.cn/",
+        "description": "中国权威科学普及组织，也算是一个大型辟谣中心(x)"
+      },
+      {
+        "name": "本源量子云",
+        "url": "https://qcloud.originqc.com.cn/zh/pilotos",
+        "description": "中国首款量子计算机操作系统"
+      },
+      {
+        "name": "BOINC",
+        "url": "https://boinc.berkeley.edu/",
+        "description": "Boinc是一个可以将闲置的电脑（算力）时间捐赠给科学项目的面向大众的志愿项目。(听说这玩意还成就过一次诺奖)"
+      },
+      {
+        "name": "超算互联网",
+        "url": "https://www.scnet.cn/home/internet/index.html",
+        "description": "国家高性能计算服务平台，连接全国超算中心，提供算力调度、应用商城与 AI 社区"
+      },
+      {
+        "name": "Kiwix",
+        "url": "https://www.kiwix.org/",
+        "description": "开源离线知识平台，可把维基百科等免费教育内容制作为本地知识库，并通过桌面、移动端、热点或服务器在无网络环境访问"
+      },
+      {
+        "name": "SciDraw AI",
+        "url": "https://sci-draw.com/zh",
+        "description": "AI 科研绘图平台，文字描述或草图即可生成论文配图、图形摘要/TOC 图、机制图、流程图与教学插图，支持 SVG/PPTX 可编辑导出，内置 Nature/Science/Cell 期刊样式预设；另可将 CSV/Excel 数据转为出版级统计图表（箱线图、热图、回归图等）并导出 PNG/PDF/EPS/TIFF"
+      }
+    ],
+    "hardwareSoftware": [
+      {
+        "name": "MicroPythonOS",
+        "url": "https://micropythonos.com/",
+        "description": "一个轻量级、快速且多功能的操作系统，设计用于运行于 ESP32 等微控制器上。"
+      },
+      {
+        "name": "电子发烧友网",
+        "url": "http://www.elecfans.com/",
+        "description": "电子DIY爱好者之家，一个大型的电子DIY论坛"
+      },
+      {
+        "name": "Hackaday",
+        "url": "https://hackaday.com/",
+        "description": "致力于发布关于世界各个角落的精彩Hack项目，DIY项目的文章"
+      },
+      {
+        "name": "面包板论坛",
+        "url": "https://mbb.eet-china.com/forum",
+        "description": "电子工程师交流平台"
+      },
+      {
+        "name": "嘉立创",
+        "url": "http://www.jlc.com/",
+        "description": "高质量PCB打样平台，同时也有一个大型的硬件开源平台"
+      },
+      {
+        "name": "CircuitsToday",
+        "url": "https://www.circuitstoday.com/",
+        "description": "CircuitsToday旨在为学生和业余爱好者提供免费的电子产品资源。该网站有数以千计的电路、项目和其他信息"
+      },
+      {
+        "name": "CSDN",
+        "url": "https://www.circuitstoday.com/",
+        "description": "专业开发者社区，涵盖硬件与软件两大流派"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "description": "全球最大的开源社区，各种开源项目应有尽有。"
+      },
+      {
+        "name": "Datasheet",
+        "url": "https://www.circuitstoday.com/",
+        "description": "电子元件、集成电路查询"
+      },
+      {
+        "name": "立创开源市场",
+        "url": "https://oshwhub.com/",
+        "description": "嘉立创名下的大型硬件开源市场"
+      },
+      {
+        "name": "乐鑫",
+        "url": "https://www.espressif.com.cn/zh-hans",
+        "description": "乐鑫科技，ESP32系列的供应商"
+      },
+      {
+        "name": "Arduino",
+        "url": "https://www.arduino.cc/",
+        "description": "开源电子原型平台，用于制作交互式项目。"
+      },
+      {
+        "name": "Edge Impulse",
+        "url": "https://edgeimpulse.com/",
+        "description": "一个用于开发嵌入式机器学习应用的平台，你可以在这里训练模型并将其部署到微控制器上。"
+      },
+      {
+        "name": "TinyML",
+        "url": "https://tinyml.org/",
+        "description": "Tiny Machine Learning，一个专注于嵌入式机器学习应用的社区。"
+      },
+      {
+        "name": "ESPConnect",
+        "url": "https://esp.yzluo.top/",
+        "description": "网页上查看ESP32设备信息"
+      },
+      {
+        "name": "RT-Claw框架",
+        "url": "https://www.rt-claw.com/#",
+        "description": "openclaw的esp32移植版"
+      },
+      {
+        "name": "Circuit Mind",
+        "url": "https://www.circuitmind.io/",
+        "description": "AI 驱动的电子设计自动化平台，可自动从功能需求生成原理图、BOM 并完成器件选型"
+      },
+      {
+        "name": "Quilter",
+        "url": "https://www.quilter.ai/",
+        "description": "物理驱动的 AI，自动完成 PCB 布局布线（placement & routing），支持 Altium、KiCAD 等格式导入导出"
+      },
+      {
+        "name": "EEMaster",
+        "url": "https://ee-master.com/",
+        "description": "基于 AI Agent 的电路原理图设计平台，用自然语言描述需求即可自动完成器件选型、原理图构建与验证"
+      },
+      {
+        "name": "华秋开源硬件社区",
+        "url": "https://p.eda.cn/",
+        "description": "华秋电子旗下开源硬件项目分享平台，聚集大量开发板与硬件 DIY 项目"
+      },
+      {
+        "name": "NFC Forum",
+        "url": "https://nfc-forum.org/",
+        "description": "NFC 近场通信技术的国际标准组织，负责制定 NFC 规范、认证与推广（支付、门禁、设备配对等）"
+      },
+      {
+        "name": "Hackaday.io",
+        "url": "https://hackaday.io/",
+        "description": "全球最大的开源硬件项目协作社区，可发布、发现并协作开发各类硬件 DIY 项目"
+      },
+      {
+        "name": "CodeCraft",
+        "url": "https://codecraft.seeed.cc/",
+        "description": "Seeed Studio 推出的硬件 AI 编程助手，在浏览器中用自然语言生成代码并一键上传到开发板，无需本地环境"
+      },
+      {
+        "name": "Apache NuttX",
+        "url": "https://nuttx.apache.org/",
+        "description": "开源实时操作系统（RTOS），支持 8 位到 64 位微控制器，遵循 POSIX 标准，适用于嵌入式与物联网"
+      },
+      {
+        "name": "PicoPixel",
+        "url": "https://picopixel.io/zh/",
+        "description": "基于浏览器的 LVGL 可视化编辑器，拖放设计嵌入式 GUI 并导出可在 ESP32、STM32、Arduino 等平台编译的 C 代码"
+      },
+      {
+        "name": "anyui",
+        "url": "https://anyui.tech/zh/",
+        "description": "专业的 LVGL 嵌入式 UI 设计器，支持可视化拖拽设计、代码生成与本地仿真，兼容 Windows/macOS/Linux"
+      },
+      {
+        "name": "FabGL",
+        "url": "http://www.fabglib.org/",
+        "description": "面向 ESP32 的开源图形库，提供 VGA 直出、PS/2 键鼠输入、音频引擎、GUI 与游戏引擎，可用于自制复古电脑"
+      },
+      {
+        "name": "明武电子技术资料库",
+        "url": "https://mingwei-tech-site.pages.dev/",
+        "description": "电子模块、开发板、传感器、LED 与连接线的技术资料库，每款整理接线、例程、报错排查一页，支持搜索筛选"
+      },
+      {
+        "name": "Falstad Circuit Simulator",
+        "url": "https://www.falstad.com/circuit/",
+        "description": "浏览器电子电路模拟器，可交互编辑元件和开关，以动画显示电压、电流与接地状态，并内置大量示例电路"
+      },
+      {
+        "name": "All About Circuits",
+        "url": "https://www.allaboutcircuits.com/",
+        "description": "电子工程学习与社区平台，提供免费教材、技术文章、视频课程、项目案例、元器件资讯及工程师论坛"
+      },
+      {
+        "name": "BuildCores",
+        "url": "https://www.buildcores.com/",
+        "description": "3D PC 装机配置单生成器与硬件选型工具，支持按预算搭配 CPU/GPU/内存等部件、实时显示总价与兼容性"
+      },
+      {
+        "name": "Blueprint",
+        "url": "https://www.blueprint.io/",
+        "description": "对话式 AI 硬件设计工具，通过自然语言生成硬件原型设计（含部件清单与社区项目），面向快速做硬件原型"
+      },
+      {
+        "name": "Wareloom",
+        "url": "https://www.wareloom.com/",
+        "description": "可视化流式应用构建平台，用组件连线方式跨桌面/云/嵌入式设备构建实时应用，面向机器人、工业自动化、IoT 边缘计算、计算机视觉管线、协议诊断，内置 Core/Transports/ViewKit/ECharts 等包，同一图可跨设备分布式运行"
+      },
+      {
+        "name": "Schematik",
+        "url": "https://www.schematik.io/",
+        "description": "AI 硬件 IDE（被 WIRED 称为「硬件版 Cursor」，获 Anthropic 投资），面向 Arduino / ESP32 / Pico，用自然语言描述需求即可生成完整源码、接线图与组装说明，可直接通过 PlatformIO 烧录或导出自定义，内置大量模板与社区项目"
+      }
+    ],
+    "math": [
+      {
+        "name": "GeoGebra",
+        "url": "https://www.geogebra.org/",
+        "description": "数学利器，专门用于画各种函数图像"
+      },
+      {
+        "name": "Wolfram Alpha",
+        "url": "https://www.wolframalpha.com/",
+        "description": "一个强大的计算器，可以帮你解决各种数学问题。"
+      },
+      {
+        "name": "Desmos 图形计算器",
+        "url": "https://www.desmos.com/calculator",
+        "description": "网页版交互式图形计算器，可绘制函数、参数方程、数据表与回归模型，并通过滑块动态观察数学关系"
+      }
+    ],
+    "astronomy": [
+      {
+        "name": "超新星搜寻 | PSP",
+        "url": "https://nadc.china-vo.org/psp/",
+        "description": "天文萌新都可以参加的超新星搜寻，无需专业知识与技能"
+      },
+      {
+        "name": "天文奥赛百科",
+        "url": "https://www.astro-init.top/index.php?title=%E9%A6%96%E9%A1%B5",
+        "description": "该网站收集了各种天文奥赛的题目、解答和相关信息"
+      },
+      {
+        "name": "中国科学院国家天文台",
+        "url": "https://nao.cas.cn/",
+        "description": "中国科学院国家天文台，可以查询科研动态、学术活动等"
+      },
+      {
+        "name": "有趣天文奇观 – Interesting Sky",
+        "url": "https://interesting-sky.china-vo.org/",
+        "description": "内有天文新闻，天象预告等内容，应有尽有。如果你也爱好天文的话，强烈推荐！"
+      },
+      {
+        "name": "天文学爱好者",
+        "url": "https://www.sky-map.org/",
+        "description": "天文学爱好者聚集地，可以查询各种天体信息"
+      },
+      {
+        "name": "Stellarium",
+        "url": "https://stellarium.org/zh_CN/",
+        "description": "是一款开源的天象模拟软件。它以3D形式展示了极为逼真的星空，就像你在真实世界使用裸眼，双筒望远镜或天文望远镜看到的一样。"
+      },
+      {
+        "name": "100,000 Stars",
+        "url": "http://stars.chromeexperiments.com/",
+        "description": "真·银河系漫游指南"
+      },
+      {
+        "name": "AstroBin",
+        "url": "https://zh.welcome.astrobin.com/",
+        "description": "国外的天体摄影及图片托管平台"
+      },
+      {
+        "name": "Astrometry.net",
+        "url": "https://nova.astrometry.net/",
+        "description": "天文摄影图片鉴定网"
+      },
+      {
+        "name": "天狼星天文网",
+        "url": "https://www.dogstar.net/",
+        "description": "天文学爱好者聚集地，可以查询各种天体信息，也有各种资讯"
+      },
+      {
+        "name": "视觉彗星",
+        "url": "https://astro.vanbuitenen.nl/comets",
+        "description": "可以进行彗星数据查询"
+      },
+      {
+        "name": "国家天文科学数据中心",
+        "url": "https://nadc.china-vo.org/",
+        "description": "国家天文科学数据中心官网"
+      },
+      {
+        "name": "天文通",
+        "url": "https://laysky.com/",
+        "description": "一个很有用的天文网站"
+      }
+    ],
+    "biology": [
+      {
+        "name": "GeneCards",
+        "url": "https://www.genecards.org/",
+        "description": "基因大全"
+      },
+      {
+        "name": "Addgene",
+        "url": "https://www.addgene.org/",
+        "description": "购买优质基因的网站，用于科研实验"
+      },
+      {
+        "name": "BioRender",
+        "url": "https://biorender.com/",
+        "description": "生物绘图工具，可以绘制各种生物结构图。"
+      }
+    ],
+    "chemistry": [
+      {
+        "name": "ChemSpider",
+        "url": "https://www.chemspider.com/",
+        "description": "化学元素查询"
+      },
+      {
+        "name": "PubChem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/",
+        "description": "一个免费的在线数据库，收录了来自世界各地的化学信息"
+      },
+      {
+        "name": "The Photographic Periodic Table of the Elements",
+        "url": "https://periodictable.com/",
+        "description": "在线查询化学元素周期表"
+      },
+      {
+        "name": "阿拉丁",
+        "url": "https://www.aladdin-e.com/",
+        "description": "化学试剂选购"
+      },
+      {
+        "name": "中华试剂网",
+        "url": "http://www.labgogo.com/",
+        "description": "化学试剂选购"
+      },
+      {
+        "name": "吉至生化",
+        "url": "https://www.acmec-e.com/",
+        "description": "化学试剂选购"
+      },
+      {
+        "name": "国药试剂网",
+        "url": "https://www.reagent.com.cn/",
+        "description": "化学试剂选购"
+      }
+    ]
+  }
+}

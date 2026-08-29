@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站收录</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- 左侧导航栏 -->
+        <aside class="w-full md:w-64 bg-white border-r border-gray-200 p-4 md:sticky md:top-0 md:h-screen overflow-y-auto">
+            <div class="flex items-center justify-between mb-6 slide-up">
+                <h1 class="text-xl font-bold text-primary flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-500 hover:rotate-12"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg>
+                    <span class="transition-all duration-300 hover:scale-105">网站收录</span>
+                </h1>
+                <button id="mobile-menu-button" class="md:hidden text-gray-500 p-2 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+            
+            <div id="nav-container" class="space-y-1">
+                <div class="nav-item active slide-in nav-transition" data-category="all" style="animation-delay: 0.1s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>全部网站</span>
+                    <span class="ml-auto bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded-full" id="count-all"></span>
+                </div>
+                <!-- 分类导航将通过JavaScript动态生成 -->
+            </div>
+            
+            <!-- 小马宝莉分类 -->
+            <div class="mt-6 pt-6 border-t border-gray-200">
+                <a href="mlp.html" class="nav-item slide-in nav-transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>小马宝莉</span>
+                    <span class="ml-auto bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded-full">100+</span>
+                </a>
+            </div>
+            
+            <!-- 返回按钮 -->
+            <div class="mt-6">
+                <button onclick="window.location.href='https://blog.goldenapplepie.xyz/'" class="nav-item slide-in nav-transition w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 12-7-7-7 7"/><path d="M12 19V5"/></svg>
+                    <span>返回</span>
+                </button>
+            </div>
+            
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="flex-1 p-4 md:p-8">
+            <!-- 顶部搜索栏 -->
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-6 fade-in">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <div class="relative">
+                            <input type="text" id="search-input" placeholder="搜索网站..." 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none search-focus transition-all duration-300 focus:shadow-md">
+                            <button id="search-button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary p-1 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- 分类标签 -->
+            <div class="flex flex-wrap gap-2 mb-6 fade-in" style="animation-delay: 0.2s;" id="category-tags">
+                <button class="px-3 py-1 bg-primary text-white rounded-full text-sm tag-hover">全部</button>
+                <!-- 分类标签将通过JavaScript动态生成 -->
+            </div>
+            
+            <!-- 网站卡片网格 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="website-grid">
+                <!-- 网站卡片将通过JavaScript动态生成 -->
+                <div class="col-span-full flex justify-center items-center py-20">
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-spin text-gray-400 mb-4"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                            <p class="text-gray-500">加载中...</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- 分页控件容器 -->
+            <div id="pagination-container"></div>
+        </main>
+    </div>
+    
+
+    
+    <!-- 回到顶端按钮（置于脚本之前，确保 DOM 已解析） -->
+    <button id="back-to-top" aria-label="回到顶端"
+        class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script>
+        // 全局变量
+        let allWebsites = [];
+        let currentCategory = 'all';
+        let searchQuery = '';
+        let categoryNames = {}; // 存储分类名称映射
+        let searchHistory = []; // 搜索历史
+        const MAX_HISTORY_ITEMS = 10; // 最大历史记录数
+        
+        // 分页相关状态
+        let currentPage = 1;
+        let itemsPerPage = 24;
+        let filteredList = []; // 当前筛选+排序后的完整列表（分页从这里面切片）
+        
+        // 初始化函数
+        async function init() {
+            try {
+                // 加载所有JSON文件
+                await loadAllJsonFiles();
+                // 更新全部网站数量
+                document.getElementById('count-all').textContent = allWebsites.length;
+                // 生成导航菜单
+                generateNavigation();
+                // 生成分类标签
+                generateCategoryTags();
+                // 渲染网站卡片（含分页）
+                applyFilter();
+            } catch (error) {
+                console.error('初始化失败:', error);
+                document.getElementById('website-grid').innerHTML = `
+                    <div class="col-span-full flex justify-center items-center py-20">
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-500 mb-4"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                            <p class="text-red-500">加载失败，请刷新页面重试</p>
+                            <p class="text-sm text-gray-500 mt-2">${error.message}</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        // 加载所有JSON文件
+        async function loadAllJsonFiles() {
+            const jsonFiles = [
+                'json/ai.json',
+                'json/other.json',
+                'json/mc.json',
+                'json/music.json',
+                'json/science.json'
+            ];
+            
+            for (const file of jsonFiles) {
+                try {
+                    const response = await fetch(file);
+                    if (!response.ok) {
+                        throw new Error(`无法加载 ${file}`);
+                    }
+                    
+                    const data = await response.json();
+                    const categoryKey = file.split('/')[1].replace('.json', '');
+                    
+                    // 提取分类名称
+                    if (data.class_name) {
+                        categoryNames[categoryKey] = data.class_name;
+                    } else {
+                        // 默认使用首字母大写的分类名
+                        categoryNames[categoryKey] = categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+                    }
+                    
+                    // 处理不同格式的JSON文件
+                    if (data.categories) {
+                        // science.json格式
+                        for (const [subCategory, websites] of Object.entries(data.categories)) {
+                            websites.forEach(website => {
+                                allWebsites.push({
+                                    name: website.title || website.name,
+                                    url: website.url,
+                                    description: website.description,
+                                    category: subCategory,
+                                    source: categoryKey
+                                });
+                            });
+                        }
+                    } else if (data.websites && Array.isArray(data.websites)) {
+                        // 包含class_name和websites的格式
+                        data.websites.forEach(website => {
+                            allWebsites.push({
+                                ...website,
+                                category: categoryKey,
+                                source: categoryKey
+                            });
+                        });
+                    } else if (Array.isArray(data)) {
+                        // 其他JSON格式（数组）
+                        data.forEach(website => {
+                            allWebsites.push({
+                                ...website,
+                                category: categoryKey,
+                                source: categoryKey
+                            });
+                        });
+                    }
+                } catch (error) {
+                    console.warn(`加载 ${file} 失败:`, error);
+                    // 继续加载其他文件
+                }
+            }
+        }
+        
+        // 生成导航菜单
+        function generateNavigation() {
+            const navContainer = document.getElementById('nav-container');
+            
+            // 分类图标映射
+                const categoryIcons = {
+                    'ai': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/><path d="M12 11h4"/><path d="M12 7h4"/><path d="M8 11h.01"/><path d="M8 7h.01"/></svg>',
+                    'mc': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>',
+                    'music': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
+                    'other': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+                    'science': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>'
+                };
+            
+            // 只显示顶级分类（JSON文件名）
+            Object.entries(categoryNames).forEach(([categoryKey, categoryName], index) => {
+                const navItem = document.createElement('div');
+                navItem.className = 'nav-item';
+                navItem.dataset.category = categoryKey;
+                
+                // 获取对应分类的图标，如果没有则使用默认图标
+                const icon = categoryIcons[categoryKey] || '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3.75H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.25M10.5 3.75V6m0 0H15m-4.5 0a2.25 2.25 0 0 1 2.25-2.25h3a2.25 2.25 0 0 1 2.25 2.25v3M7.5 15a2.25 1.5 0 1 1-4.5 0 2.25 1.5 0 0 1 4.5 0Zm10.5 0a2.25 1.5 0 1 1-4.5 0 2.25 1.5 0 0 1 4.5 0Z"/></svg>';
+                
+                // 统计该分类的网站数量
+                const categoryCount = allWebsites.filter(website => website.source === categoryKey).length;
+                
+                navItem.innerHTML = `
+                    ${icon}
+                    <span>${categoryName}</span>
+                    <span class="ml-auto bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded-full">${categoryCount}</span>
+                `;
+                
+                // 添加进入动画
+                navItem.classList.add('slide-in', 'nav-transition');
+                navItem.style.animationDelay = `${index * 0.1}s`;
+                
+                navItem.addEventListener('click', () => {
+                    // 移除所有活动状态
+                    document.querySelectorAll('.nav-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    // 添加活动状态
+                    navItem.classList.add('active');
+                    // 更新当前分类
+                    currentCategory = categoryKey;
+                    // 重新筛选并渲染（重置分页）
+                    applyFilter();
+                });
+                
+                navContainer.appendChild(navItem);
+            });
+        }
+        
+        // 生成分类标签
+        function generateCategoryTags() {
+            const tagContainer = document.getElementById('category-tags');
+            
+            // 只显示顶级分类（JSON文件名）
+            Object.entries(categoryNames).forEach(([categoryKey, categoryName], index) => {
+                const tag = document.createElement('button');
+                tag.className = 'px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white transition-colors slide-in';
+                tag.dataset.category = categoryKey;
+                tag.textContent = categoryName;
+                tag.style.animationDelay = `${index * 0.1}s`;
+                
+                tag.addEventListener('click', () => {
+                    // 更新当前分类
+                    currentCategory = categoryKey;
+                    // 更新导航菜单状态
+                    document.querySelectorAll('.nav-item').forEach(item => {
+                        item.classList.remove('active');
+                        if (item.dataset.category === categoryKey) {
+                            item.classList.add('active');
+                        }
+                    });
+                    // 重新筛选并渲染（重置分页）
+                    applyFilter();
+                });
+                
+                tagContainer.appendChild(tag);
+            });
+        }
+        
+        // 应用筛选（分类 + 搜索），并重置到第一页
+        function applyFilter() {
+            let list = allWebsites;
+            
+            // 按分类过滤
+            if (currentCategory !== 'all') {
+                list = list.filter(website => website.source === currentCategory);
+            }
+            
+            // 按搜索词过滤
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase();
+                list = list.filter(website => 
+                    website.name.toLowerCase().includes(query) ||
+                    website.description.toLowerCase().includes(query) ||
+                    website.url.toLowerCase().includes(query)
+                );
+            }
+            
+            // 全部网站分类下随机排序（仅筛选变化时执行一次，避免翻页时重排）
+            if (currentCategory === 'all') {
+                list = [...list].sort(() => Math.random() - 0.5);
+            }
+            
+            filteredList = list;
+            currentPage = 1;
+            renderWebsites();
+        }
+        
+        // 渲染网站卡片（分页切片）
+        function renderWebsites() {
+            const grid = document.getElementById('website-grid');
+            
+            // 添加淡出效果
+            grid.classList.add('opacity-0');
+            grid.style.transition = 'opacity 0.3s ease';
+            
+            // 短暂延迟后再渲染内容，以显示过渡效果
+            setTimeout(() => {
+                const total = filteredList.length;
+                const totalPages = Math.max(1, Math.ceil(total / itemsPerPage));
+                if (currentPage > totalPages) currentPage = totalPages;
+                if (currentPage < 1) currentPage = 1;
+                
+                // 当前页切片
+                const start = (currentPage - 1) * itemsPerPage;
+                const pageItems = filteredList.slice(start, start + itemsPerPage);
+                
+                if (total === 0) {
+                    grid.innerHTML = `
+                        <div class="col-span-full flex justify-center items-center py-20">
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 mb-4"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                                <p class="text-gray-500">未找到匹配的网站</p>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    const cardsHtml = pageItems.map((website) => `
+                        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up">
+                            <div class="p-5">
+                                <div class="flex items-start justify-between mb-3 gap-2">
+                                    <h3 class="font-semibold text-lg text-gray-900 truncate flex-1">${website.name}</h3>
+                                    <span class="px-2 py-1 bg-primary text-white text-xs rounded-full whitespace-nowrap">${categoryNames[website.source] || website.source}</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4 line-clamp-2">${website.description}</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <a href="${website.url}" target="_blank" rel="noopener noreferrer" 
+                                        class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-all duration-300 hover:translate-x-1">
+                                        <span>访问网站</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 transition-transform duration-300 hover:translate-x-0.5"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                                    </a>
+                                    <div class="text-xs text-gray-400 transition-all duration-300 hover:text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                    
+                    grid.innerHTML = cardsHtml;
+                }
+                
+                // 渲染分页控件
+                renderPagination();
+                
+                // 添加入场效果
+                setTimeout(() => {
+                    grid.classList.remove('opacity-0');
+                }, 50);
+            }, 200);
+        }
+        
+        // 渲染分页栏（含每页条数自定义）
+        function renderPagination() {
+            const container = document.getElementById('pagination-container');
+            const total = filteredList.length;
+            const totalPages = Math.max(1, Math.ceil(total / itemsPerPage));
+            if (currentPage > totalPages) currentPage = totalPages;
+            
+            if (total === 0) {
+                container.innerHTML = '';
+                return;
+            }
+            
+            // 生成页码（多页时折叠中间部分）
+            let pages = [];
+            if (totalPages <= 7) {
+                pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+            } else {
+                pages.push(1);
+                if (currentPage > 3) pages.push('...');
+                const from = Math.max(2, currentPage - 1);
+                const to = Math.min(totalPages - 1, currentPage + 1);
+                for (let p = from; p <= to; p++) pages.push(p);
+                if (currentPage < totalPages - 2) pages.push('...');
+                pages.push(totalPages);
+            }
+            
+            const pageBtns = pages.map(p => {
+                if (p === '...') return `<span class="px-2 py-1 text-gray-400 select-none">…</span>`;
+                const active = p === currentPage;
+                return `<button data-page="${p}" class="px-3 py-1 rounded-lg text-sm transition-all duration-200 ${active ? 'bg-primary text-white font-medium' : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-100'}">${p}</button>`;
+            }).join('');
+            
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 pb-4 fade-in">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <span>每页</span>
+                        <input id="items-per-page" type="number" min="1" max="999" value="${itemsPerPage}"
+                            class="w-16 px-2 py-1 border border-gray-300 rounded-lg text-center focus:outline-none search-focus transition-all duration-300">
+                        <span>条</span>
+                        <span class="ml-2 text-gray-400">共 ${total} 条 · 第 ${currentPage}/${totalPages} 页</span>
+                    </div>
+                    <div class="flex items-center gap-1 flex-wrap justify-center" id="page-controls">
+                        <button data-page="prev" ${currentPage <= 1 ? 'disabled' : ''}
+                            class="px-3 py-1 rounded-lg text-sm bg-white border border-gray-200 text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200">上一页</button>
+                        ${pageBtns}
+                        <button data-page="next" ${currentPage >= totalPages ? 'disabled' : ''}
+                            class="px-3 py-1 rounded-lg text-sm bg-white border border-gray-200 text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200">下一页</button>
+                    </div>
+                </div>
+            `;
+            
+            // 绑定页码 / 上下页事件
+            container.querySelectorAll('#page-controls button[data-page]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const v = btn.dataset.page;
+                    if (v === 'prev') {
+                        if (currentPage > 1) currentPage--;
+                    } else if (v === 'next') {
+                        if (currentPage < totalPages) currentPage++;
+                    } else {
+                        currentPage = parseInt(v, 10);
+                    }
+                    renderWebsites();
+                    document.getElementById('website-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+            
+            // 绑定每页条数自定义
+            const ipp = container.querySelector('#items-per-page');
+            if (ipp) {
+                ipp.addEventListener('change', () => {
+                    let v = parseInt(ipp.value, 10);
+                    if (isNaN(v) || v < 1) v = 1;
+                    if (v > 999) v = 999;
+                    itemsPerPage = v;
+                    currentPage = 1;
+                    renderWebsites();
+                });
+            }
+        }
+        
+        // 搜索历史管理
+        function addToSearchHistory(query) {
+            if (!query || query.trim() === '') return;
+            
+            // 移除重复项
+            searchHistory = searchHistory.filter(item => item !== query);
+            
+            // 添加到开头
+            searchHistory.unshift(query);
+            
+            // 限制历史记录数量
+            if (searchHistory.length > MAX_HISTORY_ITEMS) {
+                searchHistory = searchHistory.slice(0, MAX_HISTORY_ITEMS);
+            }
+        }
+        
+        // 获取搜索建议
+        function getSearchSuggestions(query) {
+            if (!query || query.trim() === '') return [];
+            
+            const queryLower = query.toLowerCase();
+            const suggestions = new Set();
+            
+            // 从网站名称和描述中提取建议
+            allWebsites.forEach(website => {
+                if (website.name.toLowerCase().includes(queryLower)) {
+                    suggestions.add(website.name);
+                }
+                if (website.description.toLowerCase().includes(queryLower)) {
+                    suggestions.add(website.description.substring(0, 50));
+                }
+            });
+            
+            // 从搜索历史中提取建议
+            searchHistory.forEach(item => {
+                if (item.toLowerCase().includes(queryLower)) {
+                    suggestions.add(item);
+                }
+            });
+            
+            return Array.from(suggestions).slice(0, 5); // 最多返回5个建议
+        }
+        
+        // 渲染搜索建议
+        function renderSearchSuggestions(query) {
+            const suggestions = getSearchSuggestions(query);
+            const searchContainer = document.getElementById('search-input').parentElement;
+            
+            // 移除旧的建议
+            let suggestionBox = searchContainer.querySelector('.search-suggestions');
+            if (suggestionBox) {
+                suggestionBox.remove();
+            }
+            
+            if (suggestions.length === 0) return;
+            
+            // 创建建议框
+            suggestionBox = document.createElement('div');
+            suggestionBox.className = 'search-suggestions absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-md z-10';
+            
+            suggestions.forEach(suggestion => {
+                const item = document.createElement('div');
+                item.className = 'px-4 py-2 hover:bg-gray-100 cursor-pointer';
+                item.textContent = suggestion;
+                item.addEventListener('click', () => {
+                    document.getElementById('search-input').value = suggestion;
+                    searchQuery = suggestion;
+                    addToSearchHistory(suggestion);
+                    applyFilter();
+                    suggestionBox.remove();
+                });
+                suggestionBox.appendChild(item);
+            });
+            
+            searchContainer.appendChild(suggestionBox);
+        }
+        
+        // 搜索功能
+        document.getElementById('search-button').addEventListener('click', () => {
+            searchQuery = document.getElementById('search-input').value;
+            addToSearchHistory(searchQuery);
+            applyFilter();
+        });
+        
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchQuery = e.target.value;
+                addToSearchHistory(searchQuery);
+                applyFilter();
+            }
+        });
+        
+        // 输入时显示搜索建议
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const query = e.target.value;
+            renderSearchSuggestions(query);
+        });
+        
+        // 点击页面其他地方关闭搜索建议
+        document.addEventListener('click', (e) => {
+            const searchInput = document.getElementById('search-input');
+            const suggestionBox = document.querySelector('.search-suggestions');
+            
+            if (suggestionBox && !searchInput.contains(e.target) && !suggestionBox.contains(e.target)) {
+                suggestionBox.remove();
+            }
+        });
+        
+        // 全部网站按钮
+        document.querySelector('[data-category="all"]').addEventListener('click', () => {
+            // 移除所有活动状态
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            // 添加活动状态
+            document.querySelector('[data-category="all"]').classList.add('active');
+            // 更新当前分类
+            currentCategory = 'all';
+            // 重新筛选并渲染（重置分页）
+            applyFilter();
+        });
+        
+        // 移动端菜单切换
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const navContainer = document.getElementById('nav-container');
+            navContainer.classList.toggle('hidden');
+        });
+        
+
+        
+        // 回到顶端按钮（始终显示）
+        const backToTopBtn = document.getElementById('back-to-top');
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // 初始化
+        init();
+    </script>
+</body>
+</html>

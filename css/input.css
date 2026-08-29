@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+    .card-hover {
+        @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+    }
+    .nav-item {
+        @apply flex items-center gap-2 p-3 rounded-lg hover:bg-primary-bg hover:text-primary-dark cursor-pointer transition-all duration-300;
+    }
+    .nav-item.active {
+        @apply bg-primary text-white font-medium transition-all duration-300;
+    }
+    .tag-hover {
+        @apply transition-all duration-200 hover:scale-105;
+    }
+    .search-focus {
+        @apply focus:ring-2 focus:ring-primary focus:border-transparent;
+    }
+    .btn-hover {
+        @apply transition-all duration-200 hover:bg-gray-100;
+    }
+    .fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+    .slide-in {
+        animation: slideIn 0.3s ease-out forwards;
+    }
+    .fade-up {
+        animation: fadeUp 0.4s ease-out forwards;
+    }
+    .nav-transition {
+        transition: all 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes slideIn {
+        from { transform: translateX(-10px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

@@ -1,0 +1,595 @@
+{
+  "class_name": "人工智能",
+  "websites": [
+    {
+      "name": "AIDetectLab",
+      "url": "https://www.aidetectlab.com/zh",
+      "description": "AI检测实验室，提供AI相关的检测和分析服务"
+    },
+    {
+      "name": "Meshy AI",
+      "url": "https://www.meshy.ai/zh/discover",
+      "description": "AI 3D建模和生成平台"
+    },
+    {
+      "name": "OpenClaw101",
+      "url": "https://openclaw101.dev/zh",
+      "description": "开源AI框架的相关资源"
+    },
+    {
+      "name": "AI Short",
+      "url": "https://www.aishort.top/",
+      "description": "AI 提示词库，提供 ChatGPT、DeepSeek 等模型的提示词模板并支持一键复制，涵盖写作辅助、翻译、润色、图像生成（Midjourney / Stable Diffusion）等多种场景，由社区用户分享投稿"
+    },
+    {
+      "name": "UX Bot",
+      "url": "https://www.uxbot.cn/",
+      "description": "AI辅助UX设计工具"
+    },
+    {
+      "name": "Loot Drop",
+      "url": "https://www.loot-drop.io/",
+      "description": "AI生成游戏道具和资源"
+    },
+    {
+      "name": "Toonme",
+      "url": "https://toonme.com/",
+      "description": "将你的头像生成为卡通样式的"
+    },
+    {
+      "name": "TuneFlow",
+      "url": "https://www.tuneflow.com/",
+      "description": "智能音乐创作助手"
+    },
+    {
+      "name": "UberDuck",
+      "url": "https://uberduck.ai/#mode=tts-basic",
+      "description": "语音AI"
+    },
+    {
+      "name": "U钙网",
+      "url": "https://www.uugai.com/",
+      "description": "AI生成LOGO"
+    },
+    {
+      "name": "VocalRemover",
+      "url": "https://vocalremover.org/",
+      "description": "AI分离曲子中的伴奏和人声，具有BPM识别和音乐剪辑功能"
+    },
+    {
+      "name": "jarvis-lyrics",
+      "url": "https://www.jarvis-lyrics.com/",
+      "description": "自动生成歌词"
+    },
+    {
+      "name": "全景图生成",
+      "url": "https://skybox.blockadelabs.com/",
+      "description": "通过一段描述生成全景图"
+    },
+    {
+      "name": "啦啦爱",
+      "url": "https://www.lalal.ai/?referral=KqDfDRcy&utm_source=referral_promo&utm_medium=link&utm_campaign=KqDfDRcy",
+      "description": "分离曲子中的人声和伴奏"
+    },
+    {
+      "name": "图片像素化",
+      "url": "https://pixel-me.tokyo/en/",
+      "description": "将图片转换为像素风格"
+    },
+    {
+      "name": "学术灵感",
+      "url": "https://easydl.zzh.coderai.cn/demo-5",
+      "description": "提供学术研究的灵感和辅助"
+    },
+    {
+      "name": "小嗨音乐创作助手",
+      "url": "https://hi.xingzheai.cn/#/Version",
+      "description": "音乐创作辅助工具"
+    },
+    {
+      "name": "文心-AI写作",
+      "url": "https://wenxin.baidu.com/ernie3",
+      "description": "支持多种体裁"
+    },
+    {
+      "name": "文心-AI绘画",
+      "url": "https://wenxin.baidu.com/ernie-vilg",
+      "description": "文心一言的AI绘画功能"
+    },
+    {
+      "name": "文心-中文歌词生成",
+      "url": "https://wenxin.baidu.com/wenxin/pc/lyrics",
+      "description": "自动生成中文歌词"
+    },
+    {
+      "name": "文心一言",
+      "url": "https://yiyan.baidu.com/",
+      "description": "百度训练的，并通过数据驱动的模型更新"
+    },
+    {
+      "name": "文本转语音",
+      "url": "https://azure.microsoft.com/zh-cn/products/cognitive-services/text-to-speech/#overview",
+      "description": "Microsoft Azure提供的文本转语音服务"
+    },
+    {
+      "name": "智谱AI",
+      "url": "https://open.bigmodel.cn/",
+      "description": "提供大模型相关服务和资源"
+    },
+    {
+      "name": "网易天音，AI制作音乐",
+      "url": "http://tianyin.163.com/#/",
+      "description": "使用AI技术制作音乐"
+    },
+    {
+      "name": "美化",
+      "url": "https://qr.mewx.art/",
+      "description": "包括二维码的美化、字的美化等"
+    },
+    {
+      "name": "聊天AI：图灵机器人",
+      "url": "http://www.turingapi.com/",
+      "description": "提供聊天机器人服务的平台"
+    },
+    {
+      "name": "腾讯混元",
+      "url": "https://3d.hunyuan.tencent.com/",
+      "description": "腾讯的自动生成3D模型的AI"
+    },
+    {
+      "name": "茉莉云机器人API",
+      "url": "https://mlyai.com/",
+      "description": "提供机器人API服务"
+    },
+    {
+      "name": "青云客智能聊天机器人API",
+      "url": "http://api.qingyunke.com/",
+      "description": "提供智能聊天机器人API服务"
+    },
+    {
+      "name": "音虫官网",
+      "url": "https://www.soundbug.com/",
+      "description": "AI音乐制作软件"
+    },
+    {
+      "name": "魔搭",
+      "url": "https://www.modelscope.cn/",
+      "description": "一个包含模型、论文、算力资源的论坛"
+    },
+    {
+      "name": "DeepPCB",
+      "url": "https://deeppcb.ai/",
+      "description": "AI辅助设计PCB的平台"
+    },
+    {
+      "name": "Lumine AI",
+      "url": "https://www.lumine-ai.org/",
+      "description": "在3D开放世界中打造通用智能体"
+    },
+    {
+      "name": "ESP32.AI",
+      "url": "https://www.esp32.ai/zh/",
+      "description": "基于ESP32的智能硬件解决方案"
+    },
+    {
+      "name": "Edge Impulse",
+      "url": "https://edgeimpulse.com/",
+      "description": "一个用于开发嵌入式机器学习应用的平台，你可以在这里训练模型并将其部署到微控制器上。"
+    },
+    {
+      "name": "TinyML",
+      "url": "https://tinyml.org/",
+      "description": "Tiny Machine Learning，一个专注于嵌入式机器学习应用的社区。"
+    },
+    {
+      "name": "Paper to Gal",
+      "url": "https://paper2gal.com/",
+      "description": "将论文解析成galgame的形式"
+    },
+    {
+      "name": "AIMusicGen",
+      "url": "https://aimusicgen.ai/",
+      "description": "AI音乐生成工具"
+    },
+    {
+      "name": "SFX生成器",
+      "url": "https://sfxengine.com/zh",
+      "description": "通过描述来生成音效的平台。"
+    },
+    {
+      "name": "NanoBanana",
+      "url": "https://nanobanana.co/zh",
+      "description": "包含AI图片、AI视频的工具，且质量较高"
+    },
+    {
+      "name": "Ludo",
+      "url": "https://ludo.ai/",
+      "description": "一个用于帮你游戏开发的大型AI工具网站"
+    },
+    {
+      "name": "MusicMaker",
+      "url": "https://musicmaker.im/zh/",
+      "description": "AI提示词编曲"
+    },
+    {
+      "name": "团子AI",
+      "url": "https://tuanziai.com/",
+      "description": "以音乐为主的AI工具套件"
+    },
+    {
+      "name": "Vozart",
+      "url": "https://vozart.ai/zh",
+      "description": "AI音乐生成"
+    },
+    {
+      "name": "openclaw",
+      "url": "https://openclaws.io/zh/",
+      "description": "开源AI框架"
+    },
+    {
+      "name": "OiiOii",
+      "url": "https://www.oiioii.ai/home",
+      "description": "AI动画创作平台"
+    },
+    {
+      "name": "Pentagi",
+      "url": "https://pentagi.com/",
+      "description": "一个接入AI的网络渗透安全测试工具"
+    },
+    {
+      "name": "Lumen Platform",
+      "url": "https://lumenplatform.net/",
+      "description": "minecraft相关，可以帮你生成皮肤"
+    },
+    {
+      "name": "Flux",
+      "url": "https://www.flux.ai/",
+      "description": "基于浏览器的 AI 硬件设计平台，可通过 AI 完成 PCB 原理图生成、布局布线与制造输出，号称“世界首个 AI 硬件工程师”"
+    },
+    {
+      "name": "LibLib",
+      "url": "https://www.liblib.tv/",
+      "description": "国内 AI 绘画模型分享与生成社区（哩布哩布），提供 Stable Diffusion 模型、在线生图与作品工作流分享"
+    },
+    {
+      "name": "魔珐星云",
+      "url": "https://xingyun3d.com/",
+      "description": "AI 具身交互智能体开放平台，提供 3D 数字人实时驱动与视频生成，让屏幕与应用拥有会表达、能办事的 AI 智能体"
+    },
+    {
+      "name": "Hyper3D (Rodin)",
+      "url": "https://hyper3d.ai/",
+      "description": "AI 3D 模型生成平台，可根据文字或图片快速生成 3D 资产，并支持 3D 编辑与多视图输出"
+    },
+    {
+      "name": "Edraw.AI",
+      "url": "https://www.edraw.ai/",
+      "description": "AI 驱动的可视化协作平台，支持用 AI 生成流程图、思维导图、图表与演示文稿"
+    },
+    {
+      "name": "RunningHub RHTV",
+      "url": "https://rhtv.runninghub.cn/",
+      "description": "AI 创意工作流与视频创作画布，提供无限画布、一键复刻爆款视频与动作迁移等能力"
+    },
+    {
+      "name": "HyperFrames",
+      "url": "https://www.hyperframes.dev/",
+      "description": "HeyGen 推出的 AI 视频生成社区与工具，可通过 AI agent 快速生成产品展示、UI 动效等营销视频"
+    },
+    {
+      "name": "SwanLab",
+      "url": "https://docs.swanlab.cn/",
+      "description": "AI 训练分析平台（MLOps），可跟踪机器学习实验指标，与 50+ 训练框架集成，支持私有化部署"
+    },
+    {
+      "name": "Open Design",
+      "url": "https://open-design.ai/zh/",
+      "description": "开源、本地优先的 AI 设计工作台（Claude Design 的开源替代），把 coding agent 接入设计工作流生成原型、网页、Slides 与视频"
+    },
+    {
+      "name": "TapNow",
+      "url": "https://www.tapnow.ai/zh",
+      "description": "AI 智能体创意画布，统一调度文本、图像、视频模型，提供专业级镜头、灯光与视频对象替换控制"
+    },
+    {
+      "name": "AI Video AI",
+      "url": "https://aivideoai.io/zh",
+      "description": "免费的 AI 视频生成平台，支持文生视频、图生视频、口型同步与音乐 MV，自动匹配 20+ 视频模型"
+    },
+    {
+      "name": "DeepTutor",
+      "url": "https://deeptutor.info/zh-cn/",
+      "description": "Agent-native 的开源个性化学习伴侣，提供伙伴、协同写作、交互式书本、记忆与知识中心等模块，支持本地部署"
+    },
+    {
+      "name": "FreeModel",
+      "url": "https://freemodel.dev/",
+      "description": "多模型 AI API 网关，单一端点兼容 OpenAI 与 Anthropic 格式，自动将请求路由到最匹配的开放模型并支持回退，无厂商锁定"
+    },
+    {
+      "name": "LocalAI",
+      "url": "https://localai.io/",
+      "description": "开源（MIT）的本地 AI 推理运行时，提供兼容 OpenAI 的 API，可在普通电脑甚至仅 CPU 上运行文本、语音、图像、视频等模型"
+    },
+    {
+      "name": "Vidu",
+      "url": "https://www.vidu.cn/",
+      "description": "生数科技推出的 AI 视频生成平台，支持参考生视频、多主体一致性、图生视频与首尾帧等功能，主打动漫与短视频创作"
+    },
+    {
+      "name": "VEO 3 视频生成器 (wwwveo.com)",
+      "url": "https://wwwveo.com/zh",
+      "description": "AI 视频生成站点，支持文生/图生视频与参考控制；自称 Google Veo 但域名 wwwveo.com 非官方（官方站点为 deepmind.google/models/veo），疑似第三方镜像/仿冒"
+    },
+    {
+      "name": "Google Veo (官方)",
+      "url": "https://deepmind.google/models/veo/",
+      "description": "Google DeepMind 推出的领先视频生成模型，支持原生音频、最高 4K 输出，提供参考图像引导、镜头控制与画面扩展等创作能力（官方站点）"
+    },
+    {
+      "name": "V2Fun",
+      "url": "https://v2fun.art/",
+      "description": "AI 3D 模型生成平台，支持文生/图生 3D 模型、自动绑骨、PBR 贴图、视频动捕与 3D 动画，一站式产出可导出 FBX/GLB 的游戏与打印资产"
+    },
+    {
+      "name": "MiniMax",
+      "url": "https://www.minimaxi.com/",
+      "description": "MiniMax 是多模态 AI 公司，推出 MiniMax M3（1M 上下文 Coding/Agent 模型）、H3 视频生成、Speech/Music 与开放平台 API"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/",
+      "description": "OpenAI 是领先的人工智能研究与部署公司，提供 ChatGPT 对话助手、GPT 系列前沿大模型（如 GPT-5.6）与开放 API 平台"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/",
+      "description": "Anthropic 是聚焦 AI 安全的研究公司，推出 Claude 系列模型（Opus/Sonnet/Haiku）与 API，主打可靠、可信的企业级 AI"
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "description": "Google DeepMind 是 Google 的 AI 研究部门，推出 Gemini 多模态大模型、Veo 视频生成、Lyria 音乐与开源 Gemma 等"
+    },
+    {
+      "name": "Meta AI",
+      "url": "https://www.meta.com/ai/",
+      "description": "Meta AI 是 Meta 的 AI 部门，推出 Llama/Muse 系列模型与 Meta AI 助手，并深度集成到 Facebook/Instagram/WhatsApp 等社交产品"
+    },
+    {
+      "name": "Microsoft AI",
+      "url": "https://www.microsoft.com/en-us/ai",
+      "description": "Microsoft 通过 Microsoft 365 Copilot、Copilot Studio 与 Azure AI 将生成式 AI 嵌入办公与云端，提供企业级智能代理与 API"
+    },
+    {
+      "name": "xAI",
+      "url": "https://x.ai/",
+      "description": "xAI 是马斯克创立的 AI 公司，推出 Grok 系列模型与统一多模态 API（文本/代码/语音/图像/视频）"
+    },
+    {
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/",
+      "description": "Mistral AI 是法国领先 AI 实验室，提供 Mistral 前沿模型、Le Chat 助手与企业级私有化部署方案（Vibe/Studio/Forge）"
+    },
+    {
+      "name": "Cohere",
+      "url": "https://cohere.com/",
+      "description": "Cohere 专注企业级 AI，提供 Command 生成模型、Embed/Rerank 检索与 North 私有化 AI 工作平台，支持 49 种语言"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/",
+      "description": "Hugging Face 是全球最大开源机器学习社区与模型中心，托管 200 万+ 模型、数据集与 AI 应用，并维护 Transformers 等开源工具"
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "description": "Perplexity 是 AI 搜索引擎，基于大模型提供带引用来源的答案与对话式研究体验"
+    },
+    {
+      "name": "阿里通义千问",
+      "url": "https://tongyi.aliyun.com/",
+      "description": "阿里通义实验室推出千问（Qwen）系列大模型与万相视觉生成模型，覆盖语言、代码、视觉、图像与视频等多模态能力，并通过百炼平台开放 API"
+    },
+    {
+      "name": "字节豆包",
+      "url": "https://www.doubao.com/",
+      "description": "豆包是字节跳动旗下的 AI 智能助手，基于豆包大模型提供问答、创作、学习与多模态交互能力"
+    },
+    {
+      "name": "月之暗面 Kimi",
+      "url": "https://kimi.moonshot.cn/",
+      "description": "Kimi 是月之暗面（Moonshot AI）推出的 AI 助手，主打超长上下文与智能体编程/知识工作，基于 Kimi 系列开源推理模型"
+    },
+    {
+      "name": "DeepSeek 深度求索",
+      "url": "https://www.deepseek.com/",
+      "description": "DeepSeek（深度求索）是专注 AGI 的中国 AI 公司，推出 DeepSeek 系列开源大模型（V4/R1 等）与网页/API 服务，以高性价比推理著称"
+    },
+    {
+      "name": "百川智能",
+      "url": "https://www.baichuan-ai.com/",
+      "description": "百川智能推出 Baichuan 系列大模型（M4/M3/M2 等），在医疗增强与低幻觉方向突出，并提供开源模型与企业级 API"
+    },
+    {
+      "name": "零一万物 01.AI",
+      "url": "https://www.01.ai/",
+      "description": "零一万物（01.AI，李开复创立）提供 Yi 系列大模型与企业级 Agent 决策产品（Boss/Investor/TopSales AI），聚焦行业与主权 AI 落地"
+    },
+    {
+      "name": "阶跃星辰 StepFun",
+      "url": "https://www.stepfun.com/",
+      "description": "阶跃星辰推出 Step 系列语言/多模态大模型与阶跃开放平台，主打 Agent 工作流、GUI 理解与开源权重"
+    },
+    {
+      "name": "昆仑天工",
+      "url": "https://www.tiangong.cn/",
+      "description": "天工是昆仑万维推出的 AI 助手平台，提供通用对话、AI 搜索与可定制的专家 Agent 技能（如 GEO 诊断、内容蒸馏）"
+    },
+    {
+      "name": "讯飞星火",
+      "url": "https://xinghuo.xfyun.cn/",
+      "description": "讯飞星火是科大讯飞的认知大模型，具备深度推理、AI 搜索、智能体与多语种语音能力，覆盖办公、医疗、教育等场景"
+    },
+    {
+      "name": "商汤日日新 SenseNova",
+      "url": "https://www.sensetime.com/",
+      "description": "商汤科技推出日日新（SenseNova）多模态大模型体系与视觉 AI，覆盖图像/视频创作、数字人生成与行业应用"
+    },
+    {
+      "name": "360 纳米AI",
+      "url": "https://www.360.com/",
+      "description": "360 推出纳米 AI 与 360 智脑，提供基于 DeepSeek 高速专线的 AI 助手、AI 办公与安全防护能力"
+    },
+    {
+      "name": "华为盘古大模型",
+      "url": "https://www.huaweicloud.com/pangu/",
+      "description": "华为云盘古大模型是面向行业的多模态基础模型体系（LLM/视觉/多模态/预测/气象），深度结合昇腾生态赋能千行百业"
+    },
+    {
+      "name": "Pika AI 视频生成器 (pikaai.org)",
+      "url": "https://pikaai.org/cn/",
+      "description": "AI 视频生成工具，支持文生/图生视频与模板创作，自述由 Pica Art Labs 提供；域名 pikaai.org 非 Pika Labs 官方主域名（官方为 pika.art），疑似第三方聚合/镜像站"
+    },
+    {
+      "name": "Pika (官方)",
+      "url": "https://pika.art/",
+      "description": "Pika 官方 AI 创作平台，主打对话式创作智能体（Pika Agent）、让任意 Agent 接入创意模型的 Pika MCP、一键将照片变特效视频的 Pikaffects，以及 AI Trendmaker 自拍视频趋势创作等实验工具"
+    },
+    {
+      "name": "Runway",
+      "url": "https://www.runwayml.com/",
+      "description": "AI 媒体创作与开发平台，整合视频、图像和音频生成编辑、模型 API 工作流及面向机器人的世界模型工具"
+    },
+    {
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "description": "AI 语音与智能体平台，提供多语言文本转语音、语音克隆、转录、配音、音乐和音效生成及低延迟语音 Agent API"
+    },
+    {
+      "name": "Stability AI",
+      "url": "https://stability.ai/",
+      "description": "生成式媒体模型厂商，提供 Stable Diffusion、Stable Audio 等图像、音频、视频与 3D 模型，以及 API、私有部署和定制训练方案"
+    },
+    {
+      "name": "ComfyUI (Comfy)",
+      "url": "https://comfy.org/zh-CN/",
+      "description": "节点式 AI 视觉创作引擎，在无限画布上连接模型、处理步骤与输出，支持图像/视频生成、社区工作流混搭、桌面端与云端运行及工作流转 API"
+    },
+    {
+      "name": "UUMit",
+      "url": "https://www.uumit.com/",
+      "description": "AI 智能体能力网络，连接全球 Agent、API、数据与算力，支持发布任务需求由智能体自动匹配协作，并提供能力上架、算力共享与平台托管结算"
+    },
+    {
+      "name": "MindVideo AI",
+      "url": "https://www.mindvideo.ai/zh/",
+      "description": "一站式 AI 视频/图片/音频创意套件，支持文生/图生视频、AI 剪辑、画质增强、视频延长与特效，以及图片与音乐生成"
+    },
+    {
+      "name": "CanIRun.ai",
+      "url": "https://www.canirun.ai/",
+      "description": "AI 模型本地运行检测工具，输入机器配置即可查询能否跑通指定开源大模型（Llama/DeepSeek/Qwen 等）并估算显存与带宽需求"
+    },
+    {
+      "name": "Runway（官方品牌站）",
+      "url": "https://runway.com/",
+      "description": "Runway 官方品牌站（Real-World Intelligence），旗下 Runway Creative（云端视频/图像/音频创作套件）、Runway Dev（AI 媒体 API）、Runway Robotics（世界模型策略推理），与 runwayml.com 同属官方"
+    },
+    {
+      "name": "Runway AI（runway-ai.app 第三方镜像）",
+      "url": "https://runway-ai.app/",
+      "description": "自称 Runway AI 的第三方镜像/聚合站，借 Runway 品牌揽客，页面所有「去使用」按钮均外跳到官方 app.runwayml.com，非官方运营（真实官方为 runwayml.com / runway.com）"
+    },
+    {
+      "name": "DeepSeek Harness（DSH）",
+      "url": "https://dshbase.com/zh/",
+      "description": "DeepSeek 于 2026 年 8 月发布的开源 Agent 框架（开发者预览版，MIT），核心理念「一切皆插件」——工具、技能、会话、沙箱、UI 皆为可插拔的 npm 插件，对标 Claude Code，提供 Web UI 与 120+ 社区插件生态"
+    },
+    {
+      "name": "OpenDream",
+      "url": "https://opendream.ai/",
+      "description": "免费的 AI 图像生成器（文生图），提供丰富模板快速出图，内置动漫角色生成器与 AI 女孩生成器，免费额度有限、另有付费套餐"
+    },
+    {
+      "name": "LM Studio",
+      "url": "https://lmstudio.ai/",
+      "description": "本地大模型运行与智能体桌面客户端，可在本机下载运行开源 LLM 并用于聊天或 Agent 任务，底层基于 llama.cpp/MLX，支持实时语音转录，主打隐私与数据零留存（ZDR）"
+    },
+    {
+      "name": "Ollama",
+      "url": "https://ollama.com/",
+      "description": "开源大模型运行框架，支持在本机与云端拉起开源模型，提供命令行、兼容 OpenAI 的 API 及与各类编辑器/框架的集成，可完全离线运行、数据不被用于训练"
+    },
+    {
+      "name": "笔灵AI·小说工作台",
+      "url": "https://ibiling.cn/novel-workbench",
+      "description": "面向小说创作者的 AI 写作辅助平台（笔灵AI 旗下），提供小说全篇编辑器、素材库与一键生成能力，覆盖大纲/角色/正文等写作环节，降低无写作功底用户的创作门槛"
+    },
+    {
+      "name": "VTuber2D.AI",
+      "url": "https://vtuber2d.ai/",
+      "description": "AI 动漫图层拆分工具，将动漫插画自动拆成分为层 PSD 文件供 Live2D 建模使用，内置 PSD 放大管线，基于 See-through（SIGGRAPH 2026）技术并支持接入自建 ComfyUI 渲染节点"
+    },
+  {
+      "name": "Suno",
+      "url": "https://suno.com/",
+      "description": "AI 音乐生成平台，输入文字描述或歌词即可生成含人声、歌词与完整编曲的原创歌曲，并提供歌词重写、段落重排、上传音频编辑与分轨导出（WAV stems）以及付费用户的商业授权"
+  },
+  {
+      "name": "JukeBlocks",
+      "url": "https://jukeblocks.io/",
+      "description": "可以自动生成不同的音乐风格，下载并导入至宿主软件就可以很方便的编曲了"
+  },
+  {
+      "name": "反谱",
+      "url": "https://www.serocs.cn/",
+      "description": "音乐转谱、人声分离、曲谱转换"
+  },
+  {
+      "name": "Basicpitch",
+      "url": "https://basicpitch.spotify.com/",
+      "description": "将wav,mp3转换为midi"
+  },
+  {
+      "name": "SunoMV",
+      "url": "https://suno.bi/zh",
+      "description": "第三方 AI 音乐视频生成工具（非 Suno 官方站），粘贴 Suno / B站 / YouTube 歌曲链接即可自动同步歌词、按吉卜力 / 赛博朋克 / Y2K 等 30+ 视觉风格生成影院级 MV，内置 Suno、Lyria、MiniMax 等音乐模型与 7 种字幕样式、AI 转场；免费版每日 3 首带水印，Pro 订阅按月计费"
+  },
+  {
+      "name": "PromptBase",
+      "url": "https://promptbase.com/",
+      "description": "AI 提示词交易市场，汇聚 31 万+ 高质量提示词，覆盖 Midjourney、ChatGPT Image、Gemini 视频 / 图像等生成式 AI 工具，创作者可上架售卖、买家付费获取，商品带售价与评分"
+  },
+  {
+      "name": "Meowa",
+      "url": "https://meowa.ai/",
+      "description": "AI 游戏美术工作室，面向游戏开发者生成像素角色、精灵图包（sprite sheets）、Idle / Walk 等动作动画、场景背景与游戏 UI，覆盖角色设计、插画、视频分镜与界面布局等多种游戏素材生产"
+  },
+  {
+      "name": "PixMind",
+      "url": "https://www.pixmind.io/zh",
+      "description": "AI 图像与视频一站式生成平台，单账号聚合 GPT Image 2、Midjourney V7、Seedream 5.0、Flux Kontext、Veo 3.1、Seedance 2.0、PixVerse、Kling V3 等 25+ 顶尖模型，内置商品图、营销海报、智能抠图、高清放大、视频转提示词等 10+ 应用与 10+ 工具，面向电商卖家、营销运营与内容创作者，支持 19 种语言"
+  },
+  {
+      "name": "Neuro-sama & Evil Neuro",
+      "url": "https://vedal.ai/",
+      "description": "AI VTuber 双子官方站点，由 Vedal 开发的 Neuro-sama（原初 AI 虚拟主播，会唱歌、打游戏、聊天、搞恶作剧）与 Evil Neuro（双胞胎妹妹，立志当反派、写诗集刀），提供直播入口、博客、音乐链接与周边商店，展示 AI 角色驱动的长期娱乐实验"
+  },
+  {
+      "name": "HANYUAI 图像助理",
+      "url": "https://www.hanyuai.com/zh",
+      "description": "免费在线 AI 图像处理工具集，支持文生图、图生图、多图编辑与图像识别，集成即梦、豆包 5.0、Qwen Image Edit、Nano Banana PRO 等模型；提供抠图、风格转换、老照片修复、图片翻译、AI 证件照、以图搜图、图片分析等数十种功能，支持批量处理"
+  },
+  {
+      "name": "PicDoc",
+      "url": "https://www.picdoc.cn/",
+      "description": "AI 文本转视觉工具，通过在线输入、AI 生成或上传 PDF/Word 提取文本，一键将文章转为图表、流程图、信息图、思维图等视觉图片，支持大纲改项数、AI 配图标、多风格切换，可导出 PNG/JPG/PDF/Doc 或分享链接；另支持粘贴数据生成折线图、柱状图、饼图等数据可视化图表"
+  },
+  {
+      "name": "Sousaku AI",
+      "url": "https://sousaku.ai/zh-CN/",
+      "description": "综合性 AI 创作平台（日本公司运营，与字节跳动关联：许可 Seedance 模型并基于 BytePlus 云运行），可在同一处生成图像、视频、音乐、角色与短片；集成 Seedance 2.5/2.0、Veo 3.1、Midjourney V8.1、Kling 3.0、Wan 2.7、海螺 H3、Nano Banana 2、Vidu Q3 Pro 等模型，支持原生音视频同步、多镜头叙事与多语言对话生成"
+  }
+]
+}

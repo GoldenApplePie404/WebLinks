@@ -1,0 +1,305 @@
+{
+  "class_name": "音乐工具",
+  "websites": [
+    {
+        "name": "MiDiShow",
+        "url": "https://www.midishow.com/",
+        "description": "拥有超多曲子的midi，免费下载"
+    },
+    {
+        "name": "FL Studio",
+        "url": "https://www.flstudiochina.com/",
+        "description": "编曲软件：水果的中文官网"
+    },
+    {
+        "name": "JukeBlocks",
+        "url": "https://jukeblocks.io/",
+        "description": "可以自动生成不同的音乐风格，下载并导入至宿主软件就可以很方便的编曲了"
+    },
+    {
+        "name": "MuseScore",
+        "url": "https://musescore.com/",
+        "description": "乐谱大全"
+    },
+    {
+        "name": "反谱",
+        "url": "https://www.serocs.cn/",
+        "description": "音乐转谱、人声分离、曲谱转换"
+    },
+    {
+        "name": "LearnMusic",
+        "url": "https://learningmusic.ableton.com/",
+        "description": "音乐简单教学"
+    },
+    {
+        "name": "三体声音科技",
+        "url": "https://www.threebodytech.com/cn/",
+        "description": "中国民乐插件下载，需付费"
+    },
+    {
+        "name": "VocalRemover",
+        "url": "https://vocalremover.org/",
+        "description": "AI分离曲子中的伴奏和人声，效果不错，同时还有BPM识别，音乐剪辑等功能"
+    },
+    {
+        "name": "编曲资源网",
+        "url": "https://www.bianquzyk.com/",
+        "description": "拥有各种插件，采样包，宿主，音源等资源"
+    },
+    {
+        "name": "Experiments in Musical Intelligence",
+        "url": "http://artsites.ucsc.edu/faculty/cope/experiments.htm",
+        "description": "音乐智能实验项目"
+    },
+    {
+        "name": "转换云",
+        "url": "https://www.zhuanhuanyun.cn/",
+        "description": "网易云NCM转为MP3"
+    },
+    {
+        "name": "求谱谱",
+        "url": "https://qiupupu.cn/",
+        "description": "乐谱查询与下载"
+    },
+    {
+        "name": "自由钢琴",
+        "url": "https://www.autopiano.cn/",
+        "description": "在线弹琴"
+    },
+    {
+        "name": "Pluginboutique",
+        "url": "https://www.pluginboutique.com/",
+        "description": "插件，预设下载"
+    },
+    {
+        "name": "Looptorrent",
+        "url": "https://looptorrent.net/",
+        "description": "VST,预设等下载"
+    },
+    {
+        "name": "网易天音，AI制作音乐",
+        "url": "http://tianyin.163.com/#/",
+        "description": "使用AI技术制作音乐"
+    },
+    {
+        "name": "Lalal",
+        "url": "https://www.lalal.ai/",
+        "description": "AI分离乐器"
+    },
+    {
+        "name": "jarvis-lyrics",
+        "url": "https://www.jarvis-lyrics.com/",
+        "description": "自动生成歌词"
+    },
+    {
+        "name": "Amadeuscode",
+        "url": "https://amadeuscode.ai/music",
+        "description": "声音素材库"
+    },
+    {
+        "name": "小嗨音乐创作助手",
+        "url": "https://hi.xingzheai.cn/#/Version",
+        "description": "音乐创作辅助工具"
+    },
+    {
+        "name": "Audiojam",
+        "url": "https://audiojam.cn/",
+        "description": "乐器学习平台"
+    },
+    {
+        "name": "DSK music",
+        "url": "https://www.dskmusic.com/",
+        "description": "免费VST下载"
+    },
+    {
+        "name": "PDF to Music",
+        "url": "https://www.myriad-online.com/en/products/pdftomusic.htm",
+        "description": "将PDF转为MIDI的软件"
+    },
+    {
+        "name": "MIDIFAN",
+        "url": "https://www.midifan.com/",
+        "description": "计算机音乐资讯"
+    },
+    {
+        "name": "编曲资源网",
+        "url": "https://www.bianquzy.com/",
+        "description": "编曲资源分享平台"
+    },
+    {
+        "name": "plugins4free",
+        "url": "https://plugins4free.com/instruments/",
+        "description": "免费的插件下载"
+    },
+    {
+        "name": "Reaper",
+        "url": "http://reaper.fm/index.php",
+        "description": "一个免费的音乐制作软件"
+    },
+    {
+        "name": "Alanvista",
+        "url": "http://www.alanvista.com/",
+        "description": "免费的插件下载"
+    },
+    {
+        "name": "Kong Audio",
+        "url": "http://www.chineekong.com/",
+        "description": "中国民乐插件Kong Audio的官网"
+    },
+    {
+        "name": "Kong Audio",
+        "url": "http://www.kongaudio.com/",
+        "description": "另一个Kong Audio的官网链接"
+    },
+    {
+        "name": "SampleScience",
+        "url": "https://www.samplescience.info/",
+        "description": "样本音乐资源"
+    },
+    {
+        "name": "Flowstoners",
+        "url": "http://flowstoners.com/quilcom",
+        "description": "免费的插件下载"
+    },
+    {
+        "name": "Musicca",
+        "url": "https://www.musicca.com/zh",
+        "description": "音乐学习平台"
+    },
+    {
+        "name": "Basicpitch",
+        "url": "https://basicpitch.spotify.com/",
+        "description": "将wav,mp3转换为midi"
+    },
+    {
+        "name": "特雷门琴论坛",
+        "url": "http://asmir.info/theremin_classic.htm",
+        "description": "特雷门琴相关讨论"
+    },
+    {
+        "name": "特雷门琴论坛",
+        "url": "http://www.thereminworld.com/",
+        "description": "另一个特雷门琴相关讨论论坛"
+    },
+    {
+        "name": "Roland",
+        "url": "https://www.roland.com/us/",
+        "description": "Roland乐器与音频产品"
+    },
+    {
+        "name": "Orchestraltools",
+        "url": "https://www.orchestraltools.com/store/home",
+        "description": "管弦乐工具与资源"
+    },
+    {
+        "name": "Fluffyaudio",
+        "url": "https://www.fluffyaudio.com/",
+        "description": "音频资源与插件"
+    },
+    {
+        "name": "Musicdevelopments",
+        "url": "http://www.musicdevelopments.com/melodya.html",
+        "description": "自动生成旋律，和弦"
+    },
+    {
+        "name": "ACE Studio",
+        "url": "https://ace-studio.timedomain.tech/",
+        "description": "AI声音制作工具"
+    },
+    {
+        "name": "Synthesizerv",
+        "url": "https://dreamtonics.com/synthesizerv/",
+        "description": "声音合成器"
+    },
+    {
+        "name": "KORG中国官网",
+        "url": "http://www.korgclub.com.cn/zh/about.asp",
+        "description": "KORG乐器与音频产品"
+    },
+    {
+        "name": "FamiStudio",
+        "url": "https://famistudio.org/",
+        "description": "制作8-bit音乐专业软件"
+    },
+    {
+        "name": "音虫官网",
+        "url": "https://www.soundbug.com/",
+        "description": "AI音乐制作软件"
+    },
+    {
+        "name": "Flutetunes",
+        "url": "https://www.flutetunes.com/",
+        "description": "长笛曲目与资源"
+    },
+    {
+        "name": "听否网",
+        "url": "https://www.tinfoumusic.com/",
+        "description": "最全的音乐资源网"
+    },
+    {
+        "name": "在线测音高",
+        "url": "https://bideyuanli.com/pp",
+        "description": "在线测量音高工具"
+    },
+    {
+      "name": "TuneFlow",
+      "url": "https://www.tuneflow.com/",
+      "description": "智能音乐创作助手"
+    },
+    {
+      "name": "MusicCreator AI",
+      "url": "https://www.musiccreator.ai/zh",
+      "description": "免费的 AI 音乐生成器，支持文字、歌词、图片转音乐与 AI 说唱，生成的曲目 100% 免版税可商用"
+    },
+    {
+      "name": "Audacity",
+      "url": "https://www.audacityteam.org/",
+      "description": "免费跨平台音频录制与编辑软件，支持多轨剪辑、降噪增强、VST3/Nyquist 插件及 WAV、MP3、FLAC 等格式导入导出"
+    },
+    {
+      "name": "LMMS",
+      "url": "https://lmms.io/",
+      "description": "免费开源的跨平台音乐制作软件，可编曲、制作节拍、合成与混音，支持 MIDI 键盘、VST、SoundFont 和内置乐器效果器"
+    },
+    {
+      "name": "BeepBox",
+      "url": "https://www.beepbox.co/",
+      "description": "开源的在线器乐编曲工具，可在浏览器编辑旋律、和弦、鼓点与多轨 Pattern，并通过包含完整歌曲数据的 URL 保存和分享"
+    },
+    {
+      "name": "Ardour",
+      "url": "https://ardour.org/",
+      "description": "开源跨平台数字音频工作站，支持音频与 MIDI 多轨录制、非线性编辑、混音母带、插件自动化、复杂路由及影视声音同步"
+    },
+    {
+      "name": "Suno",
+      "url": "https://suno.com/",
+      "description": "AI 音乐生成平台，输入文字描述或歌词即可生成含人声、歌词与完整编曲的原创歌曲，并提供歌词重写、段落重排、上传音频编辑与分轨导出（WAV stems）以及付费用户的商业授权"
+    },
+    {
+        "name": "AIMusicGen",
+        "url": "https://aimusicgen.ai/",
+        "description": "AI音乐生成工具"
+    },
+    {
+        "name": "MusicMaker",
+        "url": "https://musicmaker.im/zh/",
+        "description": "AI提示词编曲"
+    },
+    {
+        "name": "团子AI",
+        "url": "https://tuanziai.com/",
+        "description": "以音乐为主的AI工具套件"
+    },
+    {
+        "name": "Vozart.ai",
+        "url": "https://vozart.ai/zh",
+        "description": "AI音乐生成"
+    },
+    {
+        "name": "SunoMV",
+        "url": "https://suno.bi/zh",
+        "description": "第三方 AI 音乐视频生成工具（非 Suno 官方站），粘贴 Suno / B站 / YouTube 歌曲链接即可自动同步歌词、按吉卜力 / 赛博朋克 / Y2K 等 30+ 视觉风格生成影院级 MV，内置 Suno、Lyria、MiniMax 等音乐模型与 7 种字幕样式、AI 转场；免费版每日 3 首带水印，Pro 订阅按月计费"
+    }
+]
+}

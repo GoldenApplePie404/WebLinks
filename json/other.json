@@ -1,0 +1,640 @@
+{
+  "class_name": "其他工具",
+  "websites": [
+    {
+      "name": "学科引擎",
+      "url": "https://subj-engine.cloudroo.top/",
+      "description": "汇聚物理、化学、数学等学科的交互式模拟动画，让知识可视化，让学习更生动"
+    },
+    {
+      "name": "SakuraFrp",
+      "url": "https://www.natfrp.com/",
+      "description": "樱花内网穿透，还是免费的"
+    },
+    {
+      "name": "飞鸽内网穿透",
+      "url": "https://www.fgnwct.com/",
+      "description": "内网穿透服务"
+    },
+    {
+      "name": "萤火虫漫展",
+      "url": "http://www.fireflyacg.com/index.php",
+      "description": "萤火虫动漫游戏嘉年华官网"
+    },
+    {
+      "name": "ACCONVERT",
+      "url": "https://www.aconvert.com/",
+      "description": "在线格式转换工具"
+    },
+    {
+      "name": "MediBangPaint",
+      "url": "https://medibangpaint.com/zh_CN/",
+      "description": "绘画软件MediBangPaint的官网"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/",
+      "description": "基于Git的代码托管和研发协作平台"
+    },
+    {
+      "name": "Gitee",
+      "url": "https://gitee.com/",
+      "description": "与Github类似的代码托管平台"
+    },
+    {
+      "name": "BrowserQuest",
+      "url": "http://demos.workerman.net/browserquest/",
+      "description": "一个像素风格的小游戏"
+    },
+    {
+      "name": "Blender",
+      "url": "https://www.blender.org/",
+      "description": "3D动画制作软件Blender的官网"
+    },
+    {
+      "name": "Silk",
+      "url": "http://weavesilk.com/",
+      "description": "有趣的对称画动态曲线网站"
+    },
+    {
+      "name": "The Useless Web",
+      "url": "https://theuselessweb.com/",
+      "description": "随机生成有趣但无实际用途的网站的网站"
+    },
+    {
+      "name": "Remove",
+      "url": "https://www.remove.bg/zh",
+      "description": "一键消除图片背景的工具"
+    },
+    {
+      "name": "NeonFlames",
+      "url": "https://29a.ch/sandbox/2011/neonflames/",
+      "description": "与Silk类似的动态曲线网站"
+    },
+    {
+      "name": "Land Line",
+      "url": "https://lines.chromeexperiments.com/",
+      "description": "一个创意的在线互动体验"
+    },
+    {
+      "name": "国产烂剧制作厂",
+      "url": "https://datamuse.guokr.com/web?page=ltd&from_channel=play",
+      "description": "输入名字随机生成故事的网站"
+    },
+    {
+      "name": "Petalica paint",
+      "url": "https://petalica-paint.pixiv.dev/index_zh.html",
+      "description": "自动上色和取线稿的绘画工具"
+    },
+    {
+      "name": "PhotoMosh",
+      "url": "https://photomosh.com/",
+      "description": "一键改编图片风格的工具"
+    },
+    {
+      "name": "Toonme",
+      "url": "https://toonme.com/",
+      "description": "将头像生成卡通样式的工具"
+    },
+    {
+      "name": "CurseForge",
+      "url": "https://www.curseforge.com/",
+      "description": "游戏模组和插件下载平台"
+    },
+    {
+      "name": "Vectary",
+      "url": "https://www.vectary.com/",
+      "description": "在线3D设计平台"
+    },
+    {
+      "name": "酷大师，酷家乐",
+      "url": "https://www.kudashi.com/pub/tool/geom-modeling/design?projectid=a42fcd1a-8c2e-46ed-b3a2-46ad1d5f6123",
+      "description": "在线3D设计平台"
+    },
+    {
+      "name": "UberDuck",
+      "url": "https://uberduck.ai/#mode=tts-basic",
+      "description": "语音AI平台"
+    },
+    {
+      "name": "Panzoid",
+      "url": "https://panzoid.com/creations/",
+      "description": "炫酷视频开头素材下载平台"
+    },
+    {
+      "name": "BrandMark",
+      "url": "https://brandmark.io/",
+      "description": "自动生成LOGO的工具"
+    },
+    {
+      "name": "AnimatedDrawings",
+      "url": "https://sketch.metademolab.com/canvas",
+      "description": "让静态卡通画动起来的工具"
+    },
+    {
+      "name": "脚本之家在线工具",
+      "url": "http://tools.jb51.net/",
+      "description": "提供多种在线编程和脚本工具"
+    },
+    {
+      "name": "UnderTale",
+      "url": "https://undertale.com/",
+      "description": "传说之下的官网"
+    },
+    {
+      "name": "UT-Undyne之战",
+      "url": "https://joezeng.github.io/fairdyne/",
+      "description": "传说之下Undyne战斗模拟"
+    },
+    {
+      "name": "UT-Sans之战",
+      "url": "https://gotoanddie.github.io/c2-sans-fight/",
+      "description": "传说之下Sans战斗模拟"
+    },
+    {
+      "name": "UT-G语翻译器",
+      "url": "http://grompe.org.ru/static/wingdings_gaster.html",
+      "description": "传说之下G语翻译工具"
+    },
+    {
+      "name": "Find Your π Day",
+      "url": "https://www.mypiday.com/",
+      "description": "输入生日查询圆周率位置的网站"
+    },
+    {
+      "name": "Game Jolt",
+      "url": "https://gamejolt.com/",
+      "description": "提供多种游戏下载的平台"
+    },
+    {
+      "name": "FriPE",
+      "url": "https://firpe.cn/",
+      "description": "第三方WinPE工具"
+    },
+    {
+      "name": "星辰云",
+      "url": "https://starxn.com/",
+      "description": "提供云主机和云服务器服务的平台"
+    },
+    {
+      "name": "星辰二级域名",
+      "url": "https://dns.starxn.com/",
+      "description": "免费域名分发服务"
+    },
+    {
+      "name": "WordPress",
+      "url": "https://cn.wordpress.org/",
+      "description": "WordPress中文官网"
+    },
+    {
+      "name": "Steam",
+      "url": "https://store.steampowered.com/",
+      "description": "Steam游戏平台"
+    },
+    {
+      "name": "Nvidia",
+      "url": "https://www.nvidia.cn/studio/",
+      "description": "Nvidia中文官网"
+    },
+    {
+      "name": "Bongo Cat",
+      "url": "https://bongo.cat/",
+      "description": "受欢迎的桌宠Bongo Cat"
+    },
+    {
+      "name": "Live2D",
+      "url": "https://www.live2d.com/zh-CHS/",
+      "description": "Live2D技术官方网站"
+    },
+    {
+      "name": "Pixilart",
+      "url": "https://www.pixilart.com/",
+      "description": "在线画像素画的平台"
+    },
+    {
+      "name": "Procreate",
+      "url": "https://procreate.art/cn/ipad",
+      "description": "绘画软件Procreate的官网"
+    },
+    {
+      "name": "纸艺大师",
+      "url": "https://tamasoft.co.jp/pepakura-en/",
+      "description": "纸艺模型设计软件"
+    },
+    {
+      "name": "Cloudreve",
+      "url": "https://docs.cloudreve.org/",
+      "description": "云盘系统文档"
+    },
+    {
+      "name": "Htmlpage",
+      "url": "https://htmlpage.cn/",
+      "description": "网站制作工具"
+    },
+    {
+      "name": "Framer",
+      "url": "https://www.framer.com/",
+      "description": "网站和应用界面设计工具"
+    },
+    {
+      "name": "123云盘",
+      "url": "https://www.123pan.com/login",
+      "description": "云存储服务"
+    },
+    {
+      "name": "元气音频",
+      "url": "https://yuanqiyinpin.github.io/",
+      "description": "变声器下载网站"
+    },
+    {
+      "name": "KSWEB",
+      "url": "http://www.kslabs.ru/",
+      "description": "将手机变成服务器主机的APP"
+    },
+    {
+      "name": "Bigjpg",
+      "url": "https://bigjpg.com/",
+      "description": "AI人工智能图片放大工具"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/",
+      "description": "OpenAI官方网站"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://text-to-speech.cn/chatGPT.html",
+      "description": "ChatGPT中文网"
+    },
+    {
+      "name": "AIR源码站",
+      "url": "https://airymz.com/",
+      "description": "提供网站和游戏开源代码的站点"
+    },
+    {
+      "name": "Mirai论坛",
+      "url": "https://mirai.mamoe.net/",
+      "description": "Mirai机器人框架相关讨论"
+    },
+    {
+      "name": "Drea Robot",
+      "url": "https://drea.cc/",
+      "description": "QQ机器人框架"
+    },
+    {
+      "name": "菜鸟教程",
+      "url": "https://www.runoob.com/",
+      "description": "计算机编程自学教程"
+    },
+    {
+      "name": "6pen",
+      "url": "https://6pen.art/",
+      "description": "通过文字描述的AI绘画工具"
+    },
+    {
+      "name": "FuturePedia",
+      "url": "https://www.futurepedia.io/",
+      "description": "汇集AI工具网站的平台"
+    },
+    {
+      "name": "免费API",
+      "url": "https://api.aa1.cn/",
+      "description": "提供免费API服务的网站"
+    },
+    {
+      "name": "PixelPapercraft",
+      "url": "https://www.pixelpapercraft.com/",
+      "description": "折纸艺术相关的网站"
+    },
+    {
+      "name": "AirPortal",
+      "url": "https://airportal.cn/",
+      "description": "空投快传服务"
+    },
+    {
+      "name": "地球联合政府",
+      "url": "https://uegov.world/",
+      "description": "粉丝自制的非官方网站"
+    },
+    {
+      "name": "法阵图片生成",
+      "url": "https://ciaccodavi.de/qbdp/acg/",
+      "description": "生成法阵图片的网站"
+    },
+    {
+      "name": "压缩大师",
+      "url": "http://sh.wzcym.com/",
+      "description": "文件压缩工具"
+    },
+    {
+      "name": "压缩图网站",
+      "url": "https://www.yasuotu.com/",
+      "description": "在线图片压缩工具"
+    },
+    {
+      "name": "ZZ加速器",
+      "url": "https://zzjiasuqi.com/",
+      "description": "网络加速服务"
+    },
+    {
+      "name": "MikuTools – 工具集合",
+      "url": "https://tools.miku.ac/",
+      "description": "提供各种实用工具的网站"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/",
+      "description": "自然语言处理和机器学习模型库"
+    },
+    {
+      "name": "Apache ECharts",
+      "url": "https://echarts.apache.org/zh/index.html",
+      "description": "基于JavaScript的开源可视化图表库"
+    },
+    {
+      "name": "TintWoW",
+      "url": "https://tinywow.com/",
+      "description": "免费的格式转换工具"
+    },
+    {
+      "name": "反向词典",
+      "url": "https://wantwords.net/",
+      "description": "提供反向查询词汇功能的网站"
+    },
+    {
+      "name": "AI生成简历",
+      "url": "http://www.yoojober.com/",
+      "description": "使用AI技术生成简历的网站"
+    },
+    {
+      "name": "vizard",
+      "url": "https://vizard.video/",
+      "description": "录屏工具"
+    },
+    {
+      "name": "子比主题",
+      "url": "https://www.zibll.com/pay-zibll",
+      "description": "适用于网站开发的主题"
+    },
+    {
+      "name": "cpolar极点云",
+      "url": "https://www.cpolar.com/",
+      "description": "将本地Web站点公开至公网的服务"
+    },
+    {
+      "name": "原神：地图工具",
+      "url": "https://v3.yuanshen.site/",
+      "description": "原神游戏地图工具"
+    },
+    {
+      "name": "游戏弹琴助手（适用于原神）",
+      "url": "https://shida.fun/",
+      "description": "适用于原神游戏的弹琴助手"
+    },
+    {
+      "name": "矩池云",
+      "url": "https://www.matpool.com/",
+      "description": "专注于人工智能领域的云服务商"
+    },
+    {
+      "name": "魔搭社区",
+      "url": "https://www.modelscope.cn/",
+      "description": "人工智能论坛"
+    },
+    {
+      "name": "Kaggle",
+      "url": "https://www.kaggle.com/",
+      "description": "国外免费AI训练平台"
+    },
+    {
+      "name": "碧蓝档案LOGO生成器",
+      "url": "https://logo.bluearchive.cc/",
+      "description": "用于生成碧蓝档案同款LOGO"
+    },
+    {
+      "name": "PolyHaven",
+      "url": "https://polyhaven.com/zh",
+      "description": "公共3D资源库"
+    },
+    {
+      "name": "Itch",
+      "url": "https://itch.io/",
+      "description": "游戏开发者的聚集地，有很多游戏开发的咨询、项目、资源等"
+    },
+    {
+      "name": "Kali",
+      "url": "https://www.kali.org/",
+      "description": "友尽小工具[doge]"
+    },
+    {
+      "name": "MakerWorld",
+      "url": "https://makerworld.com.cn/zh",
+      "description": "一个3D模型分享平台（主要针对3D打印）"
+    },
+    {
+      "name": "爱给网",
+      "url": "https://www.aigei.com/",
+      "description": "一个素材网，包含了音效、配乐、视频、3D、平面、游戏、教程等内容"
+    },
+    {
+      "name": "GodotHub",
+      "url": "https://godothub.com/",
+      "description": "Godot游戏引擎社区"
+    },
+    {
+      "name": "芯参网",
+      "url": "https://www.xincanshu.com/cpu/",
+      "description": "一个硬件评测网站，里面有CPU、主板、显卡等评测"
+    },
+    {
+      "name": "GodotForums",
+      "url": "https://godotforums.org/",
+      "description": "Godot论坛"
+    },
+    {
+      "name": "GameDeveloper",
+      "url": "https://www.gamedeveloper.com/",
+      "description": "游戏开发领域的新闻动态汇总"
+    },
+    {
+      "name": "GameDevmarket",
+      "url": "https://www.gamedevmarket.net/",
+      "description": "游戏素材网站GameDevmarket"
+    },
+    {
+      "name": "字节跳动",
+      "url": "https://seed.bytedance.com/zh/",
+      "description": "字节跳动官方网站"
+    },
+    {
+      "name": "在线像素画创作工具",
+      "url": "https://pixel.9link.vip/zh/",
+      "description": "在线像素画创作平台"
+    },
+    {
+      "name": "Foxpay支付系统",
+      "url": "https://foxpay.top/",
+      "description": "支付系统平台"
+    },
+    {
+      "name": "在线视频与图像下载器",
+      "url": "https://snapany.com/",
+      "description": "视频和图像下载工具"
+    },
+    {
+      "name": "elysiajs官网",
+      "url": "https://elysiajs.com/",
+      "description": "Elysia.js框架官方网站"
+    },
+    {
+      "name": "CyberStrikeLab",
+      "url": "https://www.cyberstrikelab.com/#/login",
+      "description": "网络安全仿真实战靶场平台"
+    },
+    {
+      "name": "Pixabay",
+      "url": "https://pixabay.com/",
+      "description": "免费图片、视频和音乐素材网站"
+    },
+    {
+      "name": "FastMirror",
+      "url": "https://www.fastmirror.net/#/home",
+      "description": "快速镜像下载服务"
+    },
+    {
+      "name": "BuildIt",
+      "url": "https://builditapp.com/",
+      "description": "应用构建工具"
+    },
+    {
+      "name": "HelloGitHub",
+      "url": "https://hellogithub.com/",
+      "description": "GitHub优质项目推荐平台"
+    },
+    {
+      "name": "RA2 Web",
+      "url": "https://www.ra2web.com/",
+      "description": "红色警戒2网页版"
+    },
+    {
+      "name": "PlayFC",
+      "url": "https://www.playfc.cn/",
+      "description": "FC游戏在线玩平台"
+    },
+    {
+      "name": "Xark Argo",
+      "url": "https://xark-argo.com/",
+      "description": "游戏或工具网站"
+    },
+    {
+      "name": "VDitor",
+      "url": "https://b3log.org/vditor/",
+      "description": "Markdown编辑器"
+    },
+    {
+      "name": "Hello Algo",
+      "url": "https://www.hello-algo.com/",
+      "description": "算法学习网站"
+    },
+    {
+      "name": "图片加密",
+      "url": "https://k12-sdfsf-5g757tm551b1d50b-1411243133.tcloudbaseapp.com/hunxiao/",
+      "description": "一个可以用于图片加密的网站"
+    },
+    {
+      "name": "OpenGameArt",
+      "url": "https://opengameart.org/",
+      "description": "游戏美术资源分享社区，提供开源/免费的游戏素材（音乐、音效、纹理、美术）下载与创作活动"
+    },
+    {
+      "name": "FreeSewing",
+      "url": "https://freesewing.eu/",
+      "description": "开源的定制缝纫纸样生成工具，根据个人量体数据生成合身的服装裁剪图，无广告不追踪"
+    },
+    {
+      "name": "DRCOS",
+      "url": "https://dr-cos.com/",
+      "description": "提供免费 cosplay/角色服装纸样与制作教程的网站"
+    },
+    {
+      "name": "Seamly",
+      "url": "https://seamly.io/",
+      "description": "免费开源的服装 CAD 软件（Seamly2D），可自动计算版型并用一套纸样生成全尺码，支持 Windows/Linux/MacOS"
+    },
+    {
+      "name": "Penpot",
+      "url": "https://penpot.app/",
+      "description": "开源的 UI 设计与原型协作平台，支持设计系统、白板、代码检视与自托管，兼容开放标准"
+    },
+    {
+      "name": "KolibriOS",
+      "url": "https://kolibrios.org/zh-Hans",
+      "description": "极小的开源 x86 操作系统，用汇编语言编写，仅需数 MB 空间与极低配置即可秒级启动到图形界面"
+    },
+    {
+      "name": "La Vipère",
+      "url": "https://www.lavipere.ai/",
+      "description": "AI 原生的服装 CAD 工具，可根据图片或文字描述生成精准缝纫纸样并实时 3D 模拟，导出 CLO 3D、Gerber 等专业格式"
+    },
+    {
+      "name": "FashionINSTA",
+      "url": "https://fashioninsta.ai/",
+      "description": "面向品牌的 AI 纸样智能平台，基于企业自有 .DXF 纸样库训练，自动生成可直接生产的服装纸样、BOM 与工艺单"
+    },
+    {
+      "name": "OpenCut",
+      "url": "https://opencut.app/",
+      "description": "开源的轻量级跨平台视频编辑器，简洁但功能强大，可在任意平台使用"
+    },
+    {
+      "name": "肖老师的 Godot 实验室",
+      "url": "https://gdbook.kidsgame.top/",
+      "description": "面向零基础与进阶者的 Godot 4.x 游戏开发中文教材站，贯穿 2D 入门、项目实战与游戏 AI（强化学习/大语言模型），提供电子预览版"
+    },
+    {
+      "name": "Krita",
+      "url": "https://krita.org/",
+      "description": "免费开源的数字绘画与二维动画软件，提供多种笔刷、图层、绘画辅助器、线条稳定器、动画工具及可扩展素材和插件"
+    },
+    {
+      "name": "Inkscape",
+      "url": "https://inkscape.org/",
+      "description": "免费开源的矢量图形设计软件，提供灵活绘图、贝塞尔与螺旋曲线、文字排版及广泛格式兼容能力"
+    },
+    {
+      "name": "Photopea",
+      "url": "https://www.photopea.com/",
+      "description": "浏览器本地运行的专业图像编辑器，支持 PSD、RAW、SVG、PDF 等多种格式，以及图层、蒙版、智能对象、滤镜和矢量编辑"
+    },
+    {
+      "name": "OBS Studio",
+      "url": "https://obsproject.com/",
+      "description": "免费开源的录屏与直播制作软件，支持多来源场景、实时音视频混合、转场、音频滤镜、VST 插件及主流直播平台推流"
+    },
+    {
+      "name": "ImHex",
+      "url": "https://imhex.werwolv.net/",
+      "description": "免费开源的现代十六进制编辑器，面向逆向工程师与开发者，提供二进制数据分析、反汇编、数据解码、哈希计算、YARA 规则与自定义模式匹配等能力"
+    },
+    {
+      "name": "010 Editor",
+      "url": "https://www.sweetscape.com/010editor/",
+      "description": "专业文本/十六进制编辑器，支持 Binary Templates 二进制模板解析 300+ 文件格式，含反汇编、数据恢复、数字取证、哈希计算与类 C 脚本自动化，适合逆向工程与底层数据分析"
+    },
+    {
+      "name": "TEMVM",
+      "url": "https://my.temvm.com/?lang=zh-CN",
+      "description": "企业级云服务器服务商，提供云服务器 ECS、对象存储 OSS、内容分发 CDN 与 DDoS 高防等云安全服务，香港、美国、新加坡等全球数据中心，支持免备案、人民币计费（支付宝/微信/对公转账）"
+    },
+    {
+      "name": "京都动画",
+      "url": "https://www.kyotoanimation.co.jp/",
+      "description": "京都动画（京阿尼）官方网站，日本知名动画制作公司，代表作《吹响吧！上低音号》《Free!》《紫罗兰永恒花园》《凉宫春日的忧郁》等；主页发布新作/剧场版信息、KA 文库小说、动画展与音乐会等官方活动公告"
+    },
+    {
+      "name": "Hexo",
+      "url": "https://hexo.io/zh-cn/",
+      "description": "基于 Node.js 的快速静态博客/网站生成框架，Node.js 加持下上百页面几秒完成渲染，支持 GitHub Flavored Markdown 与多数 Octopress 插件，一条指令部署到 GitHub Pages 等平台，拥有强大插件 API，可集成 EJS/Pug/Nunjucks 模板引擎与 Babel、PostCSS、Less/Sass 等 NPM 包"
+    }
+  ]
+}

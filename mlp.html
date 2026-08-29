@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小马宝莉网站收录 - 友谊的魔法</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #ffd6e7 0%, #c1f3ff 100%);
+            color: #5a3d5a;
+        }
+
+        .mlp-header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.2);
+            border: 3px solid white;
+        }
+
+        .mlp-title {
+            text-shadow: 3px 3px 0 #ffb6c1, 6px 6px 0 rgba(255, 255, 255, 0.5);
+            color: #8a2be2;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .mlp-subtitle {
+            animation: rainbow 8s linear infinite;
+            font-weight: 700;
+        }
+
+        @keyframes rainbow {
+            0% {
+                color: #ff9a9e;
+            }
+
+            14% {
+                color: #fad0c4;
+            }
+
+            28% {
+                color: #fbc2eb;
+            }
+
+            42% {
+                color: #a6c1ee;
+            }
+
+            57% {
+                color: #84fab0;
+            }
+
+            71% {
+                color: #8fd3f4;
+            }
+
+            85% {
+                color: #a1c4fd;
+            }
+
+            100% {
+                color: #ff9a9e;
+            }
+        }
+
+        .mlp-button {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border: 2px solid white;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+            transition: all 0.3s ease;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .mlp-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+        }
+
+        .mlp-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            border: 3px solid #ffb6c1;
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .mlp-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(255, 105, 180, 0.3);
+        }
+
+        .mlp-site-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            border-radius: 15px;
+            border: 2px dashed #ffb6c1;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-size: 20px;
+        }
+
+        .mlp-site-card::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background-color: #ff9a9e;
+            transform: rotate(45deg);
+            z-index: 1;
+        }
+
+        .mlp-site-card::after {
+            content: "★";
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: white;
+            font-size: 14px;
+            z-index: 2;
+        }
+
+        .mlp-site-card:hover {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+        }
+
+        .mlp-site-title {
+            color: #8a2be2;
+            font-weight: bold;
+            border-bottom: 2px dotted #ffb6c1;
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .mlp-site-link {
+            color: #ff69b4;
+            transition: all 0.3s ease;
+        }
+
+        .mlp-site-link:hover {
+            color: #8a2be2;
+            text-decoration: underline;
+        }
+
+        .mlp-category {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: white;
+            border-radius: 50px;
+            display: inline-block;
+            padding: 5px 15px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+            border: 2px solid white;
+            font-size: 23px;
+        }
+
+        .mlp-sidebar {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            border: 3px solid #ffb6c1;
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.2);
+            position: sticky;
+            top: 20px;
+            font-size: 18px;
+        }
+
+        .mlp-sidebar-title {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .mlp-sidebar-link {
+            color: #8a2be2;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 8px 15px;
+            border-bottom: 1px dashed #ffb6c1;
+            font-size: 20px;
+        }
+
+        .mlp-sidebar-link:hover {
+            background-color: rgba(255, 182, 193, 0.2);
+            transform: translateX(5px);
+        }
+
+
+        @media (max-width: 768px) {
+            .mlp-sidebar {
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="relative overflow-x-hidden">
+    <div class="container mx-auto px-4 py-8">
+        <!-- 标题区域 -->
+        <header class="mlp-header p-6 mb-8 text-center">
+            <h1 class="mlp-title text-4xl md:text-5xl mb-2">小马宝莉网站收录</h1>
+            <p class="mlp-subtitle text-xl md:text-2xl mb-4">Friendship is Magic!</p>
+            <button onclick="history.back()" class="mlp-button px-6 py-2">点我返回至主页面</button>
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- 侧边栏导航 -->
+            <aside class="lg:w-1/4">
+                <div class="mlp-sidebar">
+                    <div class="mlp-sidebar-title">目录导航</div>
+                    <div class="p-4">
+                        <a href="#wiki" class="mlp-sidebar-link" onclick="scrollToSection('wiki')">[Wiki]</a>
+                        <a href="#news-station" class="mlp-sidebar-link" onclick="scrollToSection('news')">[新闻站]</a>
+                        <a href="#image-station" class="mlp-sidebar-link" onclick="scrollToSection('image')">[图站]</a>
+                        <a href="#video" class="mlp-sidebar-link" onclick="scrollToSection('video')">[视频站]</a>
+                        <a href="#music" class="mlp-sidebar-link" onclick="scrollToSection('music')">[音乐站]</a>
+                        <a href="#book" class="mlp-sidebar-link" onclick="scrollToSection('book')">[小说站]</a>
+                        <a href="#forum" class="mlp-sidebar-link" onclick="scrollToSection('forum')">[社区/论坛]</a>
+                        <a href="#resource" class="mlp-sidebar-link" onclick="scrollToSection('resource')">[资源站]</a>
+                        <a href="#game" class="mlp-sidebar-link" onclick="scrollToSection('game')">[游戏站]</a>
+                        <a href="#pt" class="mlp-sidebar-link" onclick="scrollToSection('pt')">[pt系列]</a>
+                        <a href="#other" class="mlp-sidebar-link" onclick="scrollToSection('other')">[其它]</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 主内容区 -->
+            <main class="lg:w-3/4">
+                <!-- Wiki部分 -->
+                <section id="wiki" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">1. Wiki</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 新闻站部分 -->
+                <section id="news-station" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">2. 新闻站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 图站部分 -->
+                <section id="image-station" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">3. 图站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 以下部分比较石山，待优化-->
+
+                <!-- 视频站部分 -->
+                <section id="video" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">4. 视频站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 音乐站部分 -->
+                <section id="music" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">5. 音乐站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 小说站部分 -->
+                <section id="book" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">6. 小说站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 社区/论坛部分 -->
+                <section id="forum" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">7. 社区/论坛</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 资源站部分 -->
+                <section id="resource" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">8. 资源站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 游戏站部分 -->
+                <section id="game" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">9. 游戏站</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- pt系列部分 -->
+                <section id="pt" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">10. pt系列</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <!-- 其它部分 -->
+                <section id="other" class="mlp-section p-6 mb-8">
+                    <h2 class="mlp-category mb-4">11. 其它</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+            </main>
+        </div>
+
+    </div>
+
+    <script>
+        // 平滑滚动函数
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.mlp-sidebar-link');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // 阻止默认锚点跳转行为
+                    const sectionId = this.getAttribute('href').substring(1); // 获取锚点ID（去掉前导的#）
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' }); // 调用平滑滚动
+                    }
+                });
+            });
+        });
+        // 为所有卡片添加随机颜色标记
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.mlp-site-card');
+            const colors = ['#ff9a9e', '#fad0c4', '#fbc2eb', '#a6c1ee', '#84fab0', '#8fd3f4', '#a1c4fd'];
+
+            cards.forEach(card => {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                card.querySelector('.mlp-site-title').style.borderBottomColor = randomColor;
+
+                // 为每个卡片添加悬停动画
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.03) rotate(1deg)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1) rotate(0)';
+                });
+            });
+        });
+
+
+        function createSiteCard(title, link, description) {
+            return `
+        <div class="mlp-site-card p-4">
+            <h3 class="mlp-site-title mb-2">
+                <a href="${link}" class="mlp-site-link">${title}</a>
+            </h3>
+            <p>${description}</p>
+        </div>
+    `;
+        }
+        //wiki分类
+        const wikis = [
+            { title: 'MLP中文维基', link: 'https://mlp.huijiwiki.com/wiki/MLP%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA', description: 'MLP中文版的WIKI，更适合中国马迷x' },
+            { title: 'MLP英文维基', link: 'https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki', description: 'MLP英文维基,内容较为全面。' },
+            { title: 'MLP同人维基', link: 'https://mlpfanart.fandom.com/wiki/My_Little_Pony_Fan_Wiki', description: 'MLP同人维基,介绍的是马圈同人各个作品（EN）。' },
+            { title: 'MLP玩具维基', link: 'http://www.mylittlewiki.org/wiki/Main_Page', description: 'MLP玩具维基,G1~G4MLP玩具的详细介绍（EN）。' },
+        ];
+        //新闻站分类
+        const newsStations = [
+            { title: 'EquestriaCN', link: 'http://www.equestriacn.com/', description: '小马中国，属于中国的小马新闻站' },
+            { title: 'Equestria Daily', link: 'www.equestriadaily.com', description: '小马日报，大型综合性新闻站。' },
+            { title: 'BronyFestival 马迷嘉年华', link: 'https://bronyfestival.com/', description: '中国规模最大的地区联合型小马主题线下展会企划，涵盖济南/上海/重庆等九大地区品牌' },
+        ];
+        //图站分类
+        const imageStations = [
+            { title: 'Derpibooru', link: 'http://www.derpibooru.org/', description: '呆站，最大的小马图站' },
+            { title: 'Manebooru', link: 'https://manebooru.art/', description: '呆站的分身之一' },
+            { title: 'Rainbooru', link: 'https://rainbooru.org/', description: '呆站的分身之一' },
+            { title: 'Twibooru', link: 'https://twibooru.org/', description: '呆站的分身之一' },
+            { title: 'Ponybooru', link: 'https://ponybooru.org/', description: '呆站的分身之一' },
+            { title: 'Ponerpics', link: 'https://ponerpics.org/', description: '呆站的分身之一' },
+            { title: 'Fluttybooru', link: 'http://www.fluffybooru.com/', description: '呆站的分身之一' },
+            { title: 'Bronibooru', link: 'http://www.bronibooru.com/', description: '呆站的分身之一' },
+            { title: 'WallPaper-MLP', link: 'https://www.mylittlewallpaper.com/c/my-little-pony/', description: '也是个不错的图站' },
+
+        ];
+        // 视频分类
+        const videos = [
+            { title: 'Need for ponies', link: 'https://needforponies.fr/', description: '可在线观看所有小马官方剧集/电影/视频/漫画/音乐' },
+            { title: 'MLP-france', link: 'http://mlp-france.com/', description: '在线超清观看所有小马官方剧集/电影/视频，甚至还有G1-G3，目前也在不断更新中。' },
+            { title: 'New Lunar Republic', link: 'https://www.newlunarrepublic.fr/', description: '在线超清观看所有小马官方剧集/电影/视频/漫画' },
+            { title: 'BronySate', link: 'http://www.bronystate.net/', description: '小马动画及电影转播' },
+        ];
+        //音乐分类
+        const musics = [
+            { title: '小马镇电台', link: 'http://www.ponyvillefm.com/', description: '可直播收听一些音乐，跟电台一样' },
+            { title: 'Pony FM', link: 'https://pony.fm/', description: '小马音乐站，免费下载各种音乐资源。' },
+            { title: '小马音乐档案馆', link: 'https://ponemusic.net/', description: '小马音乐合辑' },
+            { title: 'Ponyvillelive', link: 'https://ponyvillelive.com/mlpma', description: '小马音乐档案馆Ⅱ' },
+            { title: 'Forest Rain', link: 'https://forestrainmedia.com/', description: '小马同人音乐站点，有实体专辑出售' },
+            { title: 'MLP Episode Guide', link: 'http://zhangyijiang.github.io/mlp-guide/', description: '小马宝莉插曲指南' },
+            { title: 'Eastquestria 东方小马国', link: 'https://eastquestria.top/', description: '中国小马宝莉（MLP）同人音乐社团/厂牌（ESQ），为同人音乐创作者提供专辑发行服务，已发行多张原创小马同人音乐专辑（如随想曲 Vol.4/Vol.5、元旦合辑、小马落雪专项等）' },
+        ];
+        // 小说站分类
+        const books = [
+            { title: 'FimTale', link: 'https://fimtale.com/', description: '中文小马同人文章网站' }, // 注意：原HTML中链接协议缺失，已修正为https
+            { title: 'FIMFiction', link: 'http://www.fimfiction.net/', description: '知名的小马同人文创作品站' },
+            { title: '小马有声书资源站', link: 'http://mlpaudiobooks.net/', description: '小马有声书资源站，可在线听，当然是英文版的' },
+            { title: '印象部', link: 'http://www.ministryofimage.net/', description: '有很多小说资源的实体书出售' },
+            { title: '坎特洛特漫画站', link: 'https://www.canterlotcomics.com/', description: '包含很多漫画，是漫画大佬的云集之地' },
+        ];
+        //社区/论坛分类
+        const forums = [
+            { title: '4chan小马板', link: 'https://boards.4channel.org/mlp/', description: '马迷的老家及发源地' },
+            { title: '中心城论坛', link: 'http://www.canterlot.com/', description: '中心城论坛，一个国外的马迷论坛' },
+            { title: 'ManeChat', link: 'https://manechat.net/', description: 'Discord上的小马社区' },
+            { title: '坎特洛特大街', link: 'https://canterlotavenue.com/', description: '坎特洛特大街，一个小型的国外马迷论坛' },
+            { title: 'Ponychan', link: 'http://www.ponychan.net/', description: '属于马迷自己的"4chan"' },
+            { title: 'MLP Forums', link: 'https://mlpforums.com/', description: '一个有许多活动的马迷论坛' },
+            { title: 'Reddit', link: 'http://www.reddit.com/r/mylittlepony', description: 'Reddit上的马迷社区' },
+            { title: 'Equestria Social', link: 'https://equestria.social/about', description: '小马国社交网' },
+            { title: '最初的小马镇', link: 'https://thefirstponyville.club/', description: '国内的一个马迷社区，已停' },
+            { title: 'Brony Commune', link: 'http://bronycommune.org/', description: '明琪大大的马迷社区，现在已停运' },
+            { title: '小马社区 EquestriaCommunity', link: 'https://eqcommunity.cn/', description: '中文圈小马宝莉（Brony）综合社区，提供马圈新闻、论坛交流、马展地图与同人作品推荐' },
+        ];
+        //资源站分类
+        const resources = [
+            { title: 'Yay Ponies', link: 'http://yp1.yayponies.no/', description: '知名小马资源站' },
+            { title: '小马档案馆', link: 'http://www.theponyarchive.com/', description: '有很多资源，同时附带一个论坛' },
+            { title: 'GD资源站', link: 'https://dl.gdstudio.xyz/', description: '进去点MyLittlePony' },
+            { title: '马国记忆', link: 'https://eqmemory.cn/', description: '国内马迷自发的收集小马同人项目' },
+        ];
+        // 游戏站分类
+        const games = [
+            { title: 'PonyTown', link: 'https://pony.town/', description: '马圈最著名的线上角色扮演聊天室' },
+            { title: 'PonyLand', link: 'https://pony.land/en/', description: '你可以当成是3D版的ponytown' },
+            { title: 'MyLittleLaraoke', link: 'https://www.mylittlekaraoke.com/', description: '找小马的歌曲进行卡拉ok' },
+            { title: '小马桌宠(Github)', link: 'https://github.com/RoosterDragon/Desktop-Ponies', description: '在你的电脑桌面上养一些可爱的小马当桌宠吧' },
+            { title: 'Horse Game', link: 'http://equidev.net/', description: '一个动作冒险风格的游戏' },
+            { title: 'Raycord Legends', link: 'https://raycordlegends.com/', description: '雷序传奇，跑酷类型的游戏' },
+            { title: 'PonyAge', link: 'https://ponyage.com/', description: '小马时代，大型多人RPG游戏' },
+            { title: 'Ambient White', link: 'http://albdifferent.com/', description: '冬日传说，冒险游戏' },
+            { title: '辐射小马国', link: 'http://foe.ucoz.org/', description: '辐射小马国，根据同人小说改编的一款2D的RPG游戏' },
+            { title: 'Day Dreaming Derpy', link: 'https://rpgmaker.net/games/9424/', description: '小呆的白日梦' },
+            { title: 'Ashes of Equestria', link: 'https://theovermare.com/', description: '可以认为是3D版的FoE' },
+            { title: 'MineLittlePony', link: 'https://minelittlepony-mod.com/', description: '[Minecraft]小马宝莉mod,一个可以让你变成小马的mod' },
+            { title: 'Love & Tolerance', link: 'https://www.mylittlepony.com/', description: '[Minecraft]小马材质包' },
+            { title: 'OC制作器', link: 'http://www.dolldivine.com/mlp-fim-pony-creator.php', description: '快捷捏2d官风小马' },
+            { title: 'OC制作器(3D)', link: 'http://ponylumen.net/games/3d-pony-creator/', description: '这个是捏3D-SFM模型的' },
+            { title: 'PoniArcade', link: 'https://poniarcade.com/', description: '你可以在这里找到Brony们建的MLP主题Minecraft服务器' },
+            { title: '小马游戏开发之家', link: 'http://mylittlegamedev.com/', description: '程序马的家园' },
+            { title: '友谊是史诗', link: 'http://fie.main.jp/b/en/', description: '友谊是史诗，也是个经典的游戏' },
+            { title: '友谊是史诗下载', link: 'https://www.mediafire.com/file/c5jyxrjpkcs92vy/Friendship_is_Epic_-_Dev_version_17-02-05.zip/file', description: '下载渠道一' },
+            { title: 'Pony Club', link: 'http://ponyclub.manequest.net/', description: '小马俱乐部' },
+            { title: 'Legends of Equestria', link: 'http://www.legendsofequestria.com/home', description: '小马国传奇，大型多人在线角色扮演游戏' },
+            { title: 'EverfreeOutpost', link: 'http://play.everfree-outpost.com/serverlist.html', description: '一个线上多人小游戏' },
+            { title: 'PonyWorld', link: 'https://sourceforge.net/projects/ponyworld/', description: '基于Blender游戏引擎制作的3D小马游戏' },
+            { title: 'Equestria at War', link: 'https://www.equestriacn.com/2018/08/%e3%80%90%e6%b8%b8%e6%88%8f%e7%ae%80%e4%bb%8b%e3%80%91%e3%80%8a%e9%92%a2%e9%93%81%e9%9b%84%e5%bf%834%e3%80%8b%e6%a8%a1%e7%bb%84-equestria-at-war.html', description: '(正在寻找合适的网页)' },
+            { title: 'Pony Waifu Sim', link: 'https://ponywasim.com/', description: '知名小马黄油' },
+            { title: 'Pony-VR-Ville', link: 'http://kaitouace.com/vr/', description: '小马谷VR版' },
+            { title: 'PonyAR', link: 'https://www.ponyar.net/', description: '通过AR技术让小马出现在现实里' },
+            { title: 'Amony us MLP版', link: 'https://ponywaifusim.com/', description: '小马版的Among us' },
+            { title: '小马国游戏网', link: 'http://www.equestriagaming.net/', description: '小马游戏合集1' },
+            { title: '小马国游戏厅', link: 'http://arcade.equestriagaming.net/', description: '小马游戏合集2' },
+            { title: 'dragon-mango', link: 'https://www.dragon-mango.com/ponygame/', description: 'dragon-mango上的小马游戏' },
+            { title: 'Long Stoplight', link: 'https://roundtrip.itch.io/long-stoplight', description: '星光版贪吃蛇，在线玩' },
+            { title: 'MLP-G5-Leaked', link: 'https://singlehoof.itch.io/mlp-g5-leaked', description: '一个3D的G5的小游戏，在线玩' }
+        ];
+        //pt系列分类
+        const ptSeries = [
+            { title: 'PonyTown', link: 'https://pony.town/', description: 'pt官方，本体站' },
+            { title: 'PonyFest', link: 'https://event.pony.town/', description: 'PonyFest的线上展会' },
+            { title: 'MysticalMeadows', link: 'https://mysticalmeadows.co.uk/', description: 'MysticalMeadows服务器' },
+            { title: 'Ashes Town', link: 'https://ashes.town/', description: '辐射小马国版的pt' },
+            { title: '聚乙烯', link: 'https://town.polyethylenespace.top/', description: '国内大佬聚乙烯的pt服务器' }
+        ];
+        //其它分类
+        const others = [
+            { title: 'PonySFM', link: 'https://ponysfm.com/', description: '免费的小马SFM模型资源' },
+            { title: 'BrowserPonies', link: 'http://panzi.github.io/Browser-Ponies/', description: '在浏览器界面显示小马' },
+            { title: 'Poniverse', link: 'https://poniverse.net/', description: '统一登录，很多国外的马迷网站在用' },
+            { title: '小马融合', link: 'https://fusion.ponyar.net/', description: '将小马的造型融合起来' },
+            { title: '世界马展倒计时', link: 'https://ponycon.info/', description: '世界马展倒计时' },
+            { title: 'MePlushyou官网', link: 'https://meplushyou.com/', description: '精致的小马毛绒玩具，可以订做' },
+            { title: 'ThisPonyDoesNotExist', link: 'https://thisponydoesnotexist.net/', description: 'AI生成小马头像' },
+            { title: '什么是Brony网', link: 'http://www.whatisabrony.com/', description: '你可以在里面了解什么是马迷，以及马迷的历史' },
+            { title: 'My Little Ties', link: 'http://mylittleties.com/', description: '小马精致周边' },
+            { title: 'SCP基金会小马国分部', link: 'http://scp-equestria.wikidot.com/scp-series-eq', description: 'SCP基金会小马国分部，有点沙雕x' },
+            { title: '小马国空间联合国', link: 'http://equestria.ponysky.net/home/', description: '小马国空间联合国网' },
+            { title: '小马国天蓝丝带', link: 'http://bronyhome.org/', description: '小马国天蓝丝带公益组织' },
+            { title: 'PonySky小马星空站', link: 'http://ponysky.net/', description: '天文马可以来这看看' },
+            { title: '天蓝丝带科技网', link: 'https://srba.ac.cn/fmo/', description: '国内关于马圈的学术研究' },
+            { title: 'FiM++', link: 'https://fimpp.fandom.com/wiki/FiM%2B%2B_Wiki', description: '马迷大佬自创的编程语言' },
+            { title: 'SEAPonyCon', link: 'https://seaponycon.com/', description: 'SEAPonyCon，一个马展的网站' },
+            { title: 'PonyFest', link: 'https://ponyfest.horse/', description: 'PonyFest马展的网站' },
+            { title: '小马宝莉4399专区', link: 'https://blog.goldenapple.xyz/?p=404', description: '404 Not Found' }
+        ];
+        //……
+
+        document.addEventListener('DOMContentLoaded', function () {
+            //wiki分类卡片生成
+            const wikiSection = document.getElementById('wiki');
+            const wikiCardContainer = wikiSection.querySelector('.grid');
+            wikis.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                wikiCardContainer.innerHTML += cardHtml;
+            });
+            //新闻站分类卡片生成
+            const newsStationSection = document.getElementById('news-station');
+            const newsStationCardContainer = newsStationSection.querySelector('.grid');
+            newsStations.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                newsStationCardContainer.innerHTML += cardHtml;
+            });
+            //图站分类卡片生成
+            const imageStationSection = document.getElementById('image-station');
+            const imageStationCardContainer = imageStationSection.querySelector('.grid');
+            imageStations.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                imageStationCardContainer.innerHTML += cardHtml;
+            });
+            //视频分类卡片生成
+            const videoSection = document.getElementById('video');
+            const videoCardContainer = videoSection.querySelector('.grid');
+            videos.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                videoCardContainer.innerHTML += cardHtml;
+            });
+            //音乐分类卡片生成
+            const musicSection = document.getElementById('music');
+            const musicCardContainer = musicSection.querySelector('.grid');
+            musics.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                musicCardContainer.innerHTML += cardHtml;
+            });
+            //小说站分类卡片生成
+            const bookSection = document.getElementById('book');
+            const bookCardContainer = bookSection.querySelector('.grid');
+            books.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                bookCardContainer.innerHTML += cardHtml;
+            });
+            //社区/论坛分类卡片生成
+            const forumSection = document.getElementById('forum');
+            const forumCardContainer = forumSection.querySelector('.grid');
+            forums.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                forumCardContainer.innerHTML += cardHtml;
+            });
+            //资源站分类卡片生成
+            const resourceSection = document.getElementById('resource');
+            const resourceCardContainer = resourceSection.querySelector('.grid');
+            resources.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                resourceCardContainer.innerHTML += cardHtml;
+            });
+            //游戏分类卡片生成
+            const gameSection = document.getElementById('game');
+            const gameCardContainer = gameSection.querySelector('.grid');
+            games.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                gameCardContainer.innerHTML += cardHtml;
+            });
+            //pt系列分类卡片生成
+            const ptSeriesSection = document.getElementById('pt');
+            const ptSeriesCardContainer = ptSeriesSection.querySelector('.grid');
+            ptSeries.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                ptSeriesCardContainer.innerHTML += cardHtml;
+            });
+            //其它分类卡片生成
+            const othersSection = document.getElementById('other');
+            const othersCardContainer = othersSection.querySelector('.grid');
+            others.forEach(site => {
+                const cardHtml = createSiteCard(site.title, site.link, site.description);
+                othersCardContainer.innerHTML += cardHtml;
+            });
+            //……
+        });             
+    </script>
+</body>
+
+</html>
