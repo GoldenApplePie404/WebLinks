@@ -531,65 +531,75 @@
       "url": "https://vtuber2d.ai/",
       "description": "AI 动漫图层拆分工具，将动漫插画自动拆成分为层 PSD 文件供 Live2D 建模使用，内置 PSD 放大管线，基于 See-through（SIGGRAPH 2026）技术并支持接入自建 ComfyUI 渲染节点"
     },
-  {
+    {
       "name": "Suno",
       "url": "https://suno.com/",
       "description": "AI 音乐生成平台，输入文字描述或歌词即可生成含人声、歌词与完整编曲的原创歌曲，并提供歌词重写、段落重排、上传音频编辑与分轨导出（WAV stems）以及付费用户的商业授权"
-  },
-  {
+    },
+    {
       "name": "JukeBlocks",
       "url": "https://jukeblocks.io/",
       "description": "可以自动生成不同的音乐风格，下载并导入至宿主软件就可以很方便的编曲了"
-  },
-  {
+    },
+    {
       "name": "反谱",
       "url": "https://www.serocs.cn/",
       "description": "音乐转谱、人声分离、曲谱转换"
-  },
-  {
+    },
+    {
       "name": "Basicpitch",
       "url": "https://basicpitch.spotify.com/",
       "description": "将wav,mp3转换为midi"
-  },
-  {
+    },
+    {
       "name": "SunoMV",
       "url": "https://suno.bi/zh",
       "description": "第三方 AI 音乐视频生成工具（非 Suno 官方站），粘贴 Suno / B站 / YouTube 歌曲链接即可自动同步歌词、按吉卜力 / 赛博朋克 / Y2K 等 30+ 视觉风格生成影院级 MV，内置 Suno、Lyria、MiniMax 等音乐模型与 7 种字幕样式、AI 转场；免费版每日 3 首带水印，Pro 订阅按月计费"
-  },
-  {
+    },
+    {
       "name": "PromptBase",
       "url": "https://promptbase.com/",
       "description": "AI 提示词交易市场，汇聚 31 万+ 高质量提示词，覆盖 Midjourney、ChatGPT Image、Gemini 视频 / 图像等生成式 AI 工具，创作者可上架售卖、买家付费获取，商品带售价与评分"
-  },
-  {
+    },
+    {
       "name": "Meowa",
       "url": "https://meowa.ai/",
       "description": "AI 游戏美术工作室，面向游戏开发者生成像素角色、精灵图包（sprite sheets）、Idle / Walk 等动作动画、场景背景与游戏 UI，覆盖角色设计、插画、视频分镜与界面布局等多种游戏素材生产"
-  },
-  {
+    },
+    {
       "name": "PixMind",
       "url": "https://www.pixmind.io/zh",
       "description": "AI 图像与视频一站式生成平台，单账号聚合 GPT Image 2、Midjourney V7、Seedream 5.0、Flux Kontext、Veo 3.1、Seedance 2.0、PixVerse、Kling V3 等 25+ 顶尖模型，内置商品图、营销海报、智能抠图、高清放大、视频转提示词等 10+ 应用与 10+ 工具，面向电商卖家、营销运营与内容创作者，支持 19 种语言"
-  },
-  {
+    },
+    {
       "name": "Neuro-sama & Evil Neuro",
       "url": "https://vedal.ai/",
       "description": "AI VTuber 双子官方站点，由 Vedal 开发的 Neuro-sama（原初 AI 虚拟主播，会唱歌、打游戏、聊天、搞恶作剧）与 Evil Neuro（双胞胎妹妹，立志当反派、写诗集刀），提供直播入口、博客、音乐链接与周边商店，展示 AI 角色驱动的长期娱乐实验"
-  },
-  {
+    },
+    {
       "name": "HANYUAI 图像助理",
       "url": "https://www.hanyuai.com/zh",
       "description": "免费在线 AI 图像处理工具集，支持文生图、图生图、多图编辑与图像识别，集成即梦、豆包 5.0、Qwen Image Edit、Nano Banana PRO 等模型；提供抠图、风格转换、老照片修复、图片翻译、AI 证件照、以图搜图、图片分析等数十种功能，支持批量处理"
-  },
-  {
+    },
+    {
       "name": "PicDoc",
       "url": "https://www.picdoc.cn/",
       "description": "AI 文本转视觉工具，通过在线输入、AI 生成或上传 PDF/Word 提取文本，一键将文章转为图表、流程图、信息图、思维图等视觉图片，支持大纲改项数、AI 配图标、多风格切换，可导出 PNG/JPG/PDF/Doc 或分享链接；另支持粘贴数据生成折线图、柱状图、饼图等数据可视化图表"
-  },
-  {
+    },
+    {
       "name": "Sousaku AI",
       "url": "https://sousaku.ai/zh-CN/",
       "description": "综合性 AI 创作平台（日本公司运营，与字节跳动关联：许可 Seedance 模型并基于 BytePlus 云运行），可在同一处生成图像、视频、音乐、角色与短片；集成 Seedance 2.5/2.0、Veo 3.1、Midjourney V8.1、Kling 3.0、Wan 2.7、海螺 H3、Nano Banana 2、Vidu Q3 Pro 等模型，支持原生音视频同步、多镜头叙事与多语言对话生成"
-  }
-]
+    },
+    {
+      "name": "TelkNet",
+      "url": "https://telknet.cc/",
+      "description": "AI 音频处理平台，主打 SOTA 模型试用——提供人声/和声/伴奏分离（BS-Kar、RoFormer 等）、音频转写、图像处理、语音处理等 39 款工具；每日赠送免费积分，GPU 运行，无需绑卡即可体验"
+    },
+    {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/zh",
+      "description": "独立 AI 模型评测平台，提供 Intelligence Index 智能指数排名、速度与成本基准、Search API 提供商质量/成本/速度对比、自定义基准测试工具 Optima；覆盖 Claude、GPT、Gemini、Kimi、DeepSeek、Grok 等主流模型的多维度评测数据"
+    }
+  ]
 }

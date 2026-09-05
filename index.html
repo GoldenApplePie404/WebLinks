@@ -506,19 +506,22 @@
         // 渲染搜索建议
         function renderSearchSuggestions(query) {
             const suggestions = getSearchSuggestions(query);
-            const searchContainer = document.getElementById('search-input').parentElement;
+            const searchInput = document.getElementById('search-input');
             
-            // 移除旧的建议
-            let suggestionBox = searchContainer.querySelector('.search-suggestions');
-            if (suggestionBox) {
-                suggestionBox.remove();
-            }
+            // 移除旧的建议（直接从 body 移除）
+            document.querySelectorAll('.search-suggestions').forEach(el => el.remove());
             
             if (suggestions.length === 0) return;
             
-            // 创建建议框
-            suggestionBox = document.createElement('div');
-            suggestionBox.className = 'search-suggestions absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-md z-10';
+            // 计算搜索框相对于视口的位置
+            const rect = searchInput.getBoundingClientRect();
+            
+            // 创建建议框，挂载到 body，用 fixed 定位 + 超高 z-index
+            const suggestionBox = document.createElement('div');
+            suggestionBox.className = 'search-suggestions fixed bg-white border border-gray-200 rounded-lg shadow-lg z-[99999]';
+            suggestionBox.style.top = (rect.bottom + 4) + 'px';   // 紧贴搜索框下方
+            suggestionBox.style.left = rect.left + 'px';
+            suggestionBox.style.width = rect.width + 'px';
             
             suggestions.forEach(suggestion => {
                 const item = document.createElement('div');
@@ -534,7 +537,7 @@
                 suggestionBox.appendChild(item);
             });
             
-            searchContainer.appendChild(suggestionBox);
+            document.body.appendChild(suggestionBox);
         }
         
         // 搜索功能
@@ -567,6 +570,11 @@
                 suggestionBox.remove();
             }
         });
+        
+        // 滚动页面时关闭搜索建议（fixed 定位会留在原地，跟随搜索框位置已失效）
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.search-suggestions').forEach(el => el.remove());
+        }, true);
         
         // 全部网站按钮
         document.querySelector('[data-category="all"]').addEventListener('click', () => {
