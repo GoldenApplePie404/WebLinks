@@ -1,0 +1,27 @@
+{
+  "name": "links",
+  "version": "1.0.0",
+  "description": "本仓库主要用于存放个人常用网站汇总、各类资源与配置文件备份，方便长期存档、快速查阅与数据留存。当前为样式大改后的版本，且添加了基础的搜索功能。",
+  "main": "tailwind.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldenApplePie404/WebLinks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GoldenApplePie404/WebLinks/issues"
+  },
+  "homepage": "https://github.com/GoldenApplePie404/WebLinks#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

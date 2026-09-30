@@ -1,2 +1,13 @@
 # WorkBuddy 项目内部数据（skill / 记忆），不纳入仓库备份
 .workbuddy/
+
+# Node 依赖与工具缓存
+node_modules/
+npm-debug.log*
+.npm/
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

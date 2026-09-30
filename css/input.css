@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============ 全局暗色模式样式覆盖 ============ */
+@layer base {
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  /* 侧边栏导航项暗色 */
+  .dark .nav-item:hover {
+    @apply bg-gray-800 text-primary-light;
+  }
+  .dark .nav-item.active {
+    @apply bg-primary text-white;
+  }
+  
+  /* 卡片暗色 */
+  .dark .card-hover {
+    @apply bg-gray-800 border-gray-700;
+  }
+  .dark .card-hover:hover {
+    @apply shadow-lg border-gray-600;
+  }
+  
+  /* 搜索焦点暗色 */
+  .dark .search-focus {
+    @apply border-primary;
+  }
+}
+
 @layer utilities {
     .content-auto {
         content-visibility: auto;
