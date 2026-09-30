@@ -85,19 +85,9 @@
         "description": "CircuitsToday旨在为学生和业余爱好者提供免费的电子产品资源。该网站有数以千计的电路、项目和其他信息"
       },
       {
-        "name": "CSDN",
-        "url": "https://www.circuitstoday.com/",
-        "description": "专业开发者社区，涵盖硬件与软件两大流派"
-      },
-      {
         "name": "GitHub",
         "url": "https://github.com/",
         "description": "全球最大的开源社区，各种开源项目应有尽有。"
-      },
-      {
-        "name": "Datasheet",
-        "url": "https://www.circuitstoday.com/",
-        "description": "电子元件、集成电路查询"
       },
       {
         "name": "立创开源市场",
@@ -223,6 +213,11 @@
         "name": "Schematik",
         "url": "https://www.schematik.io/",
         "description": "AI 硬件 IDE（被 WIRED 称为「硬件版 Cursor」，获 Anthropic 投资），面向 Arduino / ESP32 / Pico，用自然语言描述需求即可生成完整源码、接线图与组装说明，可直接通过 PlatformIO 烧录或导出自定义，内置大量模板与社区项目"
+      },
+      {
+        "name": "Circuitjs Web（果冻的猿宇宙）",
+        "url": "https://cc.xiaogd.net/",
+        "description": "在线电路模拟器（Circuitjs 网页版 v2.9.0，果冻的猿宇宙部署），支持 LRC 电路等仿真；配有《编码：隐匿在计算机软硬件背后的语言》《穿越计算机的迷雾》两本书的配套在线交互电路"
       }
     ],
     "math": [

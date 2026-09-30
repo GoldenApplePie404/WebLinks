@@ -635,6 +635,26 @@
       "name": "Hexo",
       "url": "https://hexo.io/zh-cn/",
       "description": "基于 Node.js 的快速静态博客/网站生成框架，Node.js 加持下上百页面几秒完成渲染，支持 GitHub Flavored Markdown 与多数 Octopress 插件，一条指令部署到 GitHub Pages 等平台，拥有强大插件 API，可集成 EJS/Pug/Nunjucks 模板引擎与 Babel、PostCSS、Less/Sass 等 NPM 包"
+    },
+    {
+      "name": "蓝色大肥鱼",
+      "url": "https://xn--pssy23gqgbz2d718b.com/",
+      "description": "AI 娘（拟人化）表情包开放档案社区，浏览/下载 AI 生成的拟人化视觉表情包，支持按名称、Tag 标签交互检索与筛选；SPA 单页应用，中文界面；提供提交作品、图片下载保存评论功能"
+    },
+    {
+      "name": "HexEd.it",
+      "url": "https://hexed.it/",
+      "description": "免费浏览器端十六进制（Hex）编辑器，HTML5+JS 实现，跨平台（Win/Mac/Linux/移动端无需安装）；核心特性：**所有文件处理本地完成不上传服务器**、Service Worker 离线可用、无广告无追踪；支持 TB 级大文件直接从磁盘读取不占内存、多标签同时编辑、无限 Undo/Redo、50+ 编码（EBCDIC/IBM437/ISO-8859 等）文本视图、数据检查器（8-64 位有/无符号整数、IEEE 754 浮点、LEB128、日期时间，大小端切换）、Hex/文本搜索替换（支持通配符，最多列出 10000 处偏移）、书签/跳转偏移；v2026.02.21，微软商店也有 Web App 版本"
+    },
+    {
+      "name": "Returnline",
+      "url": "https://returnline.games/",
+      "description": "独立洞穴探险叙事游戏（浏览器直接玩，无需下载或登录），题材：洞穴潜水/救援/叙事冒险；2D 测试版：已上线前三章「The Unfinished Line / Another Patch of Daylight / An Answer from the Deep」，前两章免费、第三章 ¥0.10 解锁；3D 第一人称实验版并行开发；中文游戏，黑暗紧张氛围，含本地+云端存档同步；当前为实验性测试构建，进度可能重置但付费记录保留"
+    },
+    {
+      "name": "FramePacker",
+      "url": "https://www.framepacker.cn/",
+      "description": "专业级视频转序列帧动画平台（浏览器直接用，无需安装）；三大模块：①提取画面——上传视频/GIF，选帧率一键抽帧；②编辑调整——在线图像编辑器，批量抠图、逐帧精修、智能定位跳变帧/重复帧、智能去重，支持半透明特效处理与保留；③自由导出——任意分辨率导出为透明 PNG 序列帧 / Sprite Sheet 精灵图 / GIF 动图 / MP4；基础功能免费，进阶按需解锁"
     }
   ]
 }

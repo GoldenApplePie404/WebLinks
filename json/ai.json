@@ -463,8 +463,8 @@
     },
     {
       "name": "ElevenLabs",
-      "url": "https://elevenlabs.io/",
-      "description": "AI 语音与智能体平台，提供多语言文本转语音、语音克隆、转录、配音、音乐和音效生成及低延迟语音 Agent API"
+      "url": "https://elevenlabs.io/zh",
+      "description": "AI 语音与智能体平台，三大产品线：ElevenCreative（文本转语音/音乐/配音/视频本地化/广告旁白）、ElevenAgents（AI 客服语音 Agent，已被 Twilio/Stripe/KPN/Telus 等企业用）、ElevenAPI（低延迟实时语音 API）；支持 32 种语言语音克隆、1000+ 内置音色（旁白/角色/对话/社交媒体分类）；音乐生成可输出完整歌曲与人声；2023 年成立，GitHub 开源 Whisper v3 语音识别"
     },
     {
       "name": "Stability AI",
@@ -600,6 +600,71 @@
       "name": "Artificial Analysis",
       "url": "https://artificialanalysis.ai/zh",
       "description": "独立 AI 模型评测平台，提供 Intelligence Index 智能指数排名、速度与成本基准、Search API 提供商质量/成本/速度对比、自定义基准测试工具 Optima；覆盖 Claude、GPT、Gemini、Kimi、DeepSeek、Grok 等主流模型的多维度评测数据"
+    },
+    {
+      "name": "Tunee",
+      "url": "https://www.tunee.ai/zh-CN/home/",
+      "description": "全能 AI 音乐创作 Agent，主打用自然对话造音乐（告别复杂 prompt），支持上传旋律/描述情绪/分享片段等多模态输入；集成 Mureka、Minimax、TemPolor、Kling 等 9 种模型，提供音乐生成、AI 生成电影感 MV、AI 角色塑造、音轨分离（2/4/6 stems）、母带处理、音色克隆、对口型、动作迁移等完整工具链；附带 100% 商业授权，免费版每日 150 积分"
+    },
+    {
+      "name": "VoiceStudio",
+      "url": "https://voicestudio.sh/",
+      "description": "开源 AI 语音工作室，完全本地运行（无需账号），支持 646 种语言；功能含语音克隆（3 秒样本即可）、语音设计（性别/年龄/口音/音高/情绪）、视频配音（转写+翻译+重配音+对齐时间轴）、多角色有声书、转录；GitHub 11k stars，v0.5.0；提供桌面应用 + OpenAI 兼容本地 API"
+    },
+    {
+      "name": "灵蟹 SoloEnt",
+      "url": "https://soloent.cn/zh",
+      "description": "独立故事创作者 AI 写作平台（一人娱乐公司理念），三栏布局 AI 辅助写作，SoloEnt.md 项目宪法保证超长上下文一致性；提供技能包市场（prompt/workflow/rules/skills）、个人写作风格克隆、AI 责编（五维打分+评级+修改建议）、AI 拆书、AI 率检测；桌面端完全离线本地存储，免费支持 BYOK（自带密钥）"
+    },
+    {
+      "name": "Melogen AI",
+      "url": "https://melogenai.com/zh",
+      "description": "浏览器端音频工具中心，即开即用无需安装；功能含乐谱转MIDI（AIOMR自研模型）、AI音乐生成、AI曲式分析、AI歌词生成、人声分离、音频增强、MIDI转换器、PDF转MusicXML、音乐剪辑；249 国 1M+ 音频任务，支持桌面端下载"
+    },
+    {
+      "name": "EigenFlux",
+      "url": "https://www.eigenflux.net/",
+      "description": "AI Agent 广播网络，让任意 Agent 间能广播/订阅信号（信息/需求/能力），AI 引擎做语义匹配与分发；当前 6,355 活跃 Agent、1.7M+ 广播、680K+ 高价值信号；支持 Codex 等任意 Agent，研究预览阶段，token 节省 94%"
+    },
+    {
+      "name": "DSH Market",
+      "url": "https://dsh.market/",
+      "description": "DeepSeek Harness（DSH）插件市场，收录 SKILL（跨生态技能）和 PLUGIN（平台插件）两类扩展；每个条目提供维护/实用/热度/便捷/信号五维评分与综合实用分，支持 pnpm 一键安装（需匹配 DSH 版本）；代表作品：dsh-web（任务看板/远程控制/SSH/Git/主题皮肤）、ruflo（多智能体集群与自适应记忆）、distilly（知识抽取与技能提炼）、loopx（跨 Codex/Claude Code 的长期 Agent 控制平面）"
+    },
+    {
+      "name": "DSH Hub",
+      "url": "https://dshhub.org/zh-CN/",
+      "description": "DeepSeek Harness 社区插件目录，收录 18658+ 插件；12 个分类（Agent 协作/开发工具/金融数据/服务集成/界面扩展/记忆与知识库/消息通知/效率工具/技能扩展/视觉工具等），支持推荐/星标/最近更新/名称排序与兼容性筛选；每个插件展示 star 数、安装命令（npx dsh plugin add 或 pnpm）、版本兼容状态；含 @deepseek-ai/dsh-acp（Agent Client Protocol 服务器，226k star）等官方插件"
+    },
+    {
+      "name": "Video to Prompt",
+      "url": "https://videotoprompt.com/",
+      "description": "AI 逆向 Prompt 生成器——上传视频（MP4/WebM/MOV，≤50MB）或图片（JPG/PNG/WEBP/GIF，≤10MB），AI 自动分析关键帧，提取场景构图/光照氛围/调色/运镜/景深/艺术风格，生成可直接用的生产级 prompt；适配 Seedance/Veo/Kling/Wan/Midjourney/GPT Image/Seedream/FLUX 等主流文生视频/文生图模型；无注册、50 秒内出结果、支持中英日多语言输出、本地保留 prompt 历史与个人词库"
+    },
+    {
+      "name": "ScoreLabs",
+      "url": "https://scorelabs.app/",
+      "description": "浏览器端交互式乐谱平台（AI⇄音乐交集）；AI 功能：PDF OMR 乐谱识别可转可编辑可播放符号、AI 自动生成四声部 SATB 和声、乐谱 AI 分析与和声拆解、Webcam AI 手势指挥（实时调整速度/力度，本地计算机视觉）、麦克风 AI 实时音高与节奏检测；另有 100k+ 公共乐谱库、四大工作环境（Studio/Edu/Kids/Live）、支持 PDF/MusicXML/MIDI/MuseScore 导入导出"
+    },
+    {
+      "name": "LA Studio",
+      "url": "https://la-studio.cc/zh",
+      "description": "浏览器端 DAW + AI 音乐工作室（AI⇄音乐交集），WebGPU 加速无需安装；AI 工具链：人声去除、6 轨音轨分离、AI 母带、AI 降噪、AI 自动调音（逐音符修正音高）、AI 音频转 MIDI（复音乐器支持）、AI 乐谱 OCR、AI 音乐生成、AI 循环生成器、NAM 神经网络吉他音箱建模；DAW 编辑器同时间线处理音频/MIDI；标准工具全免费，Pro $5/月"
+    },
+    {
+      "name": "ARC-AGI-3",
+      "url": "https://arcprize.org/arc-agi/3",
+      "description": "ARC Prize 推出的首个交互式推理基准测试，旨在衡量 AI Agent 的类人智能；与传统静态谜题不同，Agent 必须在每个可玩环境中**通过经验学习**——感知关键信息、选择行动、构建世界模型、持续适应；设计原则：100% 人类可解、无预加载知识、清晰目标+有意义反馈、防暴力穷举；配套：25 个公开游戏数据集（ar25/bp35/ls20 等）、人类排行榜、SDK/文档、回放检查工具（追踪决策/行动/推理时间线）、2026 年度竞赛赛道"
+    },
+    {
+      "name": "Human Bench",
+      "url": "https://humanbench.ybuild.ai/",
+      "description": "人类 vs AI 趣味基准测试（浏览器本地运行，不上传任何数据）；76 道专门针对 LLM 弱点设计的陷阱题，涵盖文字细节（\"strawberry 有几个 r？\"——多数 LLM 答 3 实际 2）、小数比较（9.11 vs 9.9——多数 LLM 答 9.11）、常识判断（50m 远的洗车店走路还是开车？）、社交对话陷阱；完成后给出：参数数量估算、MoE/Dense 判断、发布日基准、AA Intelligence Index 排名、AI 人格类型、最离谱的聊天对话等趣味分析；作者 @Alex_ybuild"
+    },
+    {
+      "name": "MiaoCut",
+      "url": "https://miaocut.app/zh/",
+      "description": "免费 AI 抠图工具（BiRefNet SOTA 模型驱动），浏览器直接用无需注册；核心特性：**纯内存处理 15 分钟自动销毁绝不用于 AI 训练**、输出无水印高清透明 PNG、对头发/毛发/半透明物体边缘精准；8 个子工具：商品图抠图（白底图/方图/阴影）、人像抠图、去水印（涂抹区域智能修复）、证件照制作、老照片修复（褪色/噪点/模糊）、JPG→透明 PNG、PNG→JPG 白底、批量抠图 Pro 一次 20+ 张；独立开发者构建，100% 免费无订阅"
     }
   ]
 }

@@ -19,7 +19,7 @@
     {
       "name": "MuseScore",
       "url": "https://musescore.com/",
-      "description": "乐谱大全"
+      "description": "全球最大乐谱共享社区，收录 400 万+ 乐谱（141 万官方 + 263 万社区）；支持乐器/流派/难度/合奏/格式多维筛选；钢琴 200 万、古典 82 万、OST 38 万、流行 36 万、摇滚 29 万、爵士 16 万；273 万互动乐谱可在线播放，131 万 PDF 可下载；关联开源 MuseScore 编辑器（musescore.org），支持 MusicXML / MIDI 导入导出与乐谱编辑"
     },
     {
       "name": "反谱",
@@ -305,6 +305,51 @@
       "name": "TelkNet",
       "url": "https://telknet.cc/",
       "description": "AI 音频处理平台，主打 SOTA 模型试用——提供人声/和声/伴奏分离（BS-Kar、RoFormer 等）、音频转写、图像处理、语音处理等 39 款工具；每日赠送免费积分，GPU 运行，无需绑卡即可体验"
+    },
+    {
+      "name": "Tunee",
+      "url": "https://www.tunee.ai/zh-CN/home/",
+      "description": "全能 AI 音乐创作 Agent，主打用自然对话造音乐（告别复杂 prompt），支持上传旋律/描述情绪/分享片段等多模态输入；集成 Mureka、Minimax、TemPolor、Kling 等 9 种模型，提供音乐生成、AI 生成电影感 MV、AI 角色塑造、音轨分离（2/4/6 stems）、母带处理、音色克隆、对口型、动作迁移等完整工具链；附带 100% 商业授权，免费版每日 150 积分"
+    },
+    {
+      "name": "Melogen AI",
+      "url": "https://melogenai.com/zh",
+      "description": "浏览器端音频工具中心，即开即用无需安装；功能含乐谱转MIDI（AIOMR自研模型）、AI音乐生成、AI曲式分析、AI歌词生成、人声分离、音频增强、MIDI转换器、PDF转MusicXML、音乐剪辑；249 国 1M+ 音频任务，支持桌面端下载"
+    },
+    {
+      "name": "Avee Music Player",
+      "url": "https://aveeplayer.com/",
+      "description": "Android/Windows 端音乐播放器 + 音频可视化视频制作工具；支持 MP3/WAV/MP4 等主流格式、网络电台、设备文件夹浏览；18 种内置频谱模板 + 自定义可视化模板（多图层、图片/动画叠加、频率微调）、内置均衡器；可将音频导出为最高 4K 视频，支持多种分辨率/帧率/宽高比"
+    },
+    {
+      "name": "Vizzy",
+      "url": "https://vizzy.io/",
+      "description": "在线音乐可视化视频/歌词视频制作平台（无 AI，全手动控制）；提供反应式元素、高级特效、社区模板可 remix；渲染在本地电脑（非云端），免费无水印，最高支持 4K / 60 FPS，输出竖屏/横屏/方形，服务数千音乐人与内容创作者"
+    },
+    {
+      "name": "Strudel",
+      "url": "https://strudel.cc/",
+      "description": "开源浏览器端 live coding 音乐平台，JavaScript 版 TidalCycles（Haskell live coding 音乐语言）；在 REPL 里写代码实时生成动态音乐片段，AGPL 协议，源码在 Codeberg，内置交互式教程与 Discord 社区"
+    },
+    {
+      "name": "月盒 Two Moons",
+      "url": "https://two-moons.site/",
+      "description": "交互式乐理学习一站式站点，由 moayuisuda 开发；功能含视唱练耳教程、每日练习、和弦探索、内容市场；提供 Android APK 下载，无 AI 功能"
+    },
+    {
+      "name": "Tembrica",
+      "url": "https://tembrica.com/en",
+      "description": "综合在线工具平台，800+ 工具无需注册；音乐相关亮点：Sheet Music to MIDI（OMR 乐谱识别，ONNX 浏览器本地推理不上传服务器，识别后可 Verify 同步回放再导出 MIDI / MusicXML）、Audio to Notes、BPM & Key Finder、AI 歌词生成歌曲、Audio Enhancer / Trim / Metadata Editor / Morse Code Generator / 白噪声生成器；另有音频编辑 52 工具、视频编辑 55 工具、语音工具 19 工具、声音合成 17 工具等多个分类"
+    },
+    {
+      "name": "ScoreLabs",
+      "url": "https://scorelabs.app/",
+      "description": "浏览器端交互式乐谱平台，四大工作环境：Studio（专业乐谱编辑器）、Edu（数字教室+作业管理）、Kids（儿童乐谱）、Live（实时演奏+AI 指挥）；100k+ 公共乐谱库（古典/民谣/圣诞/福音/儿童/标准曲），无付费墙；支持 PDF（AI OMR 扫描）/MusicXML/MIDI/MuseScore 导入，导出 PDF/MusicXML/MIDI/高分辨率音频；交互练习：瀑布式钢琴卷帘视图、麦克风实时音高/节奏检测、Webcam AI 手势指挥；AI 功能：PDF 乐谱识别可转可编辑符号、自动四声部 SATB 和声生成、乐谱分析与和声拆解"
+    },
+    {
+      "name": "LA Studio",
+      "url": "https://la-studio.cc/zh",
+      "description": "浏览器端 DAW + AI 音乐工作室，无需安装，WebGPU 加速；核心功能全在浏览器标签内运行（GPU 推理）；DAW 编辑器：音频/MIDI 同时间线、GM 音色库钢琴卷帘、EQ/压缩/混响/限制器机架；AI 工具：人声去除、6 轨音轨分离（鼓/贝斯/人声/吉他/钢琴/其他）、AI 母带、AI 降噪、AI 自动调音（逐音符修正音高）、AI 音频转 MIDI（钢琴/吉他/人声等复音乐器）、AI 乐谱 OCR、AI 音乐生成、AI 循环生成器、NAM 神经网络吉他音箱建模；标准分离/降噪/BPM 检测免费，Pro $5/月解锁无限次 HQ 与云端处理"
     }
   ]
 }
