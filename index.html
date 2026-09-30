@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网站收录</title>
-    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tailwind.css?v=20260909">
+    <script src="js/ai-search.js?v=20260909"></script>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
     <div class="flex flex-col md:flex-row min-h-screen">
         <!-- 左侧导航栏 -->
-        <aside class="w-full md:w-64 bg-white border-r border-gray-200 p-4 md:sticky md:top-0 md:h-screen overflow-y-auto">
+        <aside class="w-full md:w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 p-4 md:sticky md:top-0 md:h-screen overflow-y-auto">
             <div class="flex items-center justify-between mb-6 slide-up">
                 <h1 class="text-xl font-bold text-primary flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-500 hover:rotate-12"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg>
                     <span class="transition-all duration-300 hover:scale-105">网站收录</span>
                 </h1>
-                <button id="mobile-menu-button" class="md:hidden text-gray-500 p-2 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-110">
+                <button id="mobile-menu-button" class="md:hidden text-gray-500 dark:text-gray-400 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
                 </button>
             </div>
@@ -24,17 +25,33 @@
                 <div class="nav-item active slide-in nav-transition" data-category="all" style="animation-delay: 0.1s;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     <span>全部网站</span>
-                    <span class="ml-auto bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded-full" id="count-all"></span>
+                    <span class="ml-auto bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs px-2 py-1 rounded-full" id="count-all"></span>
                 </div>
                 <!-- 分类导航将通过JavaScript动态生成 -->
             </div>
             
+            <!-- 我的收藏（独立分组） -->
+            <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <div class="nav-item nav-transition cursor-pointer" data-category="favorites">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>我的收藏</span>
+                    <span class="ml-auto bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs px-2 py-1 rounded-full" id="count-favorites">0</span>
+                </div>
+                <!-- 收藏导入导出 -->
+                <div class="flex gap-1 mt-1 px-3">
+                    <button id="fav-export" class="flex-1 text-xs text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light py-1 transition-colors" title="导出收藏为 JSON 文件">导出</button>
+                    <span class="text-gray-300 dark:text-gray-600 py-1">·</span>
+                    <button id="fav-import" class="flex-1 text-xs text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light py-1 transition-colors" title="从 JSON 文件导入收藏">导入</button>
+                    <input type="file" id="fav-import-file" accept=".json" class="hidden">
+                </div>
+            </div>
+            
             <!-- 小马宝莉分类 -->
-            <div class="mt-6 pt-6 border-t border-gray-200">
+            <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
                 <a href="mlp.html" class="nav-item slide-in nav-transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     <span>小马宝莉</span>
-                    <span class="ml-auto bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded-full">100+</span>
+                    <span class="ml-auto bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs px-2 py-1 rounded-full">100+</span>
                 </a>
             </div>
             
@@ -51,20 +68,39 @@
         <!-- 主内容区 -->
         <main class="flex-1 p-4 md:p-8">
             <!-- 顶部搜索栏 -->
-            <div class="bg-white rounded-lg shadow-sm p-4 mb-6 fade-in">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 mb-6 fade-in border border-gray-200 dark:border-gray-700">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <div class="relative">
                             <input type="text" id="search-input" placeholder="搜索网站..." 
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none search-focus transition-all duration-300 focus:shadow-md">
-                            <button id="search-button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary p-1 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-110">
+                                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 rounded-lg focus:outline-none search-focus transition-all duration-300 focus:shadow-md">
+                            <button id="search-button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary dark:hover:text-primary-light p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                             </button>
                         </div>
                     </div>
+                    
+                    <!-- 右侧工具栏：随机跳站 + 暗色切换 -->
+                    <div class="flex items-center gap-2 shrink-0">
+                        <!-- 随机跳站 -->
+                        <button id="random-jump" class="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary-dark text-white rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" title="随机打开一个网站">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M16 8h.01"/><path d="M8 8h.01"/><path d="M12 12h.01"/><path d="M16 16h.01"/><path d="M8 16h.01"/><path d="M12 12h.01"/><path d="m2 2 20 20"/><path d="M3 8h5"/><path d="M9 15v-2"/><path d="M15 9V7"/><path d="M21 11c0-.6-.4-1-1-1h-3"/></svg>
+                            <span class="hidden sm:inline">随机跳站</span>
+                        </button>
+                        <!-- 暗色切换 -->
+                        <button id="theme-toggle" class="p-2 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light hover:border-primary dark:hover:border-primary transition-all duration-300" title="切换主题">
+                            <!-- 亮色模式下显示月亮（点它切暗色） -->
+                            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                            <!-- 暗色模式下显示太阳（点它切亮色） -->
+                            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                        </button>
+                    </div>
 
                 </div>
             </div>
+            
+            <!-- 面包屑导航 -->
+            <div class="flex items-center gap-2 mb-4 text-sm text-gray-500" id="breadcrumb"></div>
             
             <!-- 分类标签 -->
             <div class="flex flex-wrap gap-2 mb-6 fade-in" style="animation-delay: 0.2s;" id="category-tags">
@@ -89,11 +125,87 @@
     
 
     
-    <!-- 回到顶端按钮（置于脚本之前，确保 DOM 已解析） -->
-    <button id="back-to-top" aria-label="回到顶端"
-        class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    <!-- AI 悬浮球 -->
+    <button id="ai-button" aria-label="AI 智能搜索"
+        style="position:fixed; right:1.5rem; bottom:5rem; z-index:9999; width:42px; height:42px;"
+        class="rounded-full bg-primary text-white shadow-md transition-all duration-300 hover:scale-110 hover:shadow-lg animate-ai-float">
+        <!-- 外层呼吸光圈 -->
+        <span style="position:absolute; inset:0;" class="rounded-full bg-primary/30 animate-ai-ping"></span>
+        <!-- 图标 -->
+        <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+        </span>
     </button>
+
+    <!-- 回到顶端 -->
+    <button id="back-to-top" aria-label="回到顶端"
+        style="position:fixed; right:1.5rem; bottom:1.5rem; z-index:9999; width:42px; height:42px;"
+        class="rounded-full bg-primary text-white shadow-md transition-all duration-300 hover:scale-110 hover:shadow-lg">
+        <span style="display:flex; align-items:center; justify-content:center; width:100%; height:100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </span>
+    </button>
+    
+    <!-- AI 语义搜索弹窗 -->
+    <div id="ai-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <!-- 遮罩 -->
+        <div id="ai-modal-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        
+        <!-- 弹窗主体 -->
+        <div class="relative w-full max-w-xl max-h-[80vh] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-fade-up">
+            <!-- 头部 -->
+            <div class="flex items-center gap-3 px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+                <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">AI 智能推荐</h3>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">用自然语言描述你想做什么，AI 帮你找网站</p>
+                </div>
+                <button id="ai-settings-btn" class="ml-auto p-2 rounded-lg text-gray-400 hover:text-primary dark:hover:text-primary-light hover:bg-purple-50 dark:hover:bg-primary/20 transition-colors" title="AI 设置（API Key / 模型）">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button id="ai-modal-close" class="p-2 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            
+            <!-- 输入区 -->
+            <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+                <!-- textarea + 搜索按钮 同一行 -->
+                <div class="flex items-start gap-3">
+                    <textarea id="ai-input" rows="2" 
+                        class="flex-1 px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-600 rounded-xl text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none transition-all"
+                        placeholder="比如：我想把视频里的 BGM 去掉，或者 有没有免费的 AI 写作助手？"></textarea>
+                    <button id="ai-submit" 
+                        class="shrink-0 h-[46px] px-5 bg-primary hover:bg-primary-dark text-white text-sm font-medium rounded-xl transition-all hover:shadow-md hover:-translate-y-0.5">
+                        AI 搜索
+                    </button>
+                </div>
+                <!-- 快速示例标签 -->
+                <div class="mt-3 flex flex-wrap gap-2 items-center">
+                    <span class="text-xs text-gray-400 dark:text-gray-500 shrink-0">试试：</span>
+                    <button class="ai-example text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-bg dark:hover:bg-primary/30 hover:text-primary-dark dark:hover:text-primary-light transition-colors">去掉视频里的声音</button>
+                    <button class="ai-example text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-bg dark:hover:bg-primary/30 hover:text-primary-dark dark:hover:text-primary-light transition-colors">免费 AI 写作助手</button>
+                    <button class="ai-example text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-bg dark:hover:bg-primary/30 hover:text-primary-dark dark:hover:text-primary-light transition-colors">图片抠图去背景</button>
+                    <button class="ai-example text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-bg dark:hover:bg-primary/30 hover:text-primary-dark dark:hover:text-primary-light transition-colors">mc 服务器工具</button>
+                </div>
+            </div>
+            
+            <!-- 结果区 -->
+            <div id="ai-results" class="flex-1 overflow-y-auto px-6 py-4">
+                <!-- 初始提示 -->
+                <div id="ai-placeholder" class="flex flex-col items-center justify-center h-full text-center py-10">
+                    <div class="w-16 h-16 rounded-2xl bg-primary-bg dark:bg-primary flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M22 2 12 12"/></svg>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400">输入你想做的事，AI 帮你找到合适的网站</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500 mt-2">已索引 <span id="ai-index-count">0</span> 个网站</p>
+                </div>
+                <!-- 结果列表由 JS 动态生成 -->
+            </div>
+        </div>
+    </div>
 
     <script>
         // 全局变量
@@ -104,10 +216,48 @@
         let searchHistory = []; // 搜索历史
         const MAX_HISTORY_ITEMS = 10; // 最大历史记录数
         
+        // 收藏相关
+        let favorites = JSON.parse(localStorage.getItem('links-favorites') || '[]'); // URL 数组
+        
         // 分页相关状态
         let currentPage = 1;
         let itemsPerPage = 24;
         let filteredList = []; // 当前筛选+排序后的完整列表（分页从这里面切片）
+        
+        // ============ 辅助函数 ============
+        
+        // 从 URL 提取域名
+        function getDomain(url) {
+            try {
+                return new URL(url).hostname;
+            } catch (e) {
+                return '';
+            }
+        }
+        
+        // 获取网站 favicon（使用 icon.horse 服务，支持回退）
+        function getFaviconUrl(url) {
+            const domain = getDomain(url);
+            if (!domain) return '';
+            return `https://icon.horse/icon/${domain}`;
+        }
+        
+        // 收藏操作
+        function isFavorite(url) {
+            return favorites.includes(url);
+        }
+        function toggleFavorite(url) {
+            if (isFavorite(url)) {
+                favorites = favorites.filter(u => u !== url);
+            } else {
+                favorites.push(url);
+            }
+            localStorage.setItem('links-favorites', JSON.stringify(favorites));
+            updateFavoritesCount();
+        }
+        function updateFavoritesCount() {
+            document.getElementById('count-favorites').textContent = favorites.length;
+        }
         
         // 初始化函数
         async function init() {
@@ -116,12 +266,20 @@
                 await loadAllJsonFiles();
                 // 更新全部网站数量
                 document.getElementById('count-all').textContent = allWebsites.length;
+                // 更新收藏计数
+                updateFavoritesCount();
                 // 生成导航菜单
                 generateNavigation();
                 // 生成分类标签
                 generateCategoryTags();
                 // 渲染网站卡片（含分页）
                 applyFilter();
+                // 构建 AI 语义搜索索引
+                if (window.SemanticSearch) {
+                    SemanticSearch.build(allWebsites);
+                    const count = document.getElementById('ai-index-count');
+                    if (count) count.textContent = allWebsites.length;
+                }
             } catch (error) {
                 console.error('初始化失败:', error);
                 document.getElementById('website-grid').innerHTML = `
@@ -290,8 +448,11 @@
         function applyFilter() {
             let list = allWebsites;
             
-            // 按分类过滤
-            if (currentCategory !== 'all') {
+            // 收藏视图：只显示已收藏的
+            if (currentCategory === 'favorites') {
+                list = list.filter(website => favorites.includes(website.url));
+            } else if (currentCategory !== 'all') {
+                // 按分类过滤
                 list = list.filter(website => website.source === currentCategory);
             }
             
@@ -312,6 +473,7 @@
             
             filteredList = list;
             currentPage = 1;
+            renderBreadcrumb();
             renderWebsites();
         }
         
@@ -339,17 +501,25 @@
                         <div class="col-span-full flex justify-center items-center py-20">
                             <div class="text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 mb-4"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                                <p class="text-gray-500">未找到匹配的网站</p>
+                                <p class="text-gray-500">${currentCategory === 'favorites' ? '还没有收藏任何网站' : '未找到匹配的网站'}</p>
+                                ${currentCategory === 'favorites' ? '<p class="text-gray-400 text-sm mt-2">浏览网站时点击卡片上的 ⭐ 收藏</p>' : ''}
                             </div>
                         </div>
                     `;
                 } else {
-                    const cardsHtml = pageItems.map((website) => `
-                        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up">
+                    const cardsHtml = pageItems.map((website, idx) => {
+                        const favicon = getFaviconUrl(website.url);
+                        const faved = isFavorite(website.url);
+                        return `
+                        <div class="website-card bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up" 
+                            style="animation-delay: ${idx * 0.02}s" data-url="${website.url}">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-3 gap-2">
-                                    <h3 class="font-semibold text-lg text-gray-900 truncate flex-1">${website.name}</h3>
-                                    <span class="px-2 py-1 bg-primary text-white text-xs rounded-full whitespace-nowrap">${categoryNames[website.source] || website.source}</span>
+                                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                                        ${favicon ? `<img src="${favicon}" alt="" width="24" height="24" class="w-6 h-6 rounded shrink-0 object-contain bg-gray-50 border border-gray-100" loading="lazy" onerror="this.style.display='none'">` : ''}
+                                        <h3 class="font-semibold text-lg text-gray-900 truncate">${website.name}</h3>
+                                    </div>
+                                    <span class="px-2 py-1 bg-primary text-white text-xs rounded-full whitespace-nowrap shrink-0">${categoryNames[website.source] || website.source}</span>
                                 </div>
                                 <p class="text-gray-600 text-sm mb-4 line-clamp-2">${website.description}</p>
                                 <div class="flex items-center justify-between mt-4">
@@ -358,15 +528,52 @@
                                         <span>访问网站</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 transition-transform duration-300 hover:translate-x-0.5"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
                                     </a>
-                                    <div class="text-xs text-gray-400 transition-all duration-300 hover:text-gray-600">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                    <div class="flex items-center gap-2">
+                                        <button class="fav-btn p-1.5 rounded-full transition-all duration-200 ${faved ? 'text-yellow-500 hover:bg-yellow-50' : 'text-gray-300 hover:text-yellow-500 hover:bg-gray-50'}" data-url="${website.url}" title="${faved ? '取消收藏' : '收藏'}">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="${faved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    `).join('');
+                    `;}).join('');
                     
                     grid.innerHTML = cardsHtml;
+                    
+                    // 绑定卡片收藏按钮事件
+                    grid.querySelectorAll('.fav-btn').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            const url = btn.dataset.url;
+                            toggleFavorite(url);
+                            // 更新按钮样式
+                            const nowFaved = isFavorite(url);
+                            btn.classList.toggle('text-yellow-500', nowFaved);
+                            btn.classList.toggle('text-gray-300', !nowFaved);
+                            btn.title = nowFaved ? '取消收藏' : '收藏';
+                            const svg = btn.querySelector('svg');
+                            svg.setAttribute('fill', nowFaved ? 'currentColor' : 'none');
+                            // 如果当前在收藏视图，且取消了收藏，重新渲染
+                            if (currentCategory === 'favorites' && !nowFaved) {
+                                applyFilter();
+                            }
+                        });
+                    });
+                    
+                    // 绑定卡片 hover 预览（二维码弹出）
+                    grid.querySelectorAll('.website-card').forEach(card => {
+                        let hideTimer = null;
+                        card.addEventListener('mouseenter', () => {
+                            if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+                            // 延迟一点，避免快速扫过时频繁弹出
+                            hideTimer = setTimeout(() => showCardPreview(card), 200);
+                        });
+                        card.addEventListener('mouseleave', () => {
+                            if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+                            hideTimer = setTimeout(hideCardPreview, 150);
+                        });
+                    });
                 }
                 
                 // 渲染分页控件
@@ -458,6 +665,96 @@
                     renderWebsites();
                 });
             }
+        }
+        
+        // ============ 面包屑渲染 ============
+        function renderBreadcrumb() {
+            const bc = document.getElementById('breadcrumb');
+            const total = filteredList.length;
+            
+            let parts = [];
+            // 首页入口
+            parts.push(`<span class="hover:text-primary cursor-pointer transition-colors" onclick="breadNavigate('all')">全部</span>`);
+            
+            if (currentCategory === 'favorites') {
+                parts.push(`<span>/</span>`);
+                parts.push(`<span class="text-gray-700 font-medium">我的收藏</span>`);
+            } else if (currentCategory !== 'all') {
+                parts.push(`<span>/</span>`);
+                parts.push(`<span class="text-gray-700 font-medium">${categoryNames[currentCategory] || currentCategory}</span>`);
+            }
+            
+            if (searchQuery) {
+                parts.push(`<span>/</span>`);
+                parts.push(`<span class="text-gray-700">搜索 "${searchQuery}"</span>`);
+            }
+            
+            bc.innerHTML = parts.join(' ');
+            bc.title = `共 ${total} 条结果`;
+        }
+        
+        // 面包屑导航辅助（全局可调用）
+        window.breadNavigate = function(cat) {
+            currentCategory = cat;
+            searchQuery = '';
+            document.getElementById('search-input').value = '';
+            // 同步侧边栏高亮
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.dataset.category === cat) item.classList.add('active');
+            });
+            applyFilter();
+        };
+        
+        // ============ 卡片悬停预览（二维码） ============
+        function showCardPreview(card) {
+            // 先关掉旧的
+            hideCardPreview();
+            
+            const url = card.dataset.url;
+            const website = filteredList.find(w => w.url === url) || allWebsites.find(w => w.url === url);
+            if (!website) return;
+            
+            const rect = card.getBoundingClientRect();
+            const preview = document.createElement('div');
+            preview.className = 'card-preview fixed bg-white border border-gray-200 rounded-lg shadow-xl p-3 z-[99998]';
+            preview.dataset.targetUrl = url;
+            
+            const domain = getDomain(url);
+            const favicon = getFaviconUrl(url);
+            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(url)}`;
+            
+            preview.innerHTML = `
+                <div class="text-center">
+                    <div class="flex items-center justify-center gap-2 mb-2">
+                        ${favicon ? `<img src="${favicon}" width="20" height="20" class="rounded object-contain bg-gray-50" onerror="this.style.display='none'">` : ''}
+                        <span class="font-medium text-sm text-gray-900 max-w-[200px] truncate">${website.name}</span>
+                    </div>
+                    <img src="${qrUrl}" alt="QR" width="160" height="160" class="rounded border border-gray-100 bg-white">
+                    <div class="text-xs text-gray-400 mt-2 truncate max-w-[160px] mx-auto" title="${domain}">${domain}</div>
+                </div>
+            `;
+            
+            // 计算位置：优先放卡片右侧，空间不够则放左侧
+            preview.style.width = 'auto';
+            document.body.appendChild(preview);
+            const pw = preview.offsetWidth;
+            const ph = preview.offsetHeight;
+            let left = rect.right + 12;
+            let top = rect.top + (rect.height - ph) / 2;
+            if (left + pw > window.innerWidth - 8) {
+                left = rect.left - pw - 12; // 翻转到左侧
+            }
+            if (left < 8) left = 8;
+            if (top < 8) top = 8;
+            if (top + ph > window.innerHeight - 8) top = window.innerHeight - ph - 8;
+            
+            preview.style.left = left + 'px';
+            preview.style.top = top + 'px';
+        }
+        
+        function hideCardPreview() {
+            document.querySelectorAll('.card-preview').forEach(el => el.remove());
         }
         
         // 搜索历史管理
@@ -571,9 +868,10 @@
             }
         });
         
-        // 滚动页面时关闭搜索建议（fixed 定位会留在原地，跟随搜索框位置已失效）
+        // 滚动页面时关闭搜索建议和卡片预览
         window.addEventListener('scroll', () => {
             document.querySelectorAll('.search-suggestions').forEach(el => el.remove());
+            hideCardPreview();
         }, true);
         
         // 全部网站按钮
@@ -590,6 +888,16 @@
             applyFilter();
         });
         
+        // 我的收藏按钮
+        document.querySelector('[data-category="favorites"]').addEventListener('click', () => {
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelector('[data-category="favorites"]').classList.add('active');
+            currentCategory = 'favorites';
+            applyFilter();
+        });
+        
         // 移动端菜单切换
         document.getElementById('mobile-menu-button').addEventListener('click', () => {
             const navContainer = document.getElementById('nav-container');
@@ -603,6 +911,539 @@
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+        
+        // ============ 主题切换 ============
+        const THEME_KEY = 'links-theme';
+        function applyTheme(dark) {
+            const html = document.documentElement;
+            const sun = document.getElementById('theme-icon-sun');   // 亮时隐藏，暗时显示
+            const moon = document.getElementById('theme-icon-moon'); // 亮时显示，暗时隐藏
+            if (dark) {
+                html.classList.add('dark');
+                sun.classList.remove('hidden');
+                moon.classList.add('hidden');
+            } else {
+                html.classList.remove('dark');
+                sun.classList.add('hidden');
+                moon.classList.remove('hidden');
+            }
+        }
+        function initTheme() {
+            const saved = localStorage.getItem(THEME_KEY);
+            if (saved === 'dark') {
+                applyTheme(true);
+            } else if (saved === 'light') {
+                applyTheme(false);
+            } else {
+                // 未设置则跟随系统
+                applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+            }
+        }
+        initTheme();
+        
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const dark = !document.documentElement.classList.contains('dark');
+            applyTheme(dark);
+            localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light');
+        });
+        
+        // ============ 随机跳站 ============
+        document.getElementById('random-jump').addEventListener('click', () => {
+            if (filteredList.length === 0) {
+                alert('当前没有可随机的网站，请先取消筛选');
+                return;
+            }
+            const site = filteredList[Math.floor(Math.random() * filteredList.length)];
+            // 新窗口打开，让用户能回来
+            window.open(site.url, '_blank', 'noopener,noreferrer');
+        });
+        
+        // ============ 收藏导出 ============
+        document.getElementById('fav-export').addEventListener('click', () => {
+            if (favorites.length === 0) {
+                alert('收藏夹是空的，没有可导出的内容');
+                return;
+            }
+            const data = {
+                version: 1,
+                exportedAt: new Date().toISOString(),
+                count: favorites.length,
+                urls: favorites
+            };
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `links-favorites-${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+        
+        // ============ 收藏导入 ============
+        document.getElementById('fav-import').addEventListener('click', () => {
+            document.getElementById('fav-import-file').click();
+        });
+        document.getElementById('fav-import-file').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            try {
+                const text = await file.text();
+                const data = JSON.parse(text);
+                let imported = [];
+                if (Array.isArray(data)) {
+                    // 直接是数组的老格式
+                    imported = data;
+                } else if (data.urls && Array.isArray(data.urls)) {
+                    imported = data.urls;
+                }
+                // 合并去重
+                const before = favorites.length;
+                const merged = [...new Set([...favorites, ...imported.filter(u => typeof u === 'string')])];
+                favorites = merged;
+                localStorage.setItem('links-favorites', JSON.stringify(favorites));
+                updateFavoritesCount();
+                const added = favorites.length - before;
+                alert(`导入完成！新增 ${added} 个，合计 ${favorites.length} 个收藏`);
+                // 如果当前在收藏视图，刷新一下
+                if (currentCategory === 'favorites') applyFilter();
+            } catch (err) {
+                alert('导入失败：文件格式不正确');
+            } finally {
+                e.target.value = ''; // 清空，允许重新选同一文件
+            }
+        });
+        
+        // ============ AI 弹窗 ============
+        const aiModal = document.getElementById('ai-modal');
+        const aiInput = document.getElementById('ai-input');
+        const aiResults = document.getElementById('ai-results');
+        const aiPlaceholder = document.getElementById('ai-placeholder');
+        
+        function openAIModal() {
+            aiModal.classList.remove('hidden');
+            aiModal.classList.add('flex');
+            setTimeout(() => aiInput.focus(), 100);
+        }
+        function closeAIModal() {
+            aiModal.classList.add('hidden');
+            aiModal.classList.remove('flex');
+            // 关闭设置面板（如果开着）
+            const settings = document.getElementById('ai-settings-panel');
+            if (settings) settings.remove();
+        }
+        
+        document.getElementById('ai-button').addEventListener('click', openAIModal);
+        document.getElementById('ai-modal-close').addEventListener('click', closeAIModal);
+        document.getElementById('ai-modal-backdrop').addEventListener('click', closeAIModal);
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !aiModal.classList.contains('hidden')) {
+                closeAIModal();
+            }
+        });
+        
+        // 设置面板
+        document.getElementById('ai-settings-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            openAISettings();
+        });
+        
+        function openAISettings() {
+            // 如果已存在，就关掉
+            let panel = document.getElementById('ai-settings-panel');
+            if (panel) { panel.remove(); return; }
+            
+            const s = window.LLMRecRank.settings;
+            const providers = window.LLMRecRank.PROVIDERS;
+            const customPresets = window.LLMRecRank.CUSTOM_PRESETS;
+            
+            panel = document.createElement('div');
+            panel.id = 'ai-settings-panel';
+            panel.className = 'px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900';
+
+            // Provider 切换 Tab
+            const providerTabs = Object.entries(providers).map(([key, p]) => `
+                <button data-provider="${key}" 
+                    class="ai-provider-tab px-3 py-1.5 text-xs rounded-lg transition-all ${s.provider === key 
+                        ? 'bg-primary text-white' 
+                        : 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'}">
+                    ${p.name.split('（')[0].trim()}
+                </button>
+            `).join('');
+
+            // 高级选项当前值
+            const tempVal = s.temperature ?? 0.4;
+            const tokVal = s.maxTokens ?? 800;
+
+            panel.innerHTML = `
+                <div class="flex items-center gap-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 dark:text-gray-400"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                    <span class="text-xs font-semibold text-gray-700 dark:text-gray-300">AI 设置</span>
+                    <span class="text-[10px] text-gray-400 ml-auto">配置仅存本地</span>
+                </div>
+
+                <!-- Provider 切换 -->
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                    ${providerTabs}
+                </div>
+
+                <!-- Provider 专属表单（动态） -->
+                <div id="ai-provider-fields" class="space-y-3 mb-4"></div>
+
+                <!-- 自定义预设（仅 custom 模式显示） -->
+                <div id="ai-custom-presets" class="hidden mb-4">
+                    <div class="text-[10px] text-gray-500 dark:text-gray-400 mb-1">快捷填充：</div>
+                    <div class="flex flex-wrap gap-1">
+                        ${customPresets.map(p => `
+                            <button class="ai-preset-btn text-[10px] px-2 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-bg dark:hover:bg-primary/30 hover:text-primary-dark transition-colors"
+                                data-endpoint="${p.endpoint}" data-label="${p.label}">
+                                ${p.label}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- 高级选项 -->
+                <details class="mb-4">
+                    <summary class="text-xs text-gray-500 dark:text-gray-400 cursor-pointer hover:text-primary transition-colors">
+                        高级选项 ▾
+                    </summary>
+                    <div class="mt-3 space-y-3 pl-2 border-l-2 border-primary-light dark:border-primary/50">
+                        <div>
+                            <label class="text-[10px] text-gray-500 dark:text-gray-400 block mb-1">
+                                Temperature: ${tempVal} <span class="text-gray-400">（0 精准 → 2 创意）</span>
+                            </label>
+                            <input id="ai-setting-temp" type="range" min="0" max="2" step="0.1" value="${tempVal}"
+                                class="w-full accent-primary">
+                        </div>
+                        <div>
+                            <label class="text-[10px] text-gray-500 dark:text-gray-400 block mb-1">Max Tokens: ${tokVal}</label>
+                            <input id="ai-setting-tokens" type="range" min="200" max="2000" step="100" value="${tokVal}"
+                                class="w-full accent-primary">
+                        </div>
+                    </div>
+                </details>
+
+                <!-- 操作按钮 -->
+                <div class="flex items-center gap-2">
+                    <button id="ai-setting-save" class="px-3 py-1.5 bg-primary hover:bg-primary-dark text-white text-xs rounded-lg transition-colors">保存</button>
+                    <button id="ai-setting-test" class="px-3 py-1.5 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs rounded-lg transition-colors">测试连接</button>
+                    <button id="ai-setting-clear" class="px-3 py-1.5 text-xs text-red-500 hover:text-red-600 transition-colors ml-auto">清除 Key</button>
+                </div>
+                <div id="ai-setting-test-result" class="text-xs mt-2"></div>
+            `;
+            
+            // 插入到结果区之前
+            aiResults.parentElement.insertBefore(panel, aiResults.parentElement.children[1]);
+
+            // 渲染当前 Provider 的字段表单
+            function renderProviderFields(providerKey) {
+                const p = providers[providerKey];
+                const s = window.LLMRecRank.settings;
+                const container = panel.querySelector('#ai-provider-fields');
+                
+                let fields = '';
+                
+                if (['deepseek', 'openai', 'dashscope'].includes(providerKey)) {
+                    const modelField = providerKey + 'Model';
+                    const modelKeyMap = { deepseek: 'deepseekModel', openai: 'openaiModel', dashscope: 'dashscopeModel' };
+                    const currentModel = s[modelKeyMap[providerKey]] || '';
+                    const providerUrlMap = {
+                        deepseek: { text: 'DeepSeek', href: 'https://platform.deepseek.com/api_keys', hint: '国内速度最快' },
+                        openai: { text: 'OpenAI', href: 'https://platform.openai.com/api-keys', hint: '国际大牌' },
+                        dashscope: { text: 'DashScope', href: 'https://dashscope.console.aliyun.com/', hint: '阿里通义' },
+                    };
+                    const info = providerUrlMap[providerKey];
+                    fields = `
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">${info.text} API Key</label>
+                            <input id="ai-f-apiKey" type="password" value="${s.apiKey || ''}" 
+                                placeholder="sk-..."
+                                class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <a href="${info.href}" target="_blank" class="text-[10px] text-primary hover:text-primary-dark inline-block mt-1">去 ${info.text} 申请 Key →</a>
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">模型 <span class="text-gray-400">（${info.hint}）</span></label>
+                            <select id="ai-f-model" class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                                ${p.modelList.map(m => `<option value="${m.id}" ${currentModel === m.id ? 'selected' : ''}>${m.name}</option>`).join('')}
+                            </select>
+                        </div>
+                    `;
+                } else if (providerKey === 'ollama') {
+                    fields = `
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">Ollama 服务地址</label>
+                            <input id="ai-f-baseUrl" type="text" value="${s.baseUrl || 'http://localhost:11434'}"
+                                class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <p class="text-[10px] text-gray-400 dark:text-gray-500 mt-1">启动 Ollama：ollama serve</p>
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">模型（需要提前 ollama pull 下载）</label>
+                            <select id="ai-f-ollamaModel" class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                                ${p.modelList.map(m => `<option value="${m.id}" ${s.ollamaModel === m.id ? 'selected' : ''}>${m.name}</option>`).join('')}
+                            </select>
+                        </div>
+                        <p class="text-[10px] text-gray-400 dark:text-gray-500">
+                            免费 · 无需 API Key · 完全本地运行。下载模型：<code class="bg-gray-200 dark:bg-gray-700 px-1 rounded">ollama pull qwen2.5:7b</code>
+                        </p>
+                    `;
+                } else if (providerKey === 'custom') {
+                    const endpointFromPreset = customPresets[0].endpoint;
+                    fields = `
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">API Endpoint（兼容 OpenAI 格式）</label>
+                            <input id="ai-f-endpoint" type="text" value="${s.endpoint || ''}"
+                                placeholder="${endpointFromPreset}"
+                                class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">API Key（可选，有些本地服务不需要）</label>
+                            <input id="ai-f-apiKey" type="password" value="${s.apiKey || ''}"
+                                placeholder="sk-..."
+                                class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 dark:text-gray-400 block mb-1">模型名</label>
+                            <input id="ai-f-customModel" type="text" value="${s.customModel || ''}"
+                                placeholder="deepseek-v3"
+                                class="w-full px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                    `;
+                    panel.querySelector('#ai-custom-presets').classList.remove('hidden');
+                }
+
+                container.innerHTML = fields;
+
+                // 温度/Token 滑块同步显示
+                const tempSlider = panel.querySelector('#ai-setting-temp');
+                const tokSlider = panel.querySelector('#ai-setting-tokens');
+                if (tempSlider) {
+                    tempSlider.addEventListener('input', (e) => {
+                        tempSlider.parentElement.querySelector('label').innerHTML = 
+                            `Temperature: ${e.target.value} <span class="text-gray-400">（0 精准 → 2 创意）</span>`;
+                    });
+                }
+                if (tokSlider) {
+                    tokSlider.addEventListener('input', (e) => {
+                        tokSlider.parentElement.querySelector('label').textContent = `Max Tokens: ${e.target.value}`;
+                    });
+                }
+            }
+
+            renderProviderFields(s.provider);
+
+            // Tab 切换
+            panel.querySelectorAll('.ai-provider-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const key = tab.dataset.provider;
+                    // 更新 tab 样式
+                    panel.querySelectorAll('.ai-provider-tab').forEach(t => {
+                        t.classList.remove('bg-primary', 'text-white');
+                        t.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-600', 'dark:text-gray-300');
+                    });
+                    tab.classList.add('bg-primary', 'text-white');
+                    tab.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-600', 'dark:text-gray-300');
+                    // 重新渲染字段
+                    panel.querySelector('#ai-custom-presets').classList.add('hidden');
+                    renderProviderFields(key);
+                });
+            });
+
+            // 自定义预设快捷填充
+            panel.querySelectorAll('.ai-preset-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const ep = btn.dataset.endpoint;
+                    const field = panel.querySelector('#ai-f-endpoint');
+                    if (field) { field.value = ep; field.focus(); }
+                });
+            });
+
+            // 保存按钮
+            panel.querySelector('#ai-setting-save').addEventListener('click', () => {
+                const currentTab = panel.querySelector('.ai-provider-tab.bg-primary');
+                const providerKey = currentTab ? currentTab.dataset.provider : s.provider;
+                const newSettings = { provider: providerKey };
+
+                // 收集当前可见的字段值
+                const get = (id) => panel.querySelector(id)?.value?.trim() ?? '';
+                
+                if (['deepseek', 'openai', 'dashscope'].includes(providerKey)) {
+                    newSettings.apiKey = get('#ai-f-apiKey');
+                    newSettings[providerKey + 'Model'] = get('#ai-f-model') || providers[providerKey].defaultModel;
+                } else if (providerKey === 'ollama') {
+                    newSettings.baseUrl = get('#ai-f-baseUrl') || 'http://localhost:11434';
+                    newSettings.ollamaModel = get('#ai-f-ollamaModel') || providers.ollama.defaultModel;
+                } else if (providerKey === 'custom') {
+                    newSettings.endpoint = get('#ai-f-endpoint');
+                    newSettings.apiKey = get('#ai-f-apiKey');
+                    newSettings.customModel = get('#ai-f-customModel');
+                }
+
+                // 高级选项
+                newSettings.temperature = parseFloat(panel.querySelector('#ai-setting-temp').value);
+                newSettings.maxTokens = parseInt(panel.querySelector('#ai-setting-tokens').value);
+
+                // 保留其他 Provider 的设置（切换回来时不丢）
+                const old = window.LLMRecRank.settings;
+                ['deepseekModel', 'openaiModel', 'dashscopeModel', 'ollamaModel', 'customModel', 'baseUrl', 'endpoint'].forEach(k => {
+                    if (!(k in newSettings)) newSettings[k] = old[k];
+                });
+                // API Key 共用：如果没改就保留
+                if (providerKey !== 'ollama' && !newSettings.apiKey) newSettings.apiKey = old.apiKey;
+
+                window.LLMRecRank.settings = newSettings;
+                panel.remove();
+                aiInput.placeholder = providerKey === 'ollama'
+                    ? '本地 Ollama 模式，输入你的需求...'
+                    : (newSettings.apiKey ? '已启用 AI 推荐，输入你的需求...' : '未设置 API Key，仅使用本地搜索...');
+                aiInput.focus();
+            });
+
+            // 测试连接
+            panel.querySelector('#ai-setting-test').addEventListener('click', async () => {
+                const resultDiv = panel.querySelector('#ai-setting-test-result');
+                resultDiv.textContent = '测试中...';
+                resultDiv.className = 'text-xs mt-2 text-gray-500';
+                try {
+                    // 先保存当前表单到内存（不持久化），测试当前配置
+                    const currentTab = panel.querySelector('.ai-provider-tab.bg-primary');
+                    const providerKey = currentTab ? currentTab.dataset.provider : s.provider;
+                    const settings = { ...window.LLMRecRank.settings, provider: providerKey };
+                    if (['deepseek', 'openai', 'dashscope'].includes(providerKey)) {
+                        settings.apiKey = panel.querySelector('#ai-f-apiKey')?.value.trim() || '';
+                        settings[providerKey + 'Model'] = panel.querySelector('#ai-f-model')?.value || '';
+                    } else if (providerKey === 'ollama') {
+                        settings.baseUrl = panel.querySelector('#ai-f-baseUrl')?.value.trim() || '';
+                        settings.ollamaModel = panel.querySelector('#ai-f-ollamaModel')?.value || '';
+                    } else if (providerKey === 'custom') {
+                        settings.endpoint = panel.querySelector('#ai-f-endpoint')?.value.trim() || '';
+                        settings.apiKey = panel.querySelector('#ai-f-apiKey')?.value.trim() || '';
+                        settings.customModel = panel.querySelector('#ai-f-customModel')?.value || '';
+                    }
+                    window.LLMRecRank.settings = settings;
+                    
+                    const r = await window.LLMRecRank.testConnection();
+                    if (r.ok) {
+                        resultDiv.textContent = `✅ 连接成功（HTTP ${r.status}）`;
+                        resultDiv.className = 'text-xs mt-2 text-green-500';
+                    } else {
+                        resultDiv.textContent = `❌ HTTP ${r.status}`;
+                        resultDiv.className = 'text-xs mt-2 text-red-500';
+                    }
+                } catch (err) {
+                    let msg = err.message;
+                    if (msg === 'NO_API_KEY') msg = '未设置 API Key';
+                    if (msg.includes('Failed to fetch')) msg = '网络不通或 CORS 被拦截';
+                    resultDiv.textContent = `❌ ${msg}`;
+                    resultDiv.className = 'text-xs mt-2 text-red-500';
+                }
+            });
+
+            // 清除 Key
+            panel.querySelector('#ai-setting-clear').addEventListener('click', () => {
+                const old = window.LLMRecRank.settings;
+                old.apiKey = '';
+                window.LLMRecRank.settings = old;
+                // 清空所有 apiKey 输入框
+                panel.querySelectorAll('#ai-f-apiKey').forEach(i => i.value = '');
+            });
+        }
+        
+        // 示例按钮
+        document.querySelectorAll('.ai-example').forEach(btn => {
+            btn.addEventListener('click', () => {
+                aiInput.value = btn.textContent.trim();
+                aiInput.focus();
+                runAISearch();
+            });
+        });
+        
+        // 提交搜索
+        document.getElementById('ai-submit').addEventListener('click', runAISearch);
+        aiInput.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runAISearch();
+            }
+        });
+        
+        async function runAISearch() {
+            const query = aiInput.value.trim();
+            if (!query) return;
+            
+            // 显示加载状态
+            aiResults.innerHTML = `
+                <div class="flex flex-col items-center justify-center py-10 text-center">
+                    <div class="w-10 h-10 border-3 border-primary border-t-transparent rounded-full animate-spin mb-3"></div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">AI 正在搜索...</p>
+                </div>`;
+            
+            try {
+                const result = await AISearch.search(query);
+                renderAIResults(result, query);
+            } catch (err) {
+                aiResults.innerHTML = `
+                    <div class="text-center py-8">
+                        <p class="text-red-500">搜索出错了</p>
+                        <p class="text-xs text-gray-400 mt-2">${err.message}</p>
+                    </div>`;
+            }
+        }
+        
+        function renderAIResults(result, query) {
+            if (aiPlaceholder) aiPlaceholder.style.display = 'none';
+            
+            if (!result.success || result.results.length === 0) {
+                aiResults.innerHTML = `
+                    <div class="text-center py-8">
+                        <div class="text-4xl mb-3">🤔</div>
+                        <p class="text-gray-500 dark:text-gray-400">没有找到匹配的网站</p>
+                        <p class="text-xs text-gray-400 dark:text-gray-500 mt-2">试试换个说法，或者用关键词搜索</p>
+                    </div>`;
+                return;
+            }
+            
+            const { results, mode, reason } = result;
+            const modeBadge = mode === 'llm'
+                ? '<span class="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-primary text-white ml-auto">✨ AI 精选</span>'
+                : '<span class="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 ml-auto">本地搜索</span>';
+            const fallbackNote = (mode === 'local' && reason)
+                ? `<div class="mb-2 text-xs text-amber-600 dark:text-amber-400">AI 推荐暂时不可用，已降级为本地搜索（${reason}）</div>`
+                : '';
+            
+            aiResults.innerHTML = `
+                ${fallbackNote}
+                <div class="mb-3 flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                    找到 ${results.length} 个推荐
+                    ${modeBadge}
+                </div>
+                ${results.map(({ site, localScore, reason, finalScore }) => `
+                    <a href="${site.url}" target="_blank" rel="noopener noreferrer"
+                        class="block mb-2 p-3 rounded-xl bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 border border-transparent hover:border-primary-light dark:hover:border-purple-700 transition-all group">
+                        <div class="flex items-start gap-3">
+                            <img src="https://icon.horse/icon/${new URL(site.url).hostname}" alt="" 
+                                onerror="this.style.display='none'"
+                                class="w-8 h-8 rounded-lg shrink-0 bg-white dark:bg-gray-800 p-1 border border-gray-200 dark:border-gray-600"
+                                loading="lazy">
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <h4 class="font-medium text-gray-900 dark:text-gray-100 truncate group-hover:text-primary-dark dark:group-hover:text-primary-light">${site.name}</h4>
+                                    <span class="text-[10px] px-1.5 py-0.5 rounded bg-primary-bg dark:bg-primary/40 text-primary-dark dark:text-primary-light shrink-0">${(finalScore * 100).toFixed(0)}%</span>
+                                </div>
+                                ${reason ? `<p class="text-xs text-primary-dark dark:text-primary-light mb-1">💡 ${reason}</p>` : ''}
+                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">${site.description || ''}</p>
+                                <div class="mt-1 flex items-center gap-2 text-[10px] text-gray-400 dark:text-gray-500">
+                                    <span>${site.category || site.source || ''}</span>
+                                    <span>·</span>
+                                    <span class="truncate">${new URL(site.url).hostname}</span>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </div>
+                    </a>
+                `).join('')}
+            `;
+        }
         
         // 初始化
         init();
