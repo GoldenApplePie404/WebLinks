@@ -665,6 +665,41 @@
       "name": "MiaoCut",
       "url": "https://miaocut.app/zh/",
       "description": "免费 AI 抠图工具（BiRefNet SOTA 模型驱动），浏览器直接用无需注册；核心特性：**纯内存处理 15 分钟自动销毁绝不用于 AI 训练**、输出无水印高清透明 PNG、对头发/毛发/半透明物体边缘精准；8 个子工具：商品图抠图（白底图/方图/阴影）、人像抠图、去水印（涂抹区域智能修复）、证件照制作、老照片修复（褪色/噪点/模糊）、JPG→透明 PNG、PNG→JPG 白底、批量抠图 Pro 一次 20+ 张；独立开发者构建，100% 免费无订阅"
+    },
+    {
+      "name": "KsanaDock 时空码头",
+      "url": "https://www.ksanadock.com/",
+      "description": "面向独立开发者与中小工作室的**桌面版 AI 游戏工作室**，标语「让 AI 做出真正可玩的游戏」；核心差异：AI 不生成零散内容，而是 Agent 理解项目、调用引擎、运行游戏、检查结果并持续修正，从想法到可玩作品走完整条链；双引擎工作流——Godot + Web/Three.js，场景/角色/玩法/代码/素材在同一上下文协作；支持自然语言描述世界观（不必先想技术细节），在项目中与 AI 协作，以可运行可体验的游戏交付；官方配套：KsanaDock AI 网页端入口（ksanadock.ai）、Windows 桌面版下载、GitHub 开源仓库（github.com/KsanaDock）"
+    },
+    {
+      "name": "HackerAI",
+      "url": "https://hackerai.co/",
+      "description": "AI 渗透测试自动化平台（MCP 形态），标语「What will you hack today?」；核心思路：把 AI 助手连接到黑客工具箱——内置端口扫描、子域名枚举、浏览器控制与个人终端沙箱等安全工具，用对话方式完成侦察、扫描、漏洞验证到报告的授权渗透测试流程，面向渗透测试工程师、漏洞赏金猎人与安全审计员；模型经 OpenRouter 路由至 Anthropic、Google、DeepSeek、Moonshot、xAI 等供应商；另有终端原生开源版 Hacker AI（hackerai.sh，npm install -g hackerai，免费模型零速率限制）"
+    },
+    {
+      "name": "DSH Desktop",
+      "url": "https://www.dshdesktop.cn/",
+      "description": "DeepSeek Harness（DSH）的桌面增强版客户端（开源，Windows/macOS），标语「解锁被藏起来的能力」——开放 Computer Use 等官方隐藏能力，兼容 DSH 插件生态；沿用 Cordis 插件体系不魔改内核；全程图形化界面无需命令行、无需另装 Node.js（桌面设置中也可开 DSH 终端）；内置插件市场（与社区 dsh-market 合作，支持自定义数据源）；插件出问题可进恢复模式管理插件/回滚/切换 Profile；配套 Agents Anywhere 远程控制，手机/平板随时查看任务进度、继续对话，且不止 DSH——Codex、Claude Code 也能远程带在身边；另支持桌面通知、浏览器/局域网 HTTPS 访问、Profile 与数据目录图形化切换，提供企业私有部署服务"
+    },
+    {
+      "name": "REA",
+      "url": "https://rea.tools/",
+      "description": "给编码 Agent（Claude Code、Codex 等）装上逆向工程能力的工具集，标语「Reverse engineering, with your coding agent」——问你的 Agent「这个应用/游戏/网站是怎么实现的」，REA 提供工具让 Agent 检查程序背后的代码：返回指令、反编译代码、引用与运行时观察，Agent 据此解释功能原理甚至帮你重建它；三步工作流：①问一个功能 ②检查程序 ③解释并尝试修改；官网示例：逆向 Windows 计算器「200+10%=220」的百分比规则（x64 汇编分支解码+调用追踪）、逆向 Chrome 恐龙游戏速度渐增规则（6→13）并重建出可调速小游戏；npx rea-agents@latest setup 一键接入（Windows/macOS/Linux），另有 Showcases 调查案例、Blog 方法笔记与 Guides"
+    },
+    {
+      "name": "Songscription",
+      "url": "https://www.songscription.ai/new",
+      "description": "AI 音乐转写平台（2024 年创立，Reach Capital 投资，获 TechCrunch/Billboard/MusicRadar 报道）：上传 MP3/WAV/FLAC/M4A 音频、粘贴 YouTube/Instagram/TikTok 链接或直接麦克录音，AI 自动分离乐器、检测音高与节奏并写成规范五线谱；支持钢琴、吉他、贝斯、小提琴、长笛、小号、萨克斯、鼓、人声 9 种乐器单独转写，Multi-Instrument 模式可一次转写整支乐队录音并按乐器分部（含合成器）；还能将任意歌曲改编为可选难度的钢琴版、钢琴+人声或和弦谱；内置乐谱编辑器配 AI 助手 Annie（自然语言描述即可改谱）、自动钢琴指法与交互式 piano roll；导出 PDF 乐谱、MIDI（DAW 用）、MusicXML（MuseScore/Sibelius 用）、Guitar Pro 四种格式；免费版可转写 30 秒，付费解锁更长录音与更多导出"
+    },
+    {
+      "name": "MekaHime",
+      "url": "https://mekahime.com/",
+      "description": "开源 AI 陪伴工作室官方主页（标语「We make better AI companions」，Developed by MekaHime Inc.）：旗下项目含 OpenSakura、OpenAmika、OpenSarah、Open-World RPG 及角色页、赞助页；旗舰项目 OpenAmika——开源本地 AI 虚拟陪伴（2025 年 10 月启动，2026 年 11 月开源，GitHub: zeezk0/OpenAmika）：Live2D 少女 Amika，主打六大特性——丰富情绪表现、900ms 自然响应速度、无限记忆架构（Memory Writer + bge-m3 向量 + BM25 混合检索注入提示词）、智能家居 IoT 控制、全本地运行隐私安全（Semi-Local 模式脑力更强，LLM 走自己的 OpenRouter 每月几美元）；技术栈含 SenseVoice 语音识别、PixiJS + pixi-live2d-display；授权：代码 MIT 开源，Amika 的声音模型、Live2D 模型与美术版权归 MekaHime（Hugging Face: MekaHime/MekaHime_Amika）仅限个人使用，同人周边个人限额 1000 美元、社媒商用无上限需署名 MekaHime.AI，禁止二次分发模型/用它训练其他 AI，18+"
+    },
+    {
+      "name": "prompts.chat",
+      "url": "https://prompts.chat/",
+      "description": "AI 智能体提示词自由社交平台（世界首个提示词库，2022 年 12 月发布，即 GitHub 176k 星的 f/awesome-chatgpt-prompts，全球仓库热度第 33，GitHub 官方推荐）：收录提示词、技能（Skills）、工作流程与机器人（Bots），社区分享、发现与一键安装；支持通过 URL 向 Copilot Chat 传提示词、README 嵌入预定义提示词按钮；获 Forbes 报道、哈佛/哥伦比亚等 40+ 学术引用，Hugging Face 最受欢迎数据集 #1（OpenAI 联创 Greg Brockman/Wojciech Zaremba、Hugging Face CEO、GitHub 前 CEO 均公开推荐）；免费开源，可自托管私有服务器保护隐私，适用于团队与组织"
     }
   ]
 }

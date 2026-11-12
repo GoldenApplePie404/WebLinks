@@ -1,0 +1,285 @@
+{
+  "generated_at": 1793005203659,
+  "repos": {
+    "microsoft/vscode": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "microsoft/vscode",
+        "html_url": "https://github.com/microsoft/vscode",
+        "description": "Visual Studio Code",
+        "stargazers_count": 194315,
+        "forks_count": 44864,
+        "open_issues_count": 22236,
+        "language": "TypeScript",
+        "topics": [
+          "editor",
+          "electron",
+          "microsoft",
+          "typescript",
+          "visual-studio-code"
+        ],
+        "pushed_at": "2026-10-26T08:58:11Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "tailwindlabs/tailwindcss": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "tailwindlabs/tailwindcss",
+        "html_url": "https://github.com/tailwindlabs/tailwindcss",
+        "description": "A utility-first CSS framework for rapid UI development.",
+        "stargazers_count": 98120,
+        "forks_count": 7652,
+        "open_issues_count": 102,
+        "language": "TypeScript",
+        "topics": [
+          "css",
+          "css-framework",
+          "functional-css",
+          "postcss",
+          "responsive",
+          "tailwindcss",
+          "utility-classes"
+        ],
+        "pushed_at": "2026-10-19T15:50:56Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "rust-lang/rust": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "rust-lang/rust",
+        "html_url": "https://github.com/rust-lang/rust",
+        "description": "Empowering everyone to build reliable and efficient software.",
+        "stargazers_count": 120815,
+        "forks_count": 17996,
+        "open_issues_count": 12618,
+        "language": "Rust",
+        "topics": [
+          "compiler",
+          "language",
+          "rust"
+        ],
+        "pushed_at": "2026-10-26T08:50:56Z",
+        "archived": false,
+        "license": "Apache-2.0"
+      }
+    },
+    "ollama/ollama": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "ollama/ollama",
+        "html_url": "https://github.com/ollama/ollama",
+        "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "stargazers_count": 184817,
+        "forks_count": 18591,
+        "open_issues_count": 4432,
+        "language": "Go",
+        "topics": [
+          "deepseek",
+          "gemma",
+          "gemma3",
+          "glm",
+          "go",
+          "golang",
+          "gpt-oss",
+          "llama",
+          "llama3",
+          "llm",
+          "llms",
+          "minimax",
+          "mistral",
+          "ollama",
+          "qwen"
+        ],
+        "pushed_at": "2026-10-26T04:25:58Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "godotengine/godot": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "godotengine/godot",
+        "html_url": "https://github.com/godotengine/godot",
+        "description": "Godot Engine – Multi-platform 2D and 3D game engine",
+        "stargazers_count": 119091,
+        "forks_count": 27207,
+        "open_issues_count": 18943,
+        "language": "C++",
+        "topics": [
+          "game-development",
+          "game-engine",
+          "gamedev",
+          "godot",
+          "godotengine",
+          "multi-platform",
+          "open-source"
+        ],
+        "pushed_at": "2026-10-23T15:25:04Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "yt-dlp/yt-dlp": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "yt-dlp/yt-dlp",
+        "html_url": "https://github.com/yt-dlp/yt-dlp",
+        "description": "A feature-rich command-line audio/video downloader",
+        "stargazers_count": 202293,
+        "forks_count": 17709,
+        "open_issues_count": 2730,
+        "language": "Python",
+        "topics": [
+          "cli",
+          "downloader",
+          "python",
+          "sponsorblock",
+          "youtube-dl",
+          "youtube-downloader",
+          "yt-dlp"
+        ],
+        "pushed_at": "2026-10-23T15:18:53Z",
+        "archived": false,
+        "license": "Unlicense"
+      }
+    },
+    "ohmyzsh/ohmyzsh": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "ohmyzsh/ohmyzsh",
+        "html_url": "https://github.com/ohmyzsh/ohmyzsh",
+        "description": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+        "stargazers_count": 190166,
+        "forks_count": 28609,
+        "open_issues_count": 294,
+        "language": "Shell",
+        "topics": [
+          "cli",
+          "cli-app",
+          "oh-my-zsh",
+          "oh-my-zsh-plugin",
+          "oh-my-zsh-theme",
+          "ohmyzsh",
+          "plugin-framework",
+          "plugins",
+          "productivity",
+          "shell",
+          "terminal",
+          "theme",
+          "themes",
+          "zsh",
+          "zsh-configuration"
+        ],
+        "pushed_at": "2026-10-25T14:39:33Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "torvalds/linux": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "torvalds/linux",
+        "html_url": "https://github.com/torvalds/linux",
+        "description": "Linux kernel source tree",
+        "stargazers_count": 253521,
+        "forks_count": 67398,
+        "open_issues_count": 3,
+        "language": "C",
+        "topics": [],
+        "pushed_at": "2026-10-26T04:05:09Z",
+        "archived": false,
+        "license": "NOASSERTION"
+      }
+    },
+    "pytorch/pytorch": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "pytorch/pytorch",
+        "html_url": "https://github.com/pytorch/pytorch",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+        "stargazers_count": 105084,
+        "forks_count": 31772,
+        "open_issues_count": 17780,
+        "language": "Python",
+        "topics": [
+          "autograd",
+          "deep-learning",
+          "gpu",
+          "machine-learning",
+          "neural-network",
+          "numpy",
+          "python",
+          "tensor"
+        ],
+        "pushed_at": "2026-10-26T08:59:46Z",
+        "archived": false,
+        "license": "NOASSERTION"
+      }
+    },
+    "vuejs/core": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "vuejs/core",
+        "html_url": "https://github.com/vuejs/core",
+        "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        "stargazers_count": 54887,
+        "forks_count": 9271,
+        "open_issues_count": 942,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-26T08:35:58Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    },
+    "luanti-org/luanti": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "luanti-org/luanti",
+        "html_url": "https://github.com/luanti-org/luanti",
+        "description": "Luanti (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+        "stargazers_count": 13775,
+        "forks_count": 2506,
+        "open_issues_count": 1508,
+        "language": "C++",
+        "topics": [
+          "c-plus-plus",
+          "cpp17",
+          "game-engine",
+          "lua",
+          "luanti",
+          "minetest",
+          "voxel",
+          "voxel-engine"
+        ],
+        "pushed_at": "2026-10-25T08:31:32Z",
+        "archived": false,
+        "license": "NOASSERTION"
+      }
+    },
+    "ziglang/zig": {
+      "fetched_at": 1793005203659,
+      "data": {
+        "full_name": "ziglang/zig",
+        "html_url": "https://github.com/ziglang/zig",
+        "description": "Moved to Codeberg",
+        "stargazers_count": 43267,
+        "forks_count": 3124,
+        "open_issues_count": 2720,
+        "language": "Zig",
+        "topics": [
+          "compiler",
+          "language",
+          "zig"
+        ],
+        "pushed_at": "2025-11-27T01:42:59Z",
+        "archived": false,
+        "license": "MIT"
+      }
+    }
+  }
+}

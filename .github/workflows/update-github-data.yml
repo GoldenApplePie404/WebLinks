@@ -1,0 +1,37 @@
+name: Update GitHub repo data
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # 每天 UTC 2:00（北京时间 10:00）
+  push:
+    branches: [main]
+    paths:
+      - 'json/github.json'
+      - 'scripts/update_github_data.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch repo data and build snapshot
+        run: python scripts/update_github_data.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit snapshot if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add json/github-data.json
+          git diff --cached --quiet || git commit -m "chore: 更新 GitHub 仓库数据快照 [skip ci]"
+          git push

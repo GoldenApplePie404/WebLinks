@@ -655,6 +655,41 @@
       "name": "FramePacker",
       "url": "https://www.framepacker.cn/",
       "description": "专业级视频转序列帧动画平台（浏览器直接用，无需安装）；三大模块：①提取画面——上传视频/GIF，选帧率一键抽帧；②编辑调整——在线图像编辑器，批量抠图、逐帧精修、智能定位跳变帧/重复帧、智能去重，支持半透明特效处理与保留；③自由导出——任意分辨率导出为透明 PNG 序列帧 / Sprite Sheet 精灵图 / GIF 动图 / MP4；基础功能免费，进阶按需解锁"
+    },
+    {
+      "name": "VTubeLeaf",
+      "url": "https://vtubeleaf.moonrailgun.com/",
+      "description": "免费开源的 Live2D 虚拟形象工具（Windows 10+ / macOS 14+，v1.0.5），用一颗普通摄像头把表情实时映射到 Live2D 角色上，并作为虚拟摄像头输出到任意软件；功能：面部跟随（眨眼/转头/张嘴/挑眉，低延迟）、口型同步（不说话不会误动）、纯摄像头手势识别（比心/挥手，无需体感设备）、多角色库一键切换、幅度与灵敏度可调、可沿用 VTube Studio 的角色配置；适用直播（OBS/直播姬）、视频会议（飞书/腾讯会议/Zoom）、录视频、网课；内置虚拟摄像头无需装 OBS，内置 Haru/Hiyori/Mao 示例角色；**摄像头画面全部本地处理不上传、不收集数据**，永久免费无水印无订阅，源码公开于 GitHub"
+    },
+    {
+      "name": "R.U.B.B.I.S.H. Journal",
+      "url": "https://rubbishjournal.org/zh",
+      "description": "恶搞向「学术期刊」社区（中英双语），主打用正经学术论文格式写趣味论文，标语「论文精雕细琢，真相越描越浊」；设人文学科/社会科学/研究方法/生物科学/商业与经济等学科分类，论文带摘要与方法论，题材如「再玩5分钟就开始写论文」的拖延定量研究、哈基米大脑宕机现象分析、「如何嫁给张凌赫」的 DSGE 计量建模，也有医学规培生困境等半严肃文章；趣味设定：论文按垃圾类别打标（厨余/可回收/有害/其他垃圾），支持评分与评论；开放投稿（Call for Intellectual Rubbish）、支持 GitHub 登录，官方另推出 Markdown 学术排版工具 mdPaper，现收录公开论文 80+ 篇"
+    },
+    {
+      "name": "hololive Dreams",
+      "url": "https://www.hololive-dreams.com/en",
+      "description": "hololive production 官方首款游戏（QualiArts + COVER 联合开发，2026.7.23 全球同步上线），节奏游戏 + RPG 类型；世界观：漂浮荒岛「Dream Park」，玩家为 Holomem 建造游乐园设施；核心玩法：节奏游戏（Hololive 原创曲 + 翻唱曲，开服 15 天追加 25 首）+ 公园经营；54 位 Holomem 参与，开局可选最高稀有度角色（Redraw Gacha）；免费下载 + 内购抽卡；支持 iOS / Android / Steam 三端；150 万+ 预注册里程碑，预注册奖励含钻石、抽卡券、音乐盘、全角色配饰等"
+    },
+    {
+      "name": "LetRecovery",
+      "url": "https://letrecovery.net/",
+      "description": "干净无广告的 Windows 重装工具，Rust 编写 + 原生 Windows 控件界面（轻量高性能）；一键式流程：从启动到完成重装只需几步，对新手友好；支持多种系统镜像格式、丰富的自定义重装选项，数据传输与安装过程有多重安全防护；完全开源透明、零捆绑零广告；支持 x64、Windows 7–11，约 8,500+ 用户"
+    },
+    {
+      "name": "MoeLian 百合漫画站",
+      "url": "https://moelian.neo.longlian.online/manga",
+      "description": "百合向日本漫画在线阅读站（中文化界面），挂在 longlian.online 子域、经腾讯 EdgeOne 防护；作品以百合题材短篇/连载为主，汉化标题按编号归档（/manga/56 等）并支持书签收藏：如《百合盛开·三角关系，被病娇青梅和真百合留学生同时追求》《虽然是恶役大小姐，却被女主角攻略了啊！？》系列、《学生会长的百合故事》《秘则为华 共依存百合短篇集》《白日梦的大姐姐》等，部分作品带「多人」「小薄本」等标签，作者署名保留原文（上村なびあ、観乃ふみ、はづき等）"
+    },
+    {
+      "name": "Awesome MyGo",
+      "url": "https://awesomemygo.dev/",
+      "description": "MyGo 生态资源导航站：汇总围绕 Go 桌面应用框架 MyGo（egoist 开发，mygo.egoist.dev，MIT 协议）构建的社区应用、插件、UI 库与模板——用 Go 写跨平台桌面应用（原生 UI 或 WebView），体积仅几 MB；现收录 527 个社区应用（编码 Agent 终端 Kero、AI 小说/角色扮演写作台 Denova、带 Vim 模式的轻量代码编辑器 Mayoi、YouTube Music 原生播放器 Meiro、音乐播放器 MyGo Music/MixMusic/肥牛音乐、AI 原生邮件客户端 Godwit、Git 客户端 MyGit、Bili FM 等）、12 个官方插件（Fetch/SQLite/Terminal/Glass 等 + mygo-cli 工具链）、22 个 UI 组件库、状态管理方案、3 个项目模板与 4 个 AI 工具（Agent skills/MCP servers/规则）；数据来自 egoist/mygo 仓库与各项目 README，支持按分类浏览"
+    },
+    {
+      "name": "MyGo",
+      "url": "https://mygo.egoist.dev/",
+      "description": "egoist 开发的 Go 桌面应用框架（MIT 开源，GitHub: egoist/mygo，当前 v0.8.1，macOS/Windows/Linux）：口号「Tiny, fast, fully typed」，单个二进制约 7MB；两种窗口模式——原生 UI（纯 Go 编写界面、GPU 绘制，Metal/Direct3D/OpenGL，无 HTML/JS/bindings，flexbox/grid 布局 + 小部件 + 文本编辑 + 读屏支持，内存约 44MB）与 Web 前端（复用系统自带 WebView：WKWebView/WebKitGTK/WebView2，不打包浏览器，内存约 62MB）；类型化 IPC：页面调用绑定的 Go 服务、经 channel 流式传值、接收类型化事件，TypeScript 客户端由 Go 代码自动生成；桌面 API 含窗口/菜单/托盘/对话框/通知/全局快捷键/深链/文件关联；纯 Go 无 cgo，任意机器交叉编译全平台；发布就绪：App Bundle/DMG、Windows 安装器、Debian 包、代码签名、公证与签名自动更新；生态导航见 awesomemygo.dev"
     }
   ]
 }

@@ -218,6 +218,16 @@
         "name": "Circuitjs Web（果冻的猿宇宙）",
         "url": "https://cc.xiaogd.net/",
         "description": "在线电路模拟器（Circuitjs 网页版 v2.9.0，果冻的猿宇宙部署），支持 LRC 电路等仿真；配有《编码：隐匿在计算机软硬件背后的语言》《穿越计算机的迷雾》两本书的配套在线交互电路"
+      },
+      {
+        "name": "ESP-SDR",
+        "url": "https://espargos.net/espsdr/",
+        "description": "用乐鑫 ESP32 芯片做低成本软件定义无线电（SDR）：发现 ESP32 一项未公开能力——固件可绕过固定功能的 Wi-Fi 调制器，直接从芯片内部调制解调器 ADC 信号链抓取原始 IQ 基带采样，无需任何外接硬件。支持原版 ESP32 / C3 / C5 / C6 / C61 / S2 / S3 / S31；调谐 2.2–2.7 GHz（C5 额外支持 5–6 GHz），最高 80 MSa/s、模拟带宽约 13–54 MHz、自动或手动增益，甚至能收到 2.6 GHz 附近的 LTE 频段 7 与 5G NR n7。三种用法：① 浏览器 Web Serial 直接烧固件看实时频谱与瀑布图（ESP-WebSDR）；② ESPARGOS One 八通道相位相干采集，可定位蓝牙/BLE、Zigbee、802.11b 等任意信号；③ SoapyESPSDR 开源 SoapySDR 驱动（ESP32-S31），经高速 USB 20 MSa/s 或千兆以太网 40 MSa/s 连续接收，可在 Gqrx、GNU Radio 中当标准 SDR 使用。局限：调制器写入 SRAM 达 2560 Mbit/s，出芯片带宽是瓶颈；目前仅提供接收，不提供发射实现"
+      },
+      {
+        "name": "HeyPCB",
+        "url": "https://heypcb.ai/world",
+        "description": "AI 驱动的 PCB 设计平台 + 开源硬件板库（浏览器端 AI-native EDA + MCAD）：描述你要造的机器，AI 就设计出整块板——原理图、布局、制造文件，交付真正的 KiCad 文件；Circuit World 板库（/world）收录 11,000+ 已发布的开源硬件板，按核心器件索引（ESP32、Arduino/AVR、Raspberry Pi、STM32、nRF52、RISC-V），可搜索板子/制作者/标签，找到别人现成的板直接 fork 起步（示例：modular-biped 人形机器人、cubesatsim 立方星模拟器等，均标注尺寸/元件数/开源协议）；AI 助手 Inky（Pro 版带 Python 沙箱做精确计算）；支持多人实时协作（5–20 人/板）；每块板出厂前经真实元件库（已验证引脚映射与数据手册限制）与电气/布局/制造三重检查并直接给出修复；导出 Gerbers、STEP 与可编辑 CAD，任意厂商、任意工具可用；订阅 $20–500/月，另办 $2,000 奖金的 Hardware Challenge"
       }
     ],
     "math": [
@@ -319,6 +329,11 @@
         "name": "BioRender",
         "url": "https://biorender.com/",
         "description": "生物绘图工具，可以绘制各种生物结构图。"
+      },
+      {
+        "name": "Arc Institute",
+        "url": "https://arcinstitute.org/",
+        "description": "总部位于加州帕洛阿尔托的非营利研究机构，主打 AI + 生物学全栈研究，与斯坦福大学、UCSF、UC 伯克利合作运营；为科学家提供多年期资助去研究最重要的想法，同时快速开发现代实验与计算技术工具；聚焦癌症、神经退行性疾病、免疫功能障碍等复杂疾病的根因与疗法；代表性成果：Evo 2 基因组基础模型（9 万亿 DNA 碱基对训练、100 万 token 上下文、单核苷酸分辨率，可跨全生命域做基因组建模与设计）、bridge RNA 可编程重组酶方向性机制、首个用基因组语言模型设计出可存活的完整噬菌体基因组（以 ΦX174 为模板）、Virtual Cell Challenge 虚拟细胞预测基准挑战赛、肠道-脑信号与衰老认知衰退机制、维生素 B2/B3 营养基因组学治疗 NAXD 罕见病"
       }
     ],
     "chemistry": [

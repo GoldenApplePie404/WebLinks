@@ -1,0 +1,71 @@
+{
+  "class_name": "GitHub 精选",
+  "description": "我收集的优质开源项目",
+  "repos": [
+    {
+      "repo": "microsoft/vscode",
+      "note": "天天在用的编辑器，插件生态无敌",
+      "tags": ["编辑器"]
+    },
+    {
+      "repo": "tailwindlabs/tailwindcss",
+      "note": "本站就是用它写的，原子化 CSS 的代表作",
+      "tags": ["CSS", "本站同款"]
+    },
+    {
+      "repo": "rust-lang/rust",
+      "note": "想学很久了，社区氛围和工具链都是顶级",
+      "tags": ["语言", "系统"]
+    },
+    {
+      "repo": "ollama/ollama",
+      "note": "一条命令本地跑大模型，玩 AI 必备",
+      "tags": ["AI", "本地部署"]
+    },
+    {
+      "repo": "godotengine/godot",
+      "note": "开源游戏引擎之光，轻量又免费",
+      "tags": ["游戏引擎"]
+    },
+    {
+      "repo": "yt-dlp/yt-dlp",
+      "note": "视频下载天花板，命令行的艺术品",
+      "tags": ["工具"]
+    },
+    {
+      "repo": "ohmyzsh/ohmyzsh",
+      "note": "终端美化祖师爷，配置一次受用终身",
+      "tags": ["终端"]
+    },
+    {
+      "repo": "torvalds/linux",
+      "note": "一切的开端，祖师爷亲自维护",
+      "tags": ["内核", "系统"]
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "note": "深度学习框架事实标准，论文复现全靠它",
+      "tags": ["AI", "框架"]
+    },
+    {
+      "repo": "vuejs/core",
+      "note": "渐进式前端框架，中文文档友好",
+      "tags": ["前端"]
+    },
+    {
+      "repo": "luanti-org/luanti",
+      "note": "开源版 Minecraft（原 Minetest），我的世界玩家的另一个世界",
+      "tags": ["游戏", "开源"]
+    },
+    {
+      "repo": "ziglang/zig",
+      "note": "更简洁的系统级语言，值得关注的新星",
+      "tags": ["语言"]
+    },
+    {
+      "repo": "f/prompts.chat",
+      "note": "世界第一个提示词库（176k 星），从 awesome-chatgpt-prompts 进化成了提示词/技能/机器人社交平台，还能自托管",
+      "tags": ["AI", "提示词"]
+    }
+  ]
+}

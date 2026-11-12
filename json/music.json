@@ -350,6 +350,41 @@
       "name": "LA Studio",
       "url": "https://la-studio.cc/zh",
       "description": "浏览器端 DAW + AI 音乐工作室，无需安装，WebGPU 加速；核心功能全在浏览器标签内运行（GPU 推理）；DAW 编辑器：音频/MIDI 同时间线、GM 音色库钢琴卷帘、EQ/压缩/混响/限制器机架；AI 工具：人声去除、6 轨音轨分离（鼓/贝斯/人声/吉他/钢琴/其他）、AI 母带、AI 降噪、AI 自动调音（逐音符修正音高）、AI 音频转 MIDI（钢琴/吉他/人声等复音乐器）、AI 乐谱 OCR、AI 音乐生成、AI 循环生成器、NAM 神经网络吉他音箱建模；标准分离/降噪/BPM 检测免费，Pro $5/月解锁无限次 HQ 与云端处理"
+    },
+    {
+      "name": "此瞬练琴",
+      "url": "https://piano.cishoon.top/",
+      "description": "浏览器端钢琴练习工具（PWA 可装到桌面，横屏、中文界面），主打「上传自己的谱子跟着弹」：支持 MusicXML（.musicxml/.xml/.mxl）与 MIDI（.mid/.midi），单文件 ≤2MB，推荐 MusicXML（可显示指法与力度）；未登录时谱子存在本机浏览器，登录后同步到账号可跨设备使用。核心练习功能：谱面随播放滚动 + 虚拟键盘高亮当前音（键上数字为指法，橙右手/绿左手，圆点标记下一组音，键盘高度可调）、调速（1.0/0.5 快捷切换、± 微调或直接输入 BPM，变速不变调）、A-B 循环反复练某一段、单手练习（左右手各自的音量与键盘提示独立开关，可关提示留声音作伴奏）、解释模式（点谱面符号看名称/含义/弹法并可对比有无该符号的效果）与符号表；自带哈农第 1 条等练习曲；登录后可生成分享链接，他人无需登录即可打开练习。另附识谱 skill（score-to-musicxml），可将图片/PDF 乐谱在 Claude Code 中转为 MusicXML"
+    },
+    {
+      "name": "Vital",
+      "url": "https://vital.audio/",
+      "description": "免费（开源核心）的频谱变形波表合成器（Spectral Warping Wavetable Synth），提供 VST/AU 插件与独立版，支持 Windows 10+ / macOS 10.15+ / Ubuntu 18.04+。核心特色：**频谱变形振荡器**——直接作用于波形谐波，从简单波形生成截然不同的音色；波表工具链：内置波表编辑器、pitch-splice / vocode 波表转换器（把采样变波表）、甚至可用文字生成波表（text-to-wavetable）；可视化合成器——动画控件、滤波器响应、波形、LFO、示波器、频谱图全部 60 FPS GPU 加速渲染；调制系统强大：拖拽式调制并支持预览、自定义 LFO 形状、包络、Perlin 噪声随机源、velocity/aftertouch/MPE、立体声调制与调制曲线重映射、音频速率调制；支持微音调（.tun/.scl/.kbd）、高效 unison；免费版含完整合成器全部功能 + 75 预设 / 25 波表，Plus/Pro 提供更多预设与波表"
+    },
+    {
+      "name": "TypePiano",
+      "url": "https://typepiano.org/",
+      "description": "在线五线谱识谱 / 视奏训练器（中文界面，支持电脑、手机触控与 MIDI 键盘），理念是「像学打字一样练识谱」——通过大量即时反馈的视觉-动作训练，把谱面位置与琴键反应练成条件反射，摆脱初级者逐个数线和间的依赖；三种练习路径：①无限视奏（随机音符无限刷，提升反应速度）；②乐曲挑战（从《欢乐颂》到《致爱丽丝》，逐句解锁真实旋律）；③五线谱入门教程；功能含实时音效与对错高亮反馈、准确率/速度/连击数等数据统计与历史记录、自定义音域（高低音谱号）、电脑键盘 1-7 与 MIDI 键盘映射（含半音提示）、可隐藏提示；由自学钢琴的成年开发者制作，5.0/5 共 89 条用户评价"
+    },
+    {
+      "name": "Arturia",
+      "url": "https://www.arturia.com/zh",
+      "description": "法国知名音乐硬件/软件厂商官网（中文页），产品线覆盖硬件合成器（MiniFreak——固件 5.0 已支持用户采样与波表导入并附 23 个新预设、AstroLab 等）、旗舰软件合成器 Pigments（另有免费入门版 Pigments Play）、AudioFuse 系列桌面音频接口（Studio Rev2 升级前级与蓝牙模块）；官网提供各产品固件/软件免费更新、艺术家故事与线下活动（合成与声音设计大师课）资讯"
+    },
+    {
+      "name": "Instruments of the World",
+      "url": "https://instrumentsoftheworld.com/",
+      "description": "世界乐器虚拟百科，收录全球 200 种乐器（持续扩充中）；每种乐器配详细描述、图片与音频样本，众多乐器还附视频演示；提供四种浏览方式：按乐团/乐队/组合、按乐器族、按起源地、按 A-Z 字母序；面向大众也可作教学辅助（尤其服务法国及法语区的英语教师）；另有法语版站点 instrumentsdumonde.fr"
+    },
+    {
+      "name": "Songscription",
+      "url": "https://www.songscription.ai/new",
+      "description": "AI 音乐转写平台（2024 年创立，Reach Capital 投资，获 TechCrunch/Billboard/MusicRadar 报道）：上传 MP3/WAV/FLAC/M4A 音频、粘贴 YouTube/Instagram/TikTok 链接或直接麦克录音，AI 自动分离乐器、检测音高与节奏并写成规范五线谱；支持钢琴、吉他、贝斯、小提琴、长笛、小号、萨克斯、鼓、人声 9 种乐器单独转写，Multi-Instrument 模式可一次转写整支乐队录音并按乐器分部（含合成器）；还能将任意歌曲改编为可选难度的钢琴版、钢琴+人声或和弦谱；内置乐谱编辑器配 AI 助手 Annie（自然语言描述即可改谱）、自动钢琴指法与交互式 piano roll；导出 PDF 乐谱、MIDI（DAW 用）、MusicXML（MuseScore/Sibelius 用）、Guitar Pro 四种格式；免费版可转写 30 秒，付费解锁更长录音与更多导出"
+    },
+    {
+      "name": "MyGo Music",
+      "url": "https://music.egoist.dev/zh/",
+      "description": "egoist 开发的免费开源桌面音乐播放器（AGPL-3.0，GitHub: egoist/mygo-music，macOS/Windows/Linux）：用 Go 与 MyGo 写成、原生界面无 WebView，启动快占用少；开箱即播本地音乐文件（MP3/FLAC/Ogg，自动读取标签、封面与 .lrc 歌词，按歌曲/专辑/歌手整理），支持歌单、喜欢、搜索、随机与循环；特色：暂停/跳转音量淡入淡出与歌间音量均衡、Mac 刘海迷你播放器（托盘菜单 + 媒体键）、退出后记忆播放队列与进度、逐字「律动」歌词与满屏封面墙、浅色/深色/跟随系统；播客字幕边播边生成（sherpa-onnx + Qwen3-ASR，全程本机不离数据）；插件系统仅需 plugin.json + JS/TS 文件无需构建，可接入流媒体账号、曲库搜索、播客电台评论，按声明权限访问网站并需用户启动前确认，支持从 GitHub 安装与自动更新"
     }
   ]
 }
