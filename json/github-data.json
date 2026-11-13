@@ -1,15 +1,15 @@
 {
-  "generated_at": 1794483402683,
+  "generated_at": 1794560385231,
   "repos": {
     "microsoft/vscode": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "microsoft/vscode",
         "html_url": "https://github.com/microsoft/vscode",
         "description": "Visual Studio Code",
-        "stargazers_count": 195318,
-        "forks_count": 43815,
-        "open_issues_count": 21805,
+        "stargazers_count": 195359,
+        "forks_count": 43822,
+        "open_issues_count": 21652,
         "language": "TypeScript",
         "topics": [
           "editor",
@@ -18,20 +18,20 @@
           "typescript",
           "visual-studio-code"
         ],
-        "pushed_at": "2026-11-12T11:32:24Z",
+        "pushed_at": "2026-11-13T08:55:16Z",
         "archived": false,
         "license": "MIT"
       }
     },
     "tailwindlabs/tailwindcss": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "tailwindlabs/tailwindcss",
         "html_url": "https://github.com/tailwindlabs/tailwindcss",
         "description": "A utility-first CSS framework for rapid UI development.",
-        "stargazers_count": 98586,
-        "forks_count": 6390,
-        "open_issues_count": 123,
+        "stargazers_count": 98587,
+        "forks_count": 6392,
+        "open_issues_count": 125,
         "language": "TypeScript",
         "topics": [
           "css",
@@ -68,14 +68,14 @@
       }
     },
     "ollama/ollama": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "ollama/ollama",
         "html_url": "https://github.com/ollama/ollama",
         "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-        "stargazers_count": 186752,
-        "forks_count": 19035,
-        "open_issues_count": 4633,
+        "stargazers_count": 186850,
+        "forks_count": 19055,
+        "open_issues_count": 4647,
         "language": "Go",
         "topics": [
           "deepseek",
@@ -93,20 +93,20 @@
           "ollama",
           "qwen"
         ],
-        "pushed_at": "2026-11-12T03:21:12Z",
+        "pushed_at": "2026-11-13T00:02:20Z",
         "archived": false,
         "license": "MIT"
       }
     },
     "godotengine/godot": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "godotengine/godot",
         "html_url": "https://github.com/godotengine/godot",
         "description": "Godot Engine – Multi-platform 2D and 3D game engine",
-        "stargazers_count": 120017,
-        "forks_count": 27455,
-        "open_issues_count": 19021,
+        "stargazers_count": 120058,
+        "forks_count": 27474,
+        "open_issues_count": 19028,
         "language": "C++",
         "topics": [
           "game-development",
@@ -117,20 +117,20 @@
           "multi-platform",
           "open-source"
         ],
-        "pushed_at": "2026-11-12T06:49:51Z",
+        "pushed_at": "2026-11-12T16:48:59Z",
         "archived": false,
         "license": "MIT"
       }
     },
     "yt-dlp/yt-dlp": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "yt-dlp/yt-dlp",
         "html_url": "https://github.com/yt-dlp/yt-dlp",
         "description": "A feature-rich command-line audio/video downloader",
-        "stargazers_count": 207123,
-        "forks_count": 18240,
-        "open_issues_count": 2785,
+        "stargazers_count": 207408,
+        "forks_count": 18269,
+        "open_issues_count": 2787,
         "language": "Python",
         "topics": [
           "cli",
@@ -147,13 +147,13 @@
       }
     },
     "ohmyzsh/ohmyzsh": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "ohmyzsh/ohmyzsh",
         "html_url": "https://github.com/ohmyzsh/ohmyzsh",
         "description": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
-        "stargazers_count": 190577,
-        "forks_count": 27304,
+        "stargazers_count": 190596,
+        "forks_count": 27302,
         "open_issues_count": 311,
         "language": "Shell",
         "topics": [
@@ -179,30 +179,30 @@
       }
     },
     "torvalds/linux": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "torvalds/linux",
         "html_url": "https://github.com/torvalds/linux",
         "description": "Linux kernel source tree",
-        "stargazers_count": 255460,
-        "forks_count": 67032,
+        "stargazers_count": 255547,
+        "forks_count": 67176,
         "open_issues_count": 3,
         "language": "C",
         "topics": [],
-        "pushed_at": "2026-11-12T02:55:16Z",
+        "pushed_at": "2026-11-12T21:21:39Z",
         "archived": false,
         "license": "NOASSERTION"
       }
     },
     "pytorch/pytorch": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "pytorch/pytorch",
         "html_url": "https://github.com/pytorch/pytorch",
         "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-        "stargazers_count": 105450,
-        "forks_count": 30699,
-        "open_issues_count": 18172,
+        "stargazers_count": 105460,
+        "forks_count": 30715,
+        "open_issues_count": 18232,
         "language": "Python",
         "topics": [
           "autograd",
@@ -214,36 +214,36 @@
           "python",
           "tensor"
         ],
-        "pushed_at": "2026-11-12T11:36:44Z",
+        "pushed_at": "2026-11-13T08:58:46Z",
         "archived": false,
         "license": "NOASSERTION"
       }
     },
     "vuejs/core": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "vuejs/core",
         "html_url": "https://github.com/vuejs/core",
         "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-        "stargazers_count": 55007,
-        "forks_count": 9336,
+        "stargazers_count": 55013,
+        "forks_count": 9338,
         "open_issues_count": 959,
         "language": "TypeScript",
         "topics": [],
-        "pushed_at": "2026-11-12T08:47:08Z",
+        "pushed_at": "2026-11-13T08:04:03Z",
         "archived": false,
         "license": "MIT"
       }
     },
     "luanti-org/luanti": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "luanti-org/luanti",
         "html_url": "https://github.com/luanti-org/luanti",
         "description": "Luanti (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
-        "stargazers_count": 13849,
-        "forks_count": 2522,
-        "open_issues_count": 1483,
+        "stargazers_count": 13854,
+        "forks_count": 2525,
+        "open_issues_count": 1486,
         "language": "C++",
         "topics": [
           "c-plus-plus",
@@ -261,13 +261,13 @@
       }
     },
     "ziglang/zig": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "ziglang/zig",
         "html_url": "https://github.com/ziglang/zig",
         "description": "Moved to Codeberg",
-        "stargazers_count": 43278,
-        "forks_count": 3122,
+        "stargazers_count": 43283,
+        "forks_count": 3121,
         "open_issues_count": 2709,
         "language": "Zig",
         "topics": [
@@ -281,14 +281,14 @@
       }
     },
     "f/prompts.chat": {
-      "fetched_at": 1794483402683,
+      "fetched_at": 1794560385231,
       "data": {
         "full_name": "f/prompts.chat",
         "html_url": "https://github.com/f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-        "stargazers_count": 176963,
-        "forks_count": 22568,
-        "open_issues_count": 83,
+        "stargazers_count": 177041,
+        "forks_count": 22574,
+        "open_issues_count": 85,
         "language": "MDX",
         "topics": [
           "ai",
@@ -310,7 +310,7 @@
           "prompts-chat",
           "typescript"
         ],
-        "pushed_at": "2026-11-12T08:47:33Z",
+        "pushed_at": "2026-11-13T07:09:34Z",
         "archived": false,
         "license": "NOASSERTION"
       }
